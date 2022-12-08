@@ -31,3 +31,7 @@ Feature: Validating the home page of investor portal
           Then Verify the banner is dispalyed on the right top corner
           And On clicking the banner widget should navigate to external url
 
+     Scenario: Verify the scrolling function
+          Given Verify the user is landed on the Dashboard
+          And User should able to scroll the  Upcomming events, News, Updates widgets
+          Then User should able to toggle between login and logout button in the updates widgets
