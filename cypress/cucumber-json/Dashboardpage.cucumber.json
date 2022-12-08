@@ -1,0 +1,263 @@
+[
+  {
+    "description": "     Dashboardpage Assertions",
+    "keyword": "Feature",
+    "name": "Validating the home page of investor portal",
+    "line": 2,
+    "id": "validating-the-home-page-of-investor-portal",
+    "tags": [],
+    "uri": "Dashboardpage.feature",
+    "elements": [
+      {
+        "id": "validating-the-home-page-of-investor-portal;verify-the-header",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify the header",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Verify the user is landed on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 478000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User is on the dashborad Verify the following menu is displayed in the left panel",
+            "result": {
+              "status": "passed",
+              "duration": 570000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User must be navigated to the account page when clicked on user profile icon",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-home-page-of-investor-portal;verify-the-multiple-join-fund",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify the multiple join fund",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Verify the user is landed on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 440000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User is on the dashborad Verify the following menu is displayed in the left panel",
+            "result": {
+              "status": "passed",
+              "duration": 556000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User clicks on Join fond icon a drop down must be enabled",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Should be able to switch between the join fund",
+            "result": {
+              "status": "passed",
+              "duration": 457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Assert the grids avilable on the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-home-page-of-investor-portal;verify-the-multiple-investors",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify the multiple investors",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "Verify the user is landed on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 444000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User is on the dashborad Verify the following menu is displayed in the left panel",
+            "result": {
+              "status": "passed",
+              "duration": 587000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User clicks on investor icon a drop down must be enabled",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Should be able to switch between the investor",
+            "result": {
+              "status": "passed",
+              "duration": 467000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Assert the grids avilable on the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 305000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-home-page-of-investor-portal;verify-the-banner-widget",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Verify the Banner widget",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "Verify the user is landed on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "User is on the dashborad Verify the following menu is displayed in the left panel",
+            "result": {
+              "status": "passed",
+              "duration": 577000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Verify the banner is dispalyed on the right top corner",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "On clicking the banner widget should navigate to external url",
+            "result": {
+              "status": "passed",
+              "duration": 4186000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
