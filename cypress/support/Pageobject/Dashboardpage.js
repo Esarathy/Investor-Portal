@@ -24,5 +24,9 @@ getoptiontext()
 {
     return cy.get('span[class="mat-option-text"]')
 }
+getpostcount()
+{
+    return  cy.get('div > p[class="postCount"]')
+}
 }
 export default Dashboard

@@ -3,7 +3,7 @@ import Dashboard from "../../../../support/Pageobject/Dashboardpage";
 const dashboard = new Dashboard()
 
 Given('Verify the user is landed on the Dashboard', () => {
-    cy.viewport('macbook-11')
+    cy.viewport(1400,1093)
     cy.visit('http://d12qy9shi7acla.cloudfront.net/dashboard')
     cy.url().should('include', '.cloudfront.net/dashboard')
     cy.clearCookies()
