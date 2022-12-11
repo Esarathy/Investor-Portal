@@ -2,9 +2,28 @@ import { When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Dashboard from "../../../../support/Pageobject/Dashboardpage";
 const dashboard = new Dashboard()
 
-Then('User must be navigated to the account page when clicked on user profile icon', () => {
+Then('User must be navigated to the account page when clicking on user profile icon', () => {
     cy.get('.profile').click()
     cy.url().should('include', '.cloudfront.net/account')
+})
+When('Clicking the menus on the side bar, it should be navigated to the following pages', () => {
+    cy.get('.navList').contains('Dashboard').click()
+    cy.url().should('include', '.cloudfront.net/dashboard')
+    cy.reload()
+    cy.get('.navList').contains('Insights').click()
+    cy.url().should('include', '.cloudfront.net/insights')
+    cy.reload()
+    cy.get('.navList').contains('Capital account').click()
+    cy.url().should('include', '.cloudfront.net/capital-account')
+    cy.reload()
+    cy.get('.navList').contains('Reports').click()
+    cy.url().should('include', '.cloudfront.net/reports')
+    cy.reload()
+    cy.get('.navList').contains('Documents').click()
+    cy.url().should('include', '.cloudfront.net/documents')
+    cy.reload()
+    cy.get('.navList').contains('Documents').click()
+    cy.url().should('include', '.cloudfront.net/documents')
 })
 
 When('User clicks on Join fond icon a drop down must be enabled', () => {
@@ -12,7 +31,7 @@ When('User clicks on Join fond icon a drop down must be enabled', () => {
 
 })
 
-And('Should be able to switch between the join fund', () => {
+Then('User should able to switch between the join fund', () => {
     dashboard.getoptiontext().contains(' Join Fund 1 - XYZ ').should('be.visible').click()
     dashboard.getjoinfond().click()
     dashboard.getoptiontext().contains(' Join Fund 2 - XYZ ').should('be.visible').click()
@@ -30,7 +49,7 @@ And('Verify the grids avilable on the dashboard page', () => {
 When('User clicks on investor icon a drop down must be enabled', () => {
     dashboard.getinvestor().click()
 })
-And('Should be able to switch between the investor', () => {
+Then('User should able to switch between the investor', () => {
     dashboard.getoptiontext().contains(' Investor 1 ').should('be.visible').click()
     dashboard.getinvestor().click()
     dashboard.getoptiontext().contains(' Investor 2 ').should('be.visible').click()

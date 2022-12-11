@@ -4,12 +4,13 @@ const dashboard = new Dashboard()
 
 Given('Verify the user is landed on the Dashboard', () => {
     cy.viewport(1400,1093)
-    cy.visit('http://d12qy9shi7acla.cloudfront.net/dashboard')
+    cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
     cy.clearCookies()
-    cy.clearLocalStorage();
+    cy.clearLocalStorage()
 })
-When('User is on the dashborad Verify the following menu is displayed in the left panel', ()=>{
+
+When('User is on the dashborad Verify the following menu is displayed on the side bar', ()=>{
     cy.get('.navList>div').should('have.length',5)
     cy.get('.navList').contains('Dashboard').should('be.visible')
     cy.get('.navList').contains('Insights').should('be.visible')

@@ -6,6 +6,10 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
     
     },
+    "env" :
+    {
+        "url" : "http://d12qy9shi7acla.cloudfront.net/dashboard"
+    },
     specPattern: 'cypress/integration/examples/BDD/*.feature'
   },
 });
