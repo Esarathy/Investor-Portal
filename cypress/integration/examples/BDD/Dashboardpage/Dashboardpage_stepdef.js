@@ -66,13 +66,13 @@ When('The banner is dispalyed on the right top corner', () => {
     cy.get('a > img').should('be.visible')
 })
 Then('On clicking the banner widget should navigate to external url', () => {
-    // cy.get('a > img').click()
-    // cy.get('a').then(function($e1) {
-    // const url = $e1.prop('href')
-    // cy.visit(url)
+    cy.get('a > img').click()
+    cy.get('a').then(function($e1) {
+    const url = $e1.prop('href')
+    cy.visit(url)
 
 
-    // })
+    })
 })
 And('User should able to scroll the  Upcomming events, News, Updates widgets', () => {
     cy.get('.cardBody.eventsContainer').scrollTo("bottom")
