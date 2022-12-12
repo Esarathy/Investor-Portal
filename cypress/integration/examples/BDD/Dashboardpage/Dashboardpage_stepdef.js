@@ -2,10 +2,7 @@ import { When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Dashboard from "../../../../support/Pageobject/Dashboardpage";
 const dashboard = new Dashboard()
 
-Then('User must be navigated to the account page when clicking on user profile icon', () => {
-    cy.get('.profile').click()
-    cy.url().should('include', '.cloudfront.net/account')
-})
+
 When('Clicking the menus on the side bar, it should be navigated to the following pages', () => {
     cy.get('.navList').contains('Dashboard').click()
     cy.url().should('include', '.cloudfront.net/dashboard')

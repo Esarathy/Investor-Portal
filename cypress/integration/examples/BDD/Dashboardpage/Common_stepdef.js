@@ -14,7 +14,6 @@ When('User is on the dashborad Verify the following menu is displayed on the sid
     cy.get('.navList>div').should('have.length',5)
     cy.get('.navList').contains('Dashboard').should('be.visible')
     cy.get('.navList').contains('Insights').should('be.visible')
-    
     cy.get('.navList').contains('Capital Account').should('be.visible')
     cy.get('.navList').contains('Reports').should('be.visible')
     cy.get('.navList').contains('Documents').should('be.visible')
