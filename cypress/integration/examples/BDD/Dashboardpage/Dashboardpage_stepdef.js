@@ -13,7 +13,7 @@ When('Clicking the menus on the side bar, it should be navigated to the followin
     cy.get('.navList').contains('Insights').click()
     cy.url().should('include', '.cloudfront.net/insights')
     cy.reload()
-    cy.get('.navList').contains('Capital account').click()
+    cy.get('.navList').contains('Capital Account').click()
     cy.url().should('include', '.cloudfront.net/capital-account')
     cy.reload()
     cy.get('.navList').contains('Reports').click()
