@@ -1,11 +1,8 @@
 const { defineConfig } = require('cypress');
 const cucumber = require('cypress-cucumber-preprocessor').default
-module.exports = defineConfig(
-{
-  e2e: 
-  {
-    setupNodeEvents(on, config) 
-    {
+module.exports = defineConfig ({
+  e2e: {
+    setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
     
     },
@@ -17,3 +14,4 @@ module.exports = defineConfig(
     specPattern: 'cypress/integration/examples/BDD/*.feature'
   },
 });
+
