@@ -23,17 +23,17 @@
             "name": "Verify the user is landed on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1201000000
+              "duration": 3564000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "User is on the dashborad Verify the following menu is displayed in the left panel",
+            "name": "User is on the dashborad Verify the following menu is displayed on the side bar",
             "result": {
               "status": "passed",
-              "duration": 561000000
+              "duration": 45000000
             }
           },
           {
@@ -43,17 +43,27 @@
             "name": "Verify the Partner logo is displayed in the left top of the page",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Clicking the menus on the side bar, it should be navigated to the following pages",
+            "result": {
+              "status": "failed",
+              "duration": 7447000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Capital account' within the element: <mat-nav-list.mat-nav-list.mat-list-base.navList.ng-tns-c135-0> but never did.\n    at Context.eval (cypress/integration/examples/BDD/Dashboardpage/Dashboardpage_stepdef.js:16:23)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "User must be navigated to the account page when clicked on user profile icon",
+            "line": 9,
+            "name": "User must be navigated to the account page when clicking on user profile icon",
             "result": {
-              "status": "passed",
-              "duration": 102000000
+              "status": "skipped"
             }
           }
         ]
@@ -61,7 +71,7 @@
       {
         "id": "validating-the-home-page-of-investor-portal;verify-the-multiple-join-fund",
         "keyword": "Scenario",
-        "line": 10,
+        "line": 11,
         "name": "Verify the multiple join fund",
         "tags": [],
         "type": "scenario",
@@ -69,61 +79,61 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 11,
+            "line": 12,
             "name": "Verify the user is landed on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 538000000
+              "duration": 1327000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
-            "name": "User is on the dashborad Verify the following menu is displayed in the left panel",
-            "result": {
-              "status": "passed",
-              "duration": 594000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 13,
-            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "name": "User is on the dashborad Verify the following menu is displayed on the side bar",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 613000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "Verify the grids avilable on the dashboard page",
+            "name": "Verify the Partner logo is displayed in the left top of the page",
             "result": {
               "status": "passed",
-              "duration": 324000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "User clicks on Join fond icon a drop down must be enabled",
-            "result": {
-              "status": "passed",
-              "duration": 88000000
+              "duration": 4000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
-            "name": "Should be able to switch between the join fund",
+            "line": 15,
+            "name": "Verify the grids avilable on the dashboard page",
             "result": {
               "status": "passed",
-              "duration": 463000000
+              "duration": 541000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User clicks on Join fond icon a drop down must be enabled",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "User should able to switch between the join fund",
+            "result": {
+              "status": "passed",
+              "duration": 477000000
             }
           }
         ]
@@ -131,7 +141,7 @@
       {
         "id": "validating-the-home-page-of-investor-portal;verify-the-multiple-investors",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 20,
         "name": "Verify the multiple investors",
         "tags": [],
         "type": "scenario",
@@ -139,61 +149,61 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 20,
+            "line": 21,
             "name": "Verify the user is landed on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 575000000
+              "duration": 867000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
-            "name": "User is on the dashborad Verify the following menu is displayed in the left panel",
-            "result": {
-              "status": "passed",
-              "duration": 652000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 22,
-            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "name": "User is on the dashborad Verify the following menu is displayed on the side bar",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 670000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "Verify the grids avilable on the dashboard page",
+            "name": "Verify the Partner logo is displayed in the left top of the page",
             "result": {
               "status": "passed",
-              "duration": 319000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "User clicks on investor icon a drop down must be enabled",
-            "result": {
-              "status": "passed",
-              "duration": 110000000
+              "duration": 2000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
-            "name": "Should be able to switch between the investor",
+            "line": 24,
+            "name": "Verify the grids avilable on the dashboard page",
             "result": {
               "status": "passed",
-              "duration": 465000000
+              "duration": 393000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "User clicks on investor icon a drop down must be enabled",
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "User should able to switch between the investor",
+            "result": {
+              "status": "passed",
+              "duration": 412000000
             }
           }
         ]
@@ -201,7 +211,7 @@
       {
         "id": "validating-the-home-page-of-investor-portal;verify-the-banner-widget",
         "keyword": "Scenario",
-        "line": 28,
+        "line": 29,
         "name": "Verify the Banner widget",
         "tags": [],
         "type": "scenario",
@@ -209,51 +219,51 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 29,
+            "line": 30,
             "name": "Verify the user is landed on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1231000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 890000000
+              "duration": 612000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 31,
+            "name": "Verify the grids avilable on the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 993000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
             "name": "Verify the Partner logo is displayed in the left top of the page",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 32,
+            "line": 33,
             "name": "The banner is dispalyed on the right top corner",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 2000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
+            "line": 34,
             "name": "On clicking the banner widget should navigate to external url",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 12503000000
             }
           }
         ]
@@ -261,7 +271,7 @@
       {
         "id": "validating-the-home-page-of-investor-portal;verify-the-scrolling-function",
         "keyword": "Scenario",
-        "line": 35,
+        "line": 36,
         "name": "Verify the scrolling function",
         "tags": [],
         "type": "scenario",
@@ -269,41 +279,41 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 36,
+            "line": 37,
             "name": "Verify the user is landed on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 506000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 887000000
+              "duration": 2189000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 38,
+            "name": "Verify the grids avilable on the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 619000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
             "name": "User should able to scroll the  Upcomming events, News, Updates widgets",
             "result": {
               "status": "passed",
-              "duration": 9140000000
+              "duration": 9076000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 39,
+            "line": 40,
             "name": "User should able to toggle between login and logout button in the updates widgets",
             "result": {
               "status": "passed",
-              "duration": 183000000
+              "duration": 84000000
             }
           }
         ]
@@ -311,7 +321,7 @@
       {
         "id": "validating-the-home-page-of-investor-portal;verify-the-performance-widget",
         "keyword": "Scenario",
-        "line": 41,
+        "line": 42,
         "name": "Verify the Performance Widget",
         "tags": [],
         "type": "scenario",
@@ -319,41 +329,41 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 42,
+            "line": 43,
             "name": "Verify the user is landed on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 862000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 43,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 870000000
+              "duration": 21884000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 44,
+            "name": "Verify the grids avilable on the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 1018000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
             "name": "Verify the details avilable on the widget",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 11000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 45,
+            "line": 46,
             "name": "Click on the see details button on the performance widget user must be navigated to insights page",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 139000000
             }
           }
         ]
@@ -361,7 +371,7 @@
       {
         "id": "validating-the-home-page-of-investor-portal;verify-the-capital-widget",
         "keyword": "Scenario",
-        "line": 48,
+        "line": 49,
         "name": "Verify the Capital Widget",
         "tags": [],
         "type": "scenario",
@@ -369,41 +379,41 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 49,
+            "line": 50,
             "name": "Verify the user is landed on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1265000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 50,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 893000000
+              "duration": 1027000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 51,
+            "name": "Verify the grids avilable on the dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 1098000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
             "name": "Verify the details avilable on the widget",
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 4000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 53,
             "name": "Click on the see details button on the performance widget user must be navigated to capital account page",
             "result": {
               "status": "passed",
-              "duration": 116000000
+              "duration": 131000000
             }
           }
         ]
