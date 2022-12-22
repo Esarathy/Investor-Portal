@@ -1,0 +1,353 @@
+[
+  {
+    "description": "     Accountpage Assertions",
+    "keyword": "Feature",
+    "name": "Validating the Accountpage of investor portal",
+    "line": 1,
+    "id": "validating-the-accountpage-of-investor-portal",
+    "tags": [],
+    "uri": "Accountpage.feature",
+    "elements": [
+      {
+        "id": "validating-the-accountpage-of-investor-portal;profile-update",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Profile update",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1553000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User clicks the profile icon on the header",
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should be navigated to account page",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Enter the \"Value 1\" and Interface language in the profile grid",
+            "result": {
+              "status": "passed",
+              "duration": 499000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks on save button",
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Profile should be successfully updated",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-accountpage-of-investor-portal;profile-update",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Profile update",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User clicks the profile icon on the header",
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should be navigated to account page",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Enter the \"Value 11\" and Interface language in the profile grid",
+            "result": {
+              "status": "passed",
+              "duration": 501000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks on save button",
+            "result": {
+              "status": "passed",
+              "duration": 94000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Profile should be successfully updated",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-accountpage-of-investor-portal;password-update",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Password update",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 945000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User clicks the profile icon on the header",
+            "result": {
+              "status": "passed",
+              "duration": 100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "User should be navigated to account page",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password grids",
+            "result": {
+              "status": "passed",
+              "duration": 686000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User clicks on change password button",
+            "result": {
+              "status": "passed",
+              "duration": 100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Password should be successfully updated",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-accountpage-of-investor-portal;password-update",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Password update",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User clicks the profile icon on the header",
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "User should be navigated to account page",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password grids",
+            "result": {
+              "status": "passed",
+              "duration": 713000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "User clicks on change password button",
+            "result": {
+              "status": "passed",
+              "duration": 102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Password should be successfully updated",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-accountpage-of-investor-portal;delete-account",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Delete account",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 938000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User clicks the profile icon on the header",
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "User should be navigated to account page",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "User clicks on the Delete button",
+            "result": {
+              "status": "passed",
+              "duration": 493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "Account should be successfully deleted",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

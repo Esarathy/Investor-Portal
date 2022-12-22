@@ -1,32 +1,53 @@
 class Dashboard
 {
-getjoinfond()
+
+gettimeline()
 {
-    return cy.get('#mat-select-0')
+    return  cy.get('mat-card').contains(' Timeline ')
 }
-getmenuheading()
+getperformance()
 {
-    return cy.get('.menuHeading')
+    return  cy.get('mat-card').contains(' Performance ')
+}
+getcapitalinusd()
+{
+    return   cy.get('mat-card').contains(' Capital in USD ')
+}
+getupcommingevents()
+{
+    return   cy.get('mat-card').contains(' Upcoming events ')
+}
+getupdates()
+{
+    return  cy.get('mat-card').contains(' Updates ')
+}
+getbanner()
+{
+    return  cy.get('mat-card > a')
+}
+getprofile(){
+    return  cy.get('.profile')
 }
 getinvestor()
 {
     return cy.get('#mat-select-2 > div')
 }
-getprofileicon()
+getjoinfond()
 {
-    return cy.get('.profile > div > .ng-star-inserted').click()
-}
-getoverlay()
-{
-    return cy.get('.cdk-overlay-backdrop')
+    return cy.get('#mat-select-0')
 }
 getoptiontext()
 {
     return cy.get('span[class="mat-option-text"]')
 }
-getpostcount()
-{
-    return  cy.get('div > p[class="postCount"]')
+getoptions(){
+    return cy.get('div > mat-option')
+}
+getinvestments(){
+    return cy.get('mat-card').contains(' 40% of 15 Investments ')
+}
+getmenuheading(){
+    return cy.get('.menuHeading')
 }
 }
 export default Dashboard

@@ -18,7 +18,7 @@ report.generate({
     customData: {
         title: 'Run info',
         data: [
-            {label: 'Project', value: 'Join captial'},
+            {label: 'Project', value: 'Investor-capital'},
             {label: 'Release', value: '1.2.3'},
             {label: 'Cycle', value: 'B11221.34321'},
             {label: 'Execution Start Time', value: 'Nov 19th 2022, 02:31 PM EST'},

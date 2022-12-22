@@ -1,15 +1,16 @@
 {
-  "name": "joincapital",
+  "name": "investor-capital",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/cypress run"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress-cucumber-preprocessor": "^14.0.0"
+    "cypress-cucumber-preprocessor": "^14.0.0",
+    "cypress-iframe": "^1.0.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
@@ -21,7 +22,8 @@
     }
   },
   "devDependencies": {
-    "cypress": "^12.0.2",
+    "cypress": "^12.1.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "mocha": "^10.1.0",
     "mochawesome": "^7.1.3",

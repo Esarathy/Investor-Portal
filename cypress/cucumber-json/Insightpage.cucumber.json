@@ -1,0 +1,73 @@
+[
+  {
+    "description": "    Insightpage Assertions",
+    "keyword": "Feature",
+    "name": "Validating the Insight page of investor portal",
+    "line": 1,
+    "id": "validating-the-insight-page-of-investor-portal",
+    "tags": [],
+    "uri": "Insightpage.feature",
+    "elements": [
+      {
+        "id": "validating-the-insight-page-of-investor-portal;dashboard-header",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Dashboard header",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "Partners logo verified",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User click on the insight menu",
+            "result": {
+              "status": "passed",
+              "duration": 618000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User should be successfully redirected to the page",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "All the joinfund & investor should able to be selected successfully",
+            "result": {
+              "status": "passed",
+              "duration": 1089000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -2,17 +2,17 @@
   {
     "description": "     Dashboardpage Assertions",
     "keyword": "Feature",
-    "name": "Validating the home page of investor portal",
-    "line": 2,
-    "id": "validating-the-home-page-of-investor-portal",
+    "name": "Validating the Dashboard page of investor portal",
+    "line": 1,
+    "id": "validating-the-dashboard-page-of-investor-portal",
     "tags": [],
     "uri": "Dashboardpage.feature",
     "elements": [
       {
-        "id": "validating-the-home-page-of-investor-portal;verify-the-header",
+        "id": "validating-the-dashboard-page-of-investor-portal;dashboard-header",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verify the header",
+        "name": "Dashboard header",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -20,59 +20,59 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Verify the user is landed on the Dashboard",
+            "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 3564000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "User is on the dashborad Verify the following menu is displayed on the side bar",
-            "result": {
-              "status": "passed",
-              "duration": 45000000
+              "duration": 1554000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
-            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "line": 6,
+            "name": "Widgets are verified",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 680000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "All the joinfund & investor should be selected successfully",
+            "result": {
+              "status": "passed",
+              "duration": 350000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "Clicking the menus on the side bar, it should be navigated to the following pages",
+            "name": "User clicks the profile icon on the header",
             "result": {
-              "status": "failed",
-              "duration": 7447000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Capital account' within the element: <mat-nav-list.mat-nav-list.mat-list-base.navList.ng-tns-c135-0> but never did.\n    at Context.eval (cypress/integration/examples/BDD/Dashboardpage/Dashboardpage_stepdef.js:16:23)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 98000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "User must be navigated to the account page when clicking on user profile icon",
+            "name": "Should be navigated to account page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7000000
             }
           }
         ]
       },
       {
-        "id": "validating-the-home-page-of-investor-portal;verify-the-multiple-join-fund",
+        "id": "validating-the-dashboard-page-of-investor-portal;assert-sidebar-&-timeline-widget",
         "keyword": "Scenario",
         "line": 11,
-        "name": "Verify the multiple join fund",
+        "name": "Assert sidebar & Timeline widget",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -80,317 +80,97 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 12,
-            "name": "Verify the user is landed on the Dashboard",
+            "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1327000000
+              "duration": 992000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "And ",
             "line": 13,
-            "name": "User is on the dashborad Verify the following menu is displayed on the side bar",
+            "name": "Partners logo verified",
             "result": {
               "status": "passed",
-              "duration": 613000000
+              "duration": 5000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "Verify the Partner logo is displayed in the left top of the page",
+            "name": "Details on Timeline widget are verified",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 8000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 15,
-            "name": "Verify the grids avilable on the dashboard page",
+            "name": "Page redirects on menu click",
             "result": {
               "status": "passed",
-              "duration": 541000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "User clicks on Join fond icon a drop down must be enabled",
-            "result": {
-              "status": "passed",
-              "duration": 112000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "User should able to switch between the join fund",
-            "result": {
-              "status": "passed",
-              "duration": 477000000
+              "duration": 1239000000
             }
           }
         ]
       },
       {
-        "id": "validating-the-home-page-of-investor-portal;verify-the-multiple-investors",
+        "id": "validating-the-dashboard-page-of-investor-portal;banner-widget",
         "keyword": "Scenario",
-        "line": 20,
-        "name": "Verify the multiple investors",
+        "line": 17,
+        "name": "Banner widget",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 21,
-            "name": "Verify the user is landed on the Dashboard",
+            "line": 18,
+            "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 867000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "User is on the dashborad Verify the following menu is displayed on the side bar",
-            "result": {
-              "status": "passed",
-              "duration": 670000000
+              "duration": 499000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 19,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 674000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Page redirects to a youtube link on banner click",
+            "result": {
+              "status": "passed",
+              "duration": 2464000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-dashboard-page-of-investor-portal;investment-widget",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Investment widget",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
             "line": 23,
-            "name": "Verify the Partner logo is displayed in the left top of the page",
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 393000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "User clicks on investor icon a drop down must be enabled",
-            "result": {
-              "status": "passed",
-              "duration": 80000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "User should able to switch between the investor",
-            "result": {
-              "status": "passed",
-              "duration": 412000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-home-page-of-investor-portal;verify-the-banner-widget",
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "Verify the Banner widget",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 30,
-            "name": "Verify the user is landed on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 612000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 993000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "Verify the Partner logo is displayed in the left top of the page",
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 33,
-            "name": "The banner is dispalyed on the right top corner",
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "On clicking the banner widget should navigate to external url",
-            "result": {
-              "status": "passed",
-              "duration": 12503000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-home-page-of-investor-portal;verify-the-scrolling-function",
-        "keyword": "Scenario",
-        "line": 36,
-        "name": "Verify the scrolling function",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 37,
-            "name": "Verify the user is landed on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 2189000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 38,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 619000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "User should able to scroll the  Upcomming events, News, Updates widgets",
-            "result": {
-              "status": "passed",
-              "duration": 9076000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "User should able to toggle between login and logout button in the updates widgets",
-            "result": {
-              "status": "passed",
-              "duration": 84000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-home-page-of-investor-portal;verify-the-performance-widget",
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "Verify the Performance Widget",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 43,
-            "name": "Verify the user is landed on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 21884000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 44,
-            "name": "Verify the grids avilable on the dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 1018000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 45,
-            "name": "Verify the details avilable on the widget",
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 46,
-            "name": "Click on the see details button on the performance widget user must be navigated to insights page",
-            "result": {
-              "status": "passed",
-              "duration": 139000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-home-page-of-investor-portal;verify-the-capital-widget",
-        "keyword": "Scenario",
-        "line": 49,
-        "name": "Verify the Capital Widget",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 50,
-            "name": "Verify the user is landed on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 1027000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 51,
-            "name": "Verify the grids avilable on the dashboard page",
+            "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
               "duration": 1098000000
@@ -399,8 +179,58 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 52,
-            "name": "Verify the details avilable on the widget",
+            "line": 24,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 636000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Details on Investment widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-dashboard-page-of-investor-portal;performance-widget",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Performance widget",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 957000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 668000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Details on Performance widget are verified",
             "result": {
               "status": "passed",
               "duration": 4000000
@@ -408,12 +238,252 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 53,
-            "name": "Click on the see details button on the performance widget user must be navigated to capital account page",
+            "keyword": "When ",
+            "line": 32,
+            "name": "User clicks on see details in Performance widget",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 86000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Should navigate to Insight page successfully",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Insights '\n    at Context.eval (cypress/integration/examples/BDD/Dashboardpage/Dashboardpage_stepdef.js:69:31)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-dashboard-page-of-investor-portal;capital-widget",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Capital widget",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 624000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Details on Capital widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "User clicks on see details in Capital widget",
+            "result": {
+              "status": "passed",
+              "duration": 140000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Should navigate to Capitalaccount successfully",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Capital Account '\n    at Context.eval (cypress/integration/examples/BDD/Dashboardpage/Dashboardpage_stepdef.js:78:31)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-dashboard-page-of-investor-portal;upcomming-events",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Upcomming events",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1439000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 635000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "Scroll the Upcoming events",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "Should contain maximum 4 events",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-dashboard-page-of-investor-portal;news",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "News",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 590000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "Scroll the News widget",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "Should contain maximum 3 news",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-dashboard-page-of-investor-portal;updates",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Updates",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 519000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 689000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "Scroll the Updates widget",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "Should contain maximum 7 updates",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 61,
+            "name": "Clicking the toggle button",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "Should able to generate updates accordingly",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
             }
           }
         ]

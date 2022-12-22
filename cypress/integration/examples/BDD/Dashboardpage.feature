@@ -1,55 +1,69 @@
-
-Feature: Validating the home page of investor portal
+Feature: Validating the Dashboard page of investor portal
      Dashboardpage Assertions
-     Scenario: Verify the header
-          Given Verify the user is landed on the Dashboard
-          When User is on the dashborad Verify the following menu is displayed on the side bar
-          And Verify the Partner logo is displayed in the left top of the page
-          When Clicking the menus on the side bar, it should be navigated to the following pages
-          Then User must be navigated to the account page when clicking on user profile icon
 
-     Scenario: Verify the multiple join fund
-          Given Verify the user is landed on the Dashboard
-          When User is on the dashborad Verify the following menu is displayed on the side bar
-          And Verify the Partner logo is displayed in the left top of the page
-          And Verify the grids avilable on the dashboard page
-          When User clicks on Join fond icon a drop down must be enabled
-          Then User should able to switch between the join fund
+     Scenario: Dashboard header
+          Given User lands on the Dashboard
+          And Partners logo verified
+          Then The joinfund & investor dropdown must be selected successfully
+          When User clicks the profile icon on the header
+          Then Should be navigated to account page
 
+     Scenario: Dashboard leftpanel (side bar)
+          Given User lands on the Dashboard
+          And Partners logo verified
+          Then Page redirects on menu click
 
-     Scenario: Verify the multiple investors
-          Given Verify the user is landed on the Dashboard
-          When User is on the dashborad Verify the following menu is displayed on the side bar
-          And Verify the Partner logo is displayed in the left top of the page
-          And Verify the grids avilable on the dashboard page
-          When User clicks on investor icon a drop down must be enabled
-          Then User should able to switch between the investor
+     Scenario: Timeline widget
+          Given User lands on the Dashboard
+          And Partners logo verified
+          And Details on Timeline widget are verified
 
 
-     Scenario: Verify the Banner widget
-          Given Verify the user is landed on the Dashboard
-          And Verify the grids avilable on the dashboard page
-          And Verify the Partner logo is displayed in the left top of the page
-          When The banner is dispalyed on the right top corner
-          Then On clicking the banner widget should navigate to external url
+     Scenario: Banner widget
+          Given User lands on the Dashboard
+          And Widgets are verified
+          Then Page redirects to a youtube link on banner click
 
-     Scenario: Verify the scrolling function
-          Given Verify the user is landed on the Dashboard
-          And Verify the grids avilable on the dashboard page
-          And User should able to scroll the  Upcomming events, News, Updates widgets
-          Then User should able to toggle between login and logout button in the updates widgets
-
-     Scenario: Verify the Performance Widget
-          Given Verify the user is landed on the Dashboard
-          And Verify the grids avilable on the dashboard page
-          And Verify the details avilable on the widget
-          Then Click on the see details button on the performance widget user must be navigated to insights page
+     Scenario: Investment widget
+          Given User lands on the Dashboard
+          And Widgets are verified
+          And Details on Investment widget are verified
 
 
-     Scenario: Verify the Capital Widget
-          Given Verify the user is landed on the Dashboard
-          And Verify the grids avilable on the dashboard page
-          And Verify the details avilable on the widget
-          Then Click on the see details button on the performance widget user must be navigated to capital account page
+     Scenario: Performance widget
+          Given User lands on the Dashboard
+          And Widgets are verified
+          And Details on Performance widget are verified
+          When User clicks on see details in Performance widget
+          Then Should navigate to Insight page successfully
+
+     Scenario: Capital widget
+          Given User lands on the Dashboard
+          And Widgets are verified
+          And Details on Capital widget are verified
+          When User clicks on see details in Capital widget
+          Then Should navigate to Capitalaccount successfully
+
+     Scenario: Upcomming events
+          Given User lands on the Dashboard
+          And Widgets are verified
+          When User scroll the Upcoming events
+          Then Should contain list of events
+
+
+     Scenario: News
+          Given User lands on the Dashboard
+          And Widgets are verified
+          When User scroll the News widget
+          Then Should contain list of news
+
+
+     Scenario: Updates
+          Given User lands on the Dashboard
+          And Widgets are verified
+          When User scroll the Updates widget
+          Then Should contain list of updates
+          When User clicks on the toggle button
+          Then Should able to generate updates accordingly
 
 
