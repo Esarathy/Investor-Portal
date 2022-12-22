@@ -1,117 +1,146 @@
-import { When, And, Then } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Dashboard from "../../../../support/Pageobject/Dashboardpage";
+import Navigation from "../../../../support/Pageobject/Naviagtion";
 const dashboard = new Dashboard()
+const navigation = new Navigation()
 
 
-When('Clicking the menus on the side bar, it should be navigated to the following pages', () => {
-    cy.get('.navList').contains('Dashboard').click()
+Given('User lands on the Dashboard', () => {
+    cy.viewport(1400, 1093)
+    cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
-    cy.reload()
-    cy.get('.navList').contains('Insights').click()
+    cy.clearCookies()
+    cy.clearLocalStorage()
+})
+And('Partners logo verified', () => {
+    navigation.getpatnerlogo().should('be.visible')
+
+})
+
+And('Details on Timeline widget are verified', () => {
+    cy.get('div[class="progressDate start"]').should('have.text', '20. Jan2022')
+    cy.get('div[class="progressDate end"]').should('have.text', '20. Jan2032')
+
+})
+And('Details on Capital widget are verified', () => {
+    cy.get('div[class="capital"]> div > p').should('have.text','1,000mn Committed 1,000mn Called in 1,000mn Distributed 1,000mn Contributed 1,000mn Deployed 1,000mn Due Payments ')
+
+})
+
+Then('Page redirects on menu click', () => {
+    navigation.getdashboard().click()
+    dashboard.getmenuheading().should('contain', '/ Dashboard ')
+    navigation.getinsight().click()
+    dashboard.getmenuheading().should('contain', '/ Insights ')
+    navigation.getcapitalaccount().click()
+    dashboard.getmenuheading().should('contain', '/ Capital Account ')
+    navigation.getreports().click()
+    dashboard.getmenuheading().should('contain', '/ Reports ')
+    navigation.getdocuments().click()
+    dashboard.getmenuheading().should('contain', '/ Documents ')
+    navigation.getsettings().click()
+    dashboard.getmenuheading().should('contain', '/ Settings ')
+
+})
+And('Widgets are verified', () => {
+    dashboard.gettimeline().should('be.visible')
+    dashboard.getperformance().should('be.visible')
+    dashboard.getcapitalinusd().should('be.visible')
+    dashboard.getupcommingevents().should('be.visible')
+    dashboard.getupdates().should('be.visible')
+    dashboard.getbanner().should('have.attr', 'href')
+    dashboard.getinvestments().should('be.visible')
+})
+
+Then('The joinfund & investor dropdown must be selected successfully', () => {
+    cy.get('#mat-select-value-1').click()
+    cy.get('#mat-option-0').click()
+
+    cy.get('#mat-select-value-3').click()
+    cy.get('#mat-option-3').click()
+
+})
+When('User clicks on see details in Performance widget', () => {
+    cy.get('a[href="/insights"]').click()
+})
+
+Then('Should navigate to Insight page successfully', () => {
     cy.url().should('include', '.cloudfront.net/insights')
-    cy.reload()
-    cy.get('.navList').contains('Capital Account').click()
+    dashboard.getmenuheading().should('contain', '/ Insights ')
+})
+
+When('User clicks on see details in Capital widget', () => {
+    cy.get('a[href="/capital-account"]').click()
+})
+
+Then('Should navigate to Capitalaccount successfully', () => {
     cy.url().should('include', '.cloudfront.net/capital-account')
-    cy.reload()
-    cy.get('.navList').contains('Reports').click()
-    cy.url().should('include', '.cloudfront.net/reports')
-    cy.reload()
-    cy.get('.navList').contains('Documents').click()
-    cy.url().should('include', '.cloudfront.net/documents')
-    cy.reload()
-    cy.get('.navList').contains('Documents').click()
-    cy.url().should('include', '.cloudfront.net/documents')
+    dashboard.getmenuheading().should('contain', '/ Capital Account ')
 })
 
-When('User clicks on Join fond icon a drop down must be enabled', () => {
-    dashboard.getjoinfond().click()
 
+When('User clicks the profile icon on the header', () => {
+    dashboard.getprofile().click()
 })
 
-Then('User should able to switch between the join fund', () => {
-    dashboard.getoptiontext().contains(' Join Fund 1 - XYZ ').should('be.visible').click()
-    dashboard.getjoinfond().click()
-    dashboard.getoptiontext().contains(' Join Fund 2 - XYZ ').should('be.visible').click()
-    dashboard.getjoinfond().click()
-    dashboard.getoptiontext().contains(' Join Fund 3 - XYZ ').should('be.visible').click()
-
-})
-And('Verify the grids avilable on the dashboard page', () => {
-    cy.get('div').contains(' Timeline ')
-    cy.get('div').contains(' Performance ')
-    cy.get('div').contains(' Capital in USD ')
-    cy.get('div').contains(' Upcoming events ')
-    cy.get('div').contains(' Updates ')
-})
-When('User clicks on investor icon a drop down must be enabled', () => {
-    dashboard.getinvestor().click()
-})
-Then('User should able to switch between the investor', () => {
-    dashboard.getoptiontext().contains(' Investor 1 ').should('be.visible').click()
-    dashboard.getinvestor().click()
-    dashboard.getoptiontext().contains(' Investor 2 ').should('be.visible').click()
-    dashboard.getinvestor().click()
-    dashboard.getoptiontext().contains(' Investor 3 ').should('be.visible').click()
-
-})
-Then('User must be navigated to the account page when clicked on user profile icon ', () => {
-    cy.get('.profile').click()
+Then('Should be navigated to account page', () => {
     cy.url().should('include', '.cloudfront.net/account')
+
 })
 
-When('The banner is dispalyed on the right top corner', () => {
-    cy.get('a > img').should('be.visible')
-})
-Then('On clicking the banner widget should navigate to external url', () => {
-    cy.get('a > img').click()
-    cy.get('a').then(function($e1) {
-    const url = $e1.prop('href')
-    cy.visit(url)
-
-
+Then('Page redirects to a youtube link on banner click', () => {
+    cy.get('mat-card > a').invoke('removeAttr', 'target').click()
+    cy.origin('www.youtube.com', () => {
+        cy.url().should('include', '.youtube.com')
     })
 })
-And('User should able to scroll the  Upcomming events, News, Updates widgets', () => {
-    cy.get('.cardBody.eventsContainer').scrollTo("bottom")
-    cy.wait(3000)
-    cy.get('.cardBody.eventsContainer').scrollTo("top")
 
-    cy.get('.cardBody.newsContainer').scrollTo("bottom")
-    cy.wait(3000)
-    cy.get('.cardBody.newsContainer').scrollTo("top")
-
-    cy.get('.cardBody.updatesContainer').scrollTo("bottom")
-    cy.wait(3000)
-    cy.get('.cardBody.updatesContainer').scrollTo("top")
+Then('Details on Investment widget are verified', () => {
+    cy.get('.postScriptum').contains(' 6 Realized 9 Unrealized ').should('be.visible')
 })
 
-Then('User should able to toggle between login and logout button in the updates widgets', () => {
+Then('Details on Performance widget are verified', () => {
+    cy.get('div[class="performance"]> div>p').should('have.text','100.00TVPI5.00DPI10.00RVPI10.00xMOIC1,000%IRR')
+
+})
+
+When('User scroll the Upcoming events', () => {
+    if (cy.get('.cardBody.eventsContainer > .eventTile').length > 3) {
+        cy.get('.cardBody.eventsContainer').scrollTo("bottom")
+        cy.get('.cardBody.eventsContainer').scrollTo("top")
+    }
+})
+
+Then('Should contain list of events', () => {
+    cy.get('.cardBody.eventsContainer > .eventTile').should('have.length', 4)
+})
+
+When('User scroll the News widget', () => {
+    if (cy.get('.cardBody.newsContainer > .newsTile').length > 3) {
+        cy.get('.cardBody.newsContainer').scrollTo("bottom")
+        cy.get('.cardBody.newsContainer').scrollTo("top")
+    }
+})
+
+Then('Should contain list of news', () => {
+    cy.get('.cardBody.newsContainer > .newsTile').should('have.length', 3)
+})
+
+When('User scroll the Updates widget', () => {
+    if (cy.get('.cardBody.updatesContainer > .eventTile').length > 3) {
+        cy.get('.cardBody.updatesContainer').scrollTo("bottom")
+        cy.get('.cardBody.updatesContainer').scrollTo("top")
+    }
+})
+
+Then('Should contain list of updates', () => {
+    cy.get('.cardBody.updatesContainer > .eventTile').should('have.length', 7)
+})
+When('User clicks on the toggle button', () => {
     cy.get('.last-month').click()
     cy.get('.last-login').click()
+})
+Then('Should able to generate updates accordingly', () => {
 
 })
 
-Then('Click on the see details button on the performance widget user must be navigated to insights page', () => {
-    cy.get('a[href="/insights"]').click()
-    cy.url().should('include', 'cloudfront.net/insights')
-})
-
-And('Verify the details avilable on the widget', () => {
-    dashboard.getpostcount().should('contain', "TVPI")
-    dashboard.getpostcount().should('contain', "DPI")
-    dashboard.getpostcount().should('contain', "RVPI")
-    dashboard.getpostcount().should('contain', "MOIC")
-    dashboard.getpostcount().should('contain', "IRR")
-})
-Then('Click on the see details button on the performance widget user must be navigated to capital account page', () => {
-    cy.get('a[href="/capital-account"]').click()
-    cy.url().should('include', 'cloudfront.net/capital-account')
-})
-And('Verify the details avilable on the widget', () => {
-    dashboard.getpostcount().should('contain', " Committed ")
-    dashboard.getpostcount().should('contain', " Called in ")
-    dashboard.getpostcount().should('contain', " Distributed ")
-    dashboard.getpostcount().should('contain', " Contributed ")
-    dashboard.getpostcount().should('contain', " Deployed ")
-    dashboard.getpostcount().should('contain', " Due Payments ")
-})

@@ -8,10 +8,12 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
-//
+import "cypress-cucumber-attach-screenshots-to-failed-steps";
+import "cypress-iframe";
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
+
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
@@ -21,7 +23,6 @@
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
 //
 //cy.get('  ').each(($el, index, $list)=>{
-
 
 
 // -- This will overwrite an existing command --
