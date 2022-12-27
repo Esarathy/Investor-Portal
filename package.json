@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "cypress-cucumber-preprocessor": "^14.0.0",
-    "cypress-iframe": "^1.0.1"
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "pdf-parse": "^1.1.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,

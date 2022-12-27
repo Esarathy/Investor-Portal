@@ -8,7 +8,7 @@ Feature: Validating the Reports page of investor portal
         When User clicks the Quarterly toggle button
         And User selects the year and quarter drop down
         Then User should get the following documents
-        And User should preview the pdf
+        And User able to see the pdf 
 
     Scenario: Annual reports
         Given User lands on the Dashboard

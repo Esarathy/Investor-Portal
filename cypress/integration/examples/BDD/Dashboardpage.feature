@@ -6,8 +6,7 @@ Feature: Validating the Dashboard page of investor portal
           And Partners logo verified
           Then The joinfund & investor dropdown must be selected successfully
           When User clicks the profile icon on the header
-          Then Should be navigated to account page
-
+         
      Scenario: Dashboard leftpanel (side bar)
           Given User lands on the Dashboard
           And Partners logo verified
@@ -18,7 +17,6 @@ Feature: Validating the Dashboard page of investor portal
           And Partners logo verified
           And Details on Timeline widget are verified
 
-
      Scenario: Banner widget
           Given User lands on the Dashboard
           And Widgets are verified
@@ -28,7 +26,6 @@ Feature: Validating the Dashboard page of investor portal
           Given User lands on the Dashboard
           And Widgets are verified
           And Details on Investment widget are verified
-
 
      Scenario: Performance widget
           Given User lands on the Dashboard
@@ -50,13 +47,11 @@ Feature: Validating the Dashboard page of investor portal
           When User scroll the Upcoming events
           Then Should contain list of events
 
-
      Scenario: News
           Given User lands on the Dashboard
           And Widgets are verified
           When User scroll the News widget
           Then Should contain list of news
-
 
      Scenario: Updates
           Given User lands on the Dashboard

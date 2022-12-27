@@ -9,8 +9,7 @@ class Reports{
      getmenutitle(){
         return cy.get('span > .childMenuItem')
      }
-     getyear()
-     {
+     getyear(){
         return cy.get('.folderStructure')
      }
 }

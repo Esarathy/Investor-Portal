@@ -4,15 +4,17 @@ Feature: Validating the Setting of investor portal
         Given User lands on the Dashboard
         And Partners logo verified
         Then Page redirects successfully on Settings menu click
-        When User clicks Users in the toggle button
+        When User clicks on Users in the toggle button
         Then Should successfully navigate to User page
-        And Should see list of user added and funds permited
+        When User clicks on the Username
+        And Click on fund permit checkbox
+        And Should click on save button
 
     Scenario Outline: Investor menu
         Given User lands on the Dashboard
         And Partners logo verified
         Then Page redirects successfully on Settings menu click
-        When User clicks Investor in the toggle button
+        When User on clicks Investor in the toggle button
         Then Should successfully navigate to Investor page
         When User enters "<Company>" and "<Street>" in the Address widget
         And Should enter "<VAT number>","<Commercial Register Number>","<IBAN>" in More widget
