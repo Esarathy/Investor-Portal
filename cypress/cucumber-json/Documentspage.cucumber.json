@@ -1,6 +1,5 @@
 [
   {
-    "description": "    Documents page Assertions",
     "keyword": "Feature",
     "name": "Validating the Documents page of investor portal",
     "line": 1,
@@ -9,82 +8,81 @@
     "uri": "Documentspage.feature",
     "elements": [
       {
-        "id": "validating-the-documents-page-of-investor-portal;documents",
+        "id": "validating-the-documents-page-of-investor-portal;verify-the-document-is-verified-from-the-document-folder",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Documents",
+        "line": 3,
+        "name": "Verify the document is verified from the document folder",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "User lands on the Dashboard",
+            "line": 4,
+            "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1163000000
+              "duration": 1489000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 5,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 6,
-            "name": "Partners logo verified",
+            "name": "The user clicks on the Documents Page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 102000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 7,
-            "name": "Page redirects successfully on Documents menu click",
+            "name": "Click on the Sub-folder",
             "result": {
               "status": "passed",
-              "duration": 519000000
+              "duration": 192000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 8,
-            "name": "User click on Sub-folder or Documents",
+            "name": "The user should successfully navigate to the subfolder page",
             "result": {
               "status": "passed",
-              "duration": 285000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "User should successfully navigate to the subfolder page",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
+              "duration": 11000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
-            "name": "User selects any documents",
+            "line": 9,
+            "name": "The User selects any documents",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 84000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "User should view the pdf",
+            "line": 10,
+            "name": "The user should view the pdf",
             "result": {
-              "status": "failed",
-              "duration": 4010000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#pageWidgetContainer1`, but never found it.\n    at Context.eval (cypress/integration/examples/BDD/Documentspage/Documentspage_stepdef.js:38:36)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 3000000
             }
           }
         ]

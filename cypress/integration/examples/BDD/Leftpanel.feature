@@ -1,7 +1,5 @@
 Feature: Validating the Leftpanel of investor portal
 
-    Left panel and Breadcrumbs verifications:
-
     Scenario: Verify the user is redirected to the dashboard page and verify the breadcrumbs
         Given The user landed on the Dashboard page
         And Partner logo is verified

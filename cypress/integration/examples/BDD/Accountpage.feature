@@ -1,37 +1,42 @@
 Feature: Validating the Accountpage of investor portal
-     Accountpage Assertions
-     Scenario Outline: Profile update
-          Given User lands on the Dashboard
-          When User clicks the profile icon on the header
-          Then User should be navigated to account page
-          When User verifies following details in profile widget
-          And User enter the "<Name>" and Interface language in the profile grid
-          And User clicks on save button
+
+
+     Scenario Outline: Verify the profile information and its actions are working as expected
+          Given The user landed on the Dashboard page
+          And Partner logo is displayed
+          When The user clicks the profile icon on the header
+          Then the user should be navigated to the account page
+          And the user verifies the following details in the profile section
+          When the User is able to enter the "<Name>"
+          And User is able to choose the Interface language
+          And User clicks on the save button
           Then Profile should be successfully updated
           Examples:
-               | Name     |
-               | Value 1  |
+               | Name |
+               | Value 1 |
                | Value 11 |
 
-
-
-     Scenario Outline: Password update
-          Given User lands on the Dashboard
-          When User clicks the profile icon on the header
-          Then User should be navigated to account page
-          When User verifies following details in password widget
-          And User enter the "<Current password>","<New password>","<Confirm password>" following details in the password grids
-          And User clicks on change password button
+     Scenario Outline: Verify if the change password is working as expected
+          Given The user landed on the Dashboard page
+          And Partner logo is displayed
+          When The user clicks the profile icon on the header
+          Then the user should be navigated to the account page
+          And the user verifies the following details in the password section
+          And User enter the "<Current password>","<New password>","<Confirm password>" following details in the password sections
+          And User clicks on the change password button
           Then Password should be successfully updated
           Examples:
                | Current password | New password | Confirm password |
-               | Value 1          | Value 2      | Value 3          |
-               | Value 11         | Value 12     | Value 13         |
+               | Value 1 | Value 2 | Value 3 |
+               | Value 11 | Value 12 | Value 13 |
 
-     Scenario: Delete account
-          Given User lands on the Dashboard
-          When User clicks the profile icon on the header
-          Then User should be navigated to account page
-          When User verifies following details in delete widget
-          And User clicks on the Delete button
+     Scenario: Verify if the user is able to delete the account
+          Given The user landed on the Dashboard page
+          And Partner logo is displayed
+          When The user clicks the profile icon on the header
+          Then the user should be navigated to the account page
+          And the user verifies the following details in the delete section
+          When the User clicks on the Delete button
           Then Account should be successfully deleted
+
+

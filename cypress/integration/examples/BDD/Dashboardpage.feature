@@ -1,7 +1,5 @@
 Feature: Validating the Dashboard page of investor portal
 
-     Dashboard verifications
-
      Scenario: Check the Dashboard header
           Given The user landed on the Dashboard page
           Then Verify partner logo is displayed on the left panel

@@ -1,13 +1,10 @@
 Feature: Validating the Documents page of investor portal
-    Documents page Assertions
 
-    Scenario: Documents
-        Given User lands on the Dashboard
-        And Partners logo verified
-        Then Page redirects successfully on Documents menu click
-        When User click on Sub-folder or Documents 
-        Then User should successfully navigate to the subfolder page
-        When User selects any documents 
-        Then User should view the pdf 
-       
-       
+    Scenario: Verify the document is verified from the document folder
+        Given The user landed on the Dashboard page
+        And Partner logo is displayed
+        When The user clicks on the Documents Page
+        And Click on the Sub-folder
+        Then The user should successfully navigate to the subfolder page
+        When The User selects any documents
+        Then The user should view the pdf
