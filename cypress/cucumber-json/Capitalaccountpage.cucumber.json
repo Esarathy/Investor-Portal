@@ -22,7 +22,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1332000000
+              "duration": 1847000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 19000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 176000000
+              "duration": 189000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Choose the from quarter",
             "result": {
               "status": "passed",
-              "duration": 241000000
+              "duration": 239000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "Choose the To quarter",
             "result": {
               "status": "passed",
-              "duration": 227000000
+              "duration": 275000000
             }
           },
           {
@@ -71,9 +71,8 @@
             "line": 10,
             "name": "Verify the IFRS option is chosen from the drop-down",
             "result": {
-              "status": "failed",
-              "duration": 4296000000,
-              "error_message": "CypressError: Timed out retrying after 4050ms: `cy.should()` failed because the page updated as a result of this command, but you tried to continue the command chain. The subject is no longer attached to the DOM, and Cypress cannot requery the page after commands such as `cy.should()`.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou can typically solve this by breaking up a chain. For example, rewrite:\n\n> `cy.get('button').click().should('have.class', 'active')`\n\nto\n\n> `cy.get('button').as('btn').click()`\n> `cy.get('@btn').should('have.class', 'active')`\n    at isAttached (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:157180:66)\n    at applyChainers (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:138887:24)\nFrom previous event:\n    at shouldFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:138919:60)\n    at should (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:138938:23)\n    at ../driver/src/cy/assertions.ts/create/injectAssertion (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:134007:39)\n    at assertions (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:134279:16)\nFrom previous event:\n    at verifyUpcomingAssertions (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:134292:62)\n    at verifyAssertions (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:135743:19)\n    at whenStable (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:151606:62)\n    at ../driver/src/cy/retries.ts/create/retry (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:151014:14)\nFrom Your Spec Code:\n    at [2] (cypress/integration/examples/BDD/Capitalaccountpage/Capitalaccountpage_stepdef.js:33:68)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+              "status": "passed",
+              "duration": 262000000
             }
           }
         ]
@@ -93,7 +92,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1184000000
+              "duration": 934000000
             }
           },
           {
@@ -103,7 +102,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 7000000
             }
           },
           {
@@ -113,7 +112,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 180000000
+              "duration": 170000000
             }
           },
           {
@@ -123,7 +122,7 @@
             "name": "Choose the from quarter",
             "result": {
               "status": "passed",
-              "duration": 216000000
+              "duration": 225000000
             }
           },
           {
@@ -133,7 +132,7 @@
             "name": "Choose the To quarter",
             "result": {
               "status": "passed",
-              "duration": 222000000
+              "duration": 212000000
             }
           },
           {
@@ -143,7 +142,7 @@
             "name": "Verify the KFW capital account option is chosen from the drop-down",
             "result": {
               "status": "passed",
-              "duration": 228000000
+              "duration": 239000000
             }
           }
         ]
@@ -163,7 +162,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 810000000
+              "duration": 980000000
             }
           },
           {
@@ -173,7 +172,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           },
           {
@@ -183,7 +182,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 163000000
+              "duration": 175000000
             }
           },
           {
@@ -193,7 +192,7 @@
             "name": "Choose the from quarter",
             "result": {
               "status": "passed",
-              "duration": 219000000
+              "duration": 222000000
             }
           },
           {
@@ -203,7 +202,7 @@
             "name": "Choose the To quarter",
             "result": {
               "status": "passed",
-              "duration": 205000000
+              "duration": 210000000
             }
           },
           {
@@ -213,7 +212,7 @@
             "name": "Click on the Download link",
             "result": {
               "status": "passed",
-              "duration": 107000000
+              "duration": 130000000
             }
           },
           {
@@ -223,7 +222,7 @@
             "name": "Verify the display format and file format text",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 19000000
             }
           },
           {
@@ -232,8 +231,8 @@
             "line": 28,
             "name": "Clicking on the Display format",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#mat-select-60`, but never found it.\n    at getdisplayformat (cypress/support/Pageobject/Capitalaccountpage.js:49:15)\n    at [2] (cypress/integration/examples/BDD/Capitalaccountpage/Capitalaccountpage_stepdef.js:55:18)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+              "status": "passed",
+              "duration": 3000000
             }
           },
           {
@@ -242,7 +241,8 @@
             "line": 29,
             "name": "Verify the display format option from the display format drop-down",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3000000
             }
           },
           {
@@ -251,7 +251,8 @@
             "line": 30,
             "name": "Clicking on the file format",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 202000000
             }
           },
           {
@@ -260,7 +261,8 @@
             "line": 31,
             "name": "Verify the file format  option from the file format drop-down",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 19000000
             }
           }
         ]
@@ -280,7 +282,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1252000000
+              "duration": 1158000000
             }
           },
           {
@@ -290,7 +292,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 26000000
             }
           },
           {
@@ -300,7 +302,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 176000000
+              "duration": 183000000
             }
           },
           {
@@ -310,7 +312,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 123000000
             }
           },
           {
@@ -320,7 +322,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 553000000
+              "duration": 583000000
             }
           },
           {
@@ -330,7 +332,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 576000000
+              "duration": 344000000
             }
           },
           {
@@ -340,7 +342,7 @@
             "name": "Choose the capital cell type",
             "result": {
               "status": "passed",
-              "duration": 230000000
+              "duration": 262000000
             }
           },
           {
@@ -350,7 +352,7 @@
             "name": "Choose the All statuses",
             "result": {
               "status": "passed",
-              "duration": 228000000
+              "duration": 469000000
             }
           },
           {
@@ -360,7 +362,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 24000000
             }
           }
         ]
@@ -380,7 +382,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 444000000
+              "duration": 947000000
             }
           },
           {
@@ -390,7 +392,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 7000000
             }
           },
           {
@@ -400,7 +402,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 164000000
+              "duration": 175000000
             }
           },
           {
@@ -410,7 +412,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 116000000
+              "duration": 111000000
             }
           },
           {
@@ -420,7 +422,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 522000000
+              "duration": 633000000
             }
           },
           {
@@ -430,7 +432,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 611000000
+              "duration": 532000000
             }
           },
           {
@@ -440,7 +442,7 @@
             "name": "Choose the capital cell type",
             "result": {
               "status": "passed",
-              "duration": 213000000
+              "duration": 244000000
             }
           },
           {
@@ -450,7 +452,7 @@
             "name": "Choose the Paid status",
             "result": {
               "status": "passed",
-              "duration": 211000000
+              "duration": 217000000
             }
           },
           {
@@ -460,7 +462,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 15000000
             }
           }
         ]
@@ -480,7 +482,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 784000000
+              "duration": 1614000000
             }
           },
           {
@@ -490,7 +492,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 15000000
             }
           },
           {
@@ -500,7 +502,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 171000000
+              "duration": 177000000
             }
           },
           {
@@ -510,7 +512,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 110000000
+              "duration": 125000000
             }
           },
           {
@@ -520,7 +522,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 607000000
+              "duration": 894000000
             }
           },
           {
@@ -530,7 +532,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 318000000
+              "duration": 365000000
             }
           },
           {
@@ -540,7 +542,7 @@
             "name": "Choose the capital cell type",
             "result": {
               "status": "passed",
-              "duration": 208000000
+              "duration": 253000000
             }
           },
           {
@@ -550,7 +552,7 @@
             "name": "Choose the open status",
             "result": {
               "status": "passed",
-              "duration": 214000000
+              "duration": 225000000
             }
           },
           {
@@ -560,7 +562,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 35000000
             }
           }
         ]
@@ -580,7 +582,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1444000000
+              "duration": 611000000
             }
           },
           {
@@ -590,7 +592,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 6000000
             }
           },
           {
@@ -600,7 +602,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 171000000
+              "duration": 173000000
             }
           },
           {
@@ -610,7 +612,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 109000000
             }
           },
           {
@@ -620,7 +622,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 619000000
+              "duration": 636000000
             }
           },
           {
@@ -630,7 +632,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 585000000
+              "duration": 589000000
             }
           },
           {
@@ -640,7 +642,7 @@
             "name": "Choose the Distribution type",
             "result": {
               "status": "passed",
-              "duration": 269000000
+              "duration": 225000000
             }
           },
           {
@@ -650,7 +652,7 @@
             "name": "Choose the All statuses",
             "result": {
               "status": "passed",
-              "duration": 213000000
+              "duration": 216000000
             }
           },
           {
@@ -660,7 +662,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 14000000
             }
           }
         ]
@@ -680,7 +682,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1294000000
+              "duration": 1406000000
             }
           },
           {
@@ -690,7 +692,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 23000000
             }
           },
           {
@@ -700,7 +702,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 173000000
+              "duration": 181000000
             }
           },
           {
@@ -710,7 +712,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 126000000
             }
           },
           {
@@ -720,7 +722,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 881000000
+              "duration": 627000000
             }
           },
           {
@@ -730,7 +732,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 328000000
+              "duration": 615000000
             }
           },
           {
@@ -740,7 +742,7 @@
             "name": "Choose the Distribution type",
             "result": {
               "status": "passed",
-              "duration": 253000000
+              "duration": 266000000
             }
           },
           {
@@ -750,7 +752,7 @@
             "name": "Choose the Paid status",
             "result": {
               "status": "passed",
-              "duration": 243000000
+              "duration": 239000000
             }
           },
           {
@@ -760,7 +762,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 30000000
             }
           }
         ]
@@ -780,7 +782,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 452000000
+              "duration": 532000000
             }
           },
           {
@@ -800,7 +802,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 168000000
+              "duration": 169000000
             }
           },
           {
@@ -810,7 +812,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 123000000
             }
           },
           {
@@ -820,7 +822,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 849000000
+              "duration": 628000000
             }
           },
           {
@@ -830,7 +832,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 579000000
             }
           },
           {
@@ -840,7 +842,7 @@
             "name": "Choose the Distribution type",
             "result": {
               "status": "passed",
-              "duration": 206000000
+              "duration": 264000000
             }
           },
           {
@@ -850,7 +852,7 @@
             "name": "Choose the open status",
             "result": {
               "status": "passed",
-              "duration": 229000000
+              "duration": 219000000
             }
           },
           {
@@ -860,7 +862,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 12000000
             }
           }
         ]
