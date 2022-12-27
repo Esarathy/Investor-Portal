@@ -1,6 +1,5 @@
 [
   {
-    "description": "    Capitalaccount page Assertions",
     "keyword": "Feature",
     "name": "Validating the Capitalaccount page of investor portal",
     "line": 1,
@@ -9,10 +8,10 @@
     "uri": "Capitalaccountpage.feature",
     "elements": [
       {
-        "id": "validating-the-capitalaccount-page-of-investor-portal;overview-ifrs-vertical",
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-overview-of-ifrs-vertical",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Overview IFRS vertical",
+        "name": "Verify the Overview of IFRS vertical",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -20,154 +19,237 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "User lands on the Dashboard",
+            "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1246000000
+              "duration": 1332000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "Partners logo verified",
+            "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 11000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 7,
-            "name": "Page redirects successfully on Capitalaccount click",
+            "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 137000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "User clicks the Overview toggle button",
-            "result": {
-              "status": "passed",
-              "duration": 90000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "User navigates to the overview page successfully",
-            "result": {
-              "status": "failed",
-              "duration": 4012000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem>' to contain text '/ Overview', but the text was '/ translations.capital-account.overview'\n    + expected - actual\n\n    -'/ translations.capital-account.overview'\n    +'/ Overview'\n\n    at Context.eval (cypress/integration/examples/BDD/Capitalaccountpage/Capitalaccountpage_stepdef.js:29:35)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "User selects the quater drop down",
-            "result": {
-              "status": "skipped"
+              "duration": 176000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "User selects IFRS in the dropdown",
+            "line": 8,
+            "name": "Choose the from quarter",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 241000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Choose the To quarter",
+            "result": {
+              "status": "passed",
+              "duration": 227000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "User should successfully able to download the details",
+            "line": 10,
+            "name": "Verify the IFRS option is chosen from the drop-down",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 4296000000,
+              "error_message": "CypressError: Timed out retrying after 4050ms: `cy.should()` failed because the page updated as a result of this command, but you tried to continue the command chain. The subject is no longer attached to the DOM, and Cypress cannot requery the page after commands such as `cy.should()`.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou can typically solve this by breaking up a chain. For example, rewrite:\n\n> `cy.get('button').click().should('have.class', 'active')`\n\nto\n\n> `cy.get('button').as('btn').click()`\n> `cy.get('@btn').should('have.class', 'active')`\n    at isAttached (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:157180:66)\n    at applyChainers (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:138887:24)\nFrom previous event:\n    at shouldFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:138919:60)\n    at should (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:138938:23)\n    at ../driver/src/cy/assertions.ts/create/injectAssertion (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:134007:39)\n    at assertions (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:134279:16)\nFrom previous event:\n    at verifyUpcomingAssertions (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:134292:62)\n    at verifyAssertions (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:135743:19)\n    at whenStable (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:151606:62)\n    at ../driver/src/cy/retries.ts/create/retry (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:151014:14)\nFrom Your Spec Code:\n    at [2] (cypress/integration/examples/BDD/Capitalaccountpage/Capitalaccountpage_stepdef.js:33:68)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
             }
           }
         ]
       },
       {
-        "id": "validating-the-capitalaccount-page-of-investor-portal;overview-kfw-capital-account",
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-overview-kfw-capital-account",
         "keyword": "Scenario",
-        "line": 14,
-        "name": "Overview KFW capital account",
+        "line": 12,
+        "name": "Verify the Overview KFW capital account",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 15,
-            "name": "User lands on the Dashboard",
+            "line": 13,
+            "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 866000000
+              "duration": 1184000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "The user clicks on the Capital Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 180000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "Partners logo verified",
+            "name": "Choose the from quarter",
             "result": {
               "status": "passed",
-              "duration": 4000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "Page redirects successfully on Capitalaccount click",
-            "result": {
-              "status": "passed",
-              "duration": 130000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "User clicks the Overview toggle button",
-            "result": {
-              "status": "passed",
-              "duration": 93000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "User navigates to the overview page successfully",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem>' to contain text '/ Overview', but the text was '/ translations.capital-account.overview'\n    + expected - actual\n\n    -'/ translations.capital-account.overview'\n    +'/ Overview'\n\n    at Context.eval (cypress/integration/examples/BDD/Capitalaccountpage/Capitalaccountpage_stepdef.js:29:35)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "User selects the quater drop down",
-            "result": {
-              "status": "skipped"
+              "duration": 216000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
+            "line": 17,
+            "name": "Choose the To quarter",
+            "result": {
+              "status": "passed",
+              "duration": 222000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Verify the KFW capital account option is chosen from the drop-down",
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-display-format-options-from-the-drop-down",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verify the display format options from the drop-down",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
             "line": 21,
-            "name": "User selects KFW in the dropdown",
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 810000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "The user clicks on the Capital Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 163000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Choose the from quarter",
+            "result": {
+              "status": "passed",
+              "duration": 219000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Choose the To quarter",
+            "result": {
+              "status": "passed",
+              "duration": 205000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Click on the Download link",
+            "result": {
+              "status": "passed",
+              "duration": 107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Verify the display format and file format text",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "Clicking on the Display format",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#mat-select-60`, but never found it.\n    at getdisplayformat (cypress/support/Pageobject/Capitalaccountpage.js:49:15)\n    at [2] (cypress/integration/examples/BDD/Capitalaccountpage/Capitalaccountpage_stepdef.js:55:18)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "Verify the display format option from the display format drop-down",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "Clicking on the file format",
             "result": {
               "status": "skipped"
             }
@@ -175,8 +257,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
-            "name": "User should successfully able to download the details",
+            "line": 31,
+            "name": "Verify the file format  option from the file format drop-down",
             "result": {
               "status": "skipped"
             }
@@ -184,28 +266,228 @@
         ]
       },
       {
-        "id": "validating-the-capitalaccount-page-of-investor-portal;transaction",
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-transaction-details-for-the-different-dates,-capital-cell-types-and-all-statuses",
         "keyword": "Scenario",
-        "line": 24,
-        "name": "Transaction",
+        "line": 33,
+        "name": "Verify the transaction details for the different dates, capital cell types and all statuses",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 25,
-            "name": "User lands on the Dashboard",
+            "line": 34,
+            "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1202000000
+              "duration": 1252000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
-            "name": "Partners logo verified",
+            "line": 35,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "The user clicks on the Capital Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "The user clicks on the Transaction tab",
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Choose the From Date",
+            "result": {
+              "status": "passed",
+              "duration": 553000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Choose the To Date",
+            "result": {
+              "status": "passed",
+              "duration": 576000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Choose the capital cell type",
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Choose the All statuses",
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Check the transaction text",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-transaction-details-for-the-different-dates,-capital-cell-types-and-paid-status",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Verify the transaction details for the different dates, capital cell types and paid status",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 444000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "The user clicks on the Capital Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "The user clicks on the Transaction tab",
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "Choose the From Date",
+            "result": {
+              "status": "passed",
+              "duration": 522000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Choose the To Date",
+            "result": {
+              "status": "passed",
+              "duration": 611000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Choose the capital cell type",
+            "result": {
+              "status": "passed",
+              "duration": 213000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "Choose the Paid status",
+            "result": {
+              "status": "passed",
+              "duration": 211000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "Check the transaction text",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-transaction-details-for-the-different-dates,-capital-cell-types-and-open-status",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "Verify the transaction details for the different dates, capital cell types and open status",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 784000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
               "duration": 7000000
@@ -213,77 +495,372 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "Page redirects successfully on Capitalaccount click",
+            "keyword": "When ",
+            "line": 58,
+            "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 136000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "User clicks the Transaction toggle button",
-            "result": {
-              "status": "passed",
-              "duration": 101000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "User navigates to the transaction page successfully",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem>' to contain text '/ Transactions', but the text was '/ translations.capital-account.transactions'\n    + expected - actual\n\n    -'/ translations.capital-account.transactions'\n    +'/ Transactions'\n\n    at Context.eval (cypress/integration/examples/BDD/Capitalaccountpage/Capitalaccountpage_stepdef.js:76:34)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 30,
-            "name": "User enters the transaction dates",
-            "result": {
-              "status": "skipped"
+              "duration": 171000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 31,
-            "name": "Select the drop down",
+            "line": 59,
+            "name": "The user clicks on the Transaction tab",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "Choose the From Date",
+            "result": {
+              "status": "passed",
+              "duration": 607000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "Choose the To Date",
+            "result": {
+              "status": "passed",
+              "duration": 318000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "Choose the capital cell type",
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "Choose the open status",
+            "result": {
+              "status": "passed",
+              "duration": 214000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
-            "name": "User should get the following datas",
+            "line": 64,
+            "name": "Check the transaction text",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-transaction-details-for-the-different-dates,-distribution-types-and-all-statuses",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "Verify the transaction details for the different dates, Distribution types and all statuses",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 67,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 1444000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 33,
-            "name": "User clicks on paid button",
+            "line": 69,
+            "name": "The user clicks on the Capital Account Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "The user clicks on the Transaction tab",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 71,
+            "name": "Choose the From Date",
+            "result": {
+              "status": "passed",
+              "duration": 619000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "Choose the To Date",
+            "result": {
+              "status": "passed",
+              "duration": 585000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "Choose the Distribution type",
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "Choose the All statuses",
+            "result": {
+              "status": "passed",
+              "duration": 213000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
-            "name": "A pdf must be previewed at the bottom",
+            "line": 75,
+            "name": "Check the transaction text",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-transaction-details-for-the-different-dates,-distribution-types-and-paid-status",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "Verify the transaction details for the different dates, Distribution types and paid status",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 78,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 1294000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 80,
+            "name": "The user clicks on the Capital Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 81,
+            "name": "The user clicks on the Transaction tab",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 82,
+            "name": "Choose the From Date",
+            "result": {
+              "status": "passed",
+              "duration": 881000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 83,
+            "name": "Choose the To Date",
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "Choose the Distribution type",
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "Choose the Paid status",
+            "result": {
+              "status": "passed",
+              "duration": 243000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 86,
+            "name": "Check the transaction text",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-capitalaccount-page-of-investor-portal;verify-the-transaction-details-for-the-different-dates,-distribution-types-and-open-status",
+        "keyword": "Scenario",
+        "line": 88,
+        "name": "Verify the transaction details for the different dates, Distribution types and open status",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 89,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 452000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 90,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 91,
+            "name": "The user clicks on the Capital Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 168000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 92,
+            "name": "The user clicks on the Transaction tab",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 93,
+            "name": "Choose the From Date",
+            "result": {
+              "status": "passed",
+              "duration": 849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 94,
+            "name": "Choose the To Date",
+            "result": {
+              "status": "passed",
+              "duration": 331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "Choose the Distribution type",
+            "result": {
+              "status": "passed",
+              "duration": 206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "Choose the open status",
+            "result": {
+              "status": "passed",
+              "duration": 229000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "Check the transaction text",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
             }
           }
         ]
