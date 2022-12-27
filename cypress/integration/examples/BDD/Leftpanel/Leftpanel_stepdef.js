@@ -14,8 +14,8 @@ And('Partner logo is verified', () => {
 
 })
 Then('Verify Breadcrumbs - / Dashboard', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Dashboard ')
+    cy.wait(5000)   
+     leftpanel.getmenuheading().should('contain', '/ Dashboard ')
 
 })
 
@@ -26,7 +26,7 @@ When('The user clicks on the insights Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Insights', () => {
-    cy.wait(2000)
+    cy.wait(5000)    
     leftpanel.getmenuheading().should('contain', '/ Insights ')
 
 })
@@ -38,8 +38,8 @@ When('The user clicks on the Capital Account Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Capital Account / Overview', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Capital Account / Overview')
+    cy.wait(5000)  
+      leftpanel.getmenuheading().should('contain', '/ Capital Account / Overview')
 
 })
 And('The user clicks on the Transaction tab', () => {
@@ -47,8 +47,8 @@ And('The user clicks on the Transaction tab', () => {
 
 })
 Then('Verify Breadcrumbs - / Capital Account / Transactions', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Capital Account / Transactions')
+    cy.wait(5000)   
+     leftpanel.getmenuheading().should('contain', '/ Capital Account / Transactions')
 
 })
 
@@ -58,16 +58,16 @@ When('The user clicks on the Reports Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Reports/ Quarterly / 2022 / Q4', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Reports / Quarterly / 2022 / Q4')
+    cy.wait(5000)   
+     leftpanel.getmenuheading().should('contain', '/ Reports / Quarterly / 2022 / Q4')
 })
 
 And('The user clicks on the Annually tab', () => {
     leftpanel.getannual().click()
 })
 Then('Verify Breadcrumbs - / Reports / Annually /', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Reports / Annually')
+    cy.wait(5000)   
+     leftpanel.getmenuheading().should('contain', '/ Reports / Annually')
 })
 
         // Documnets page
@@ -76,8 +76,8 @@ When('The user clicks on the Documents Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Documents', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Documents ')
+    cy.wait(5000)   
+     leftpanel.getmenuheading().should('contain', '/ Documents ')
 })
 
 
@@ -87,13 +87,13 @@ When('The user clicks on the Settings Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Settings / User', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Settings / Users')
+    cy.wait(5000)  
+      leftpanel.getmenuheading().should('contain', '/ Settings / Users')
 })
 And('The user clicks on the Investor tab', () => {
     leftpanel.getinvestor().click()
 })
 Then('Verify Breadcrumbs - / Settings / Investor /', () => {
-    cy.wait(2000)
-    leftpanel.getmenuheading().should('contain', '/ Settings / Investor')
+    cy.wait(5000)   
+     leftpanel.getmenuheading().should('contain', '/ Settings / Investor')
 })

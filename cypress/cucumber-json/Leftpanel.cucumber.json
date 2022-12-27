@@ -23,7 +23,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1401000000
+              "duration": 1182000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 11000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Verify Breadcrumbs - / Dashboard",
             "result": {
               "status": "passed",
-              "duration": 2032000000
+              "duration": 5042000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1265000000
+              "duration": 1167000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "The user clicks on the insights Page",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 109000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Verify Breadcrumbs - / Insights",
             "result": {
               "status": "passed",
-              "duration": 2038000000
+              "duration": 5030000000
             }
           }
         ]
@@ -113,7 +113,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1240000000
+              "duration": 1180000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 16000000
             }
           },
           {
@@ -133,7 +133,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 181000000
+              "duration": 183000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "Verify Breadcrumbs - / Capital Account / Overview",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Capital Account / Overview'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:42:31)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Capital Account / Overview'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:42:33)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
             }
           }
         ]
@@ -163,7 +163,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1223000000
+              "duration": 1213000000
             }
           },
           {
@@ -173,7 +173,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 10000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 175000000
+              "duration": 165000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 115000000
+              "duration": 121000000
             }
           },
           {
@@ -203,7 +203,7 @@
             "name": "Verify Breadcrumbs - / Capital Account / Transactions",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Capital Account / Transactions'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:51:31)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Capital Account / Transactions'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:51:32)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
             }
           }
         ]
@@ -223,7 +223,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1254000000
+              "duration": 1168000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 11000000
             }
           },
           {
@@ -243,7 +243,7 @@
             "name": "The user clicks on the Reports Page",
             "result": {
               "status": "passed",
-              "duration": 117000000
+              "duration": 124000000
             }
           },
           {
@@ -253,7 +253,7 @@
             "name": "Verify Breadcrumbs - / Reports/ Quarterly / 2022 / Q4",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Reports / Quarterly / 2022 / Q4'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:62:31)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Reports / Quarterly / 2022 / Q4'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:62:32)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
             }
           }
         ]
@@ -273,7 +273,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1400000000
+              "duration": 812000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 6000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "The user clicks on the Reports Page",
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 111000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "The user clicks on the Annually tab",
             "result": {
               "status": "passed",
-              "duration": 182000000
+              "duration": 294000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "Verify Breadcrumbs - / Reports / Annually /",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Reports / Annually'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:70:31)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Reports / Annually'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:70:32)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
             }
           }
         ]
@@ -333,7 +333,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1169000000
+              "duration": 1151000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 12000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "The user clicks on the Documents Page",
             "result": {
               "status": "passed",
-              "duration": 103000000
+              "duration": 111000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "Verify Breadcrumbs - / Documents",
             "result": {
               "status": "passed",
-              "duration": 2042000000
+              "duration": 5042000000
             }
           }
         ]
@@ -383,7 +383,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 875000000
+              "duration": 1157000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 14000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "The user clicks on the Settings Page",
             "result": {
               "status": "passed",
-              "duration": 133000000
+              "duration": 139000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "Verify Breadcrumbs - / Settings / User",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Settings / Users'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:91:31)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Settings / Users'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:91:33)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139307:60)\n    at then (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (http://d12qy9shi7acla.cloudfront.net/__cypress/runner/cypress_runner.js:5913:14)"
             }
           }
         ]
@@ -433,7 +433,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1178000000
+              "duration": 1253000000
             }
           },
           {
@@ -443,7 +443,7 @@
             "name": "Partner logo is verified",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 11000000
             }
           },
           {
@@ -453,7 +453,7 @@
             "name": "The user clicks on the Settings Page",
             "result": {
               "status": "passed",
-              "duration": 134000000
+              "duration": 146000000
             }
           },
           {
@@ -463,7 +463,7 @@
             "name": "The user clicks on the Investor tab",
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 123000000
             }
           },
           {
@@ -473,7 +473,7 @@
             "name": "Verify Breadcrumbs - / Settings / Investor /",
             "result": {
               "status": "passed",
-              "duration": 2041000000
+              "duration": 5040000000
             }
           }
         ]

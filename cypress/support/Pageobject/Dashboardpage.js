@@ -17,6 +17,10 @@ getupcommingevents()
 {
     return   cy.get('mat-card').contains(' Upcoming events ')
 }
+getnews()
+{
+    return   cy.get('mat-card').contains(' News ')
+}
 getupdates()
 {
     return  cy.get('mat-card').contains(' Updates ')
