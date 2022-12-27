@@ -5,20 +5,29 @@ const dashboard = new Dashboard()
 const navigation = new Navigation()
 
 
-Given('User lands on the Dashboard', () => {
+Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
-And('Partners logo verified', () => {
-    if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
-        cy.get('button > .mat-button-wrapper')
-          .should('be.visible')
-          .click()
-      }
+Then('Verify partner logo is displayed on the left panel', () => {
+    // if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
+    //     cy.get('button > .mat-button-wrapper')
+    //       .should('be.visible')
+    //       .click()
+    //   }
     navigation.getpatnerlogo().should('be.visible')
 
+})
+And('Verify JointFund drop-down is displayed', () => {
+    cy.get('#mat-select-value-1').contains('Join Fund 1 - XYZ').should('be.visible')
+})
+And('Verify Investor drop-down is displayed', () => {
+    cy.get('#mat-select-value-3').contains('Investor 1').should('be.visible')
+})
+And('Profile Icon is displayed', () => {
+    dashboard.getprofile().should('be.visible')
 })
 
 And('Details on Timeline widget are verified', () => {
@@ -32,11 +41,11 @@ And('Details on Capital widget are verified', () => {
 })
 
 Then('Page redirects on menu click', () => {
-    if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
-        cy.get('button > .mat-button-wrapper')
-          .should('be.visible')
-          .click()
-      }
+    // if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
+    //     cy.get('button > .mat-button-wrapper')
+    //       .should('be.visible')
+    //       .click()
+    //   }
     navigation.getdashboard().click()
     dashboard.getmenuheading().should('contain', '/ Dashboard ')
     navigation.getinsight().click()
@@ -61,14 +70,7 @@ And('Widgets are verified', () => {
     dashboard.getinvestments().should('be.visible')
 })
 
-Then('The joinfund & investor dropdown must be selected successfully', () => {
-    cy.get('#mat-select-value-1').click()
-    cy.get('#mat-option-0').click()
 
-    cy.get('#mat-select-value-3').click()
-    cy.get('#mat-option-3').click()
-
-})
 When('User clicks on see details in Performance widget', () => {
     cy.get('a[href="/insights"]').click()
 })
