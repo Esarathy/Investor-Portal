@@ -6,8 +6,7 @@ Feature: Validating the Dashboard page of investor portal
           And Partners logo verified
           Then The joinfund & investor dropdown must be selected successfully
           When User clicks the profile icon on the header
-          Then Should be navigated to account page
-
+         
      Scenario: Dashboard leftpanel (side bar)
           Given User lands on the Dashboard
           And Partners logo verified

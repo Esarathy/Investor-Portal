@@ -32,7 +32,7 @@ And('User enter the {string} and Interface language in the profile grid', (Name)
         cy.get('mat-option > span').eq(1).click()
     })
 And('User clicks on save button', () => {
-    account.getbutton().contains(' Save ').click()
+    account.getbutton().contains(' Save ').should('not.be.disabled').click()
 })
 Then('Profile should be successfully updated', () => {
    

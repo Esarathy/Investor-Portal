@@ -23,7 +23,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1195000000
+              "duration": 1385000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "The joinfund & investor dropdown must be selected successfully",
             "result": {
               "status": "passed",
-              "duration": 357000000
+              "duration": 20000000
             }
           },
           {
@@ -53,17 +53,7 @@
             "name": "User clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 101000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "Should be navigated to account page",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
+              "duration": 94000000
             }
           }
         ]
@@ -71,7 +61,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;dashboard-leftpanel-(side-bar)",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 10,
         "name": "Dashboard leftpanel (side bar)",
         "tags": [],
         "type": "scenario",
@@ -79,31 +69,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 12,
+            "line": 11,
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 895000000
+              "duration": 888000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 12,
             "name": "Partners logo verified",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 13,
             "name": "Page redirects on menu click",
             "result": {
               "status": "passed",
-              "duration": 1101000000
+              "duration": 1539000000
             }
           }
         ]
@@ -111,7 +101,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;timeline-widget",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 15,
         "name": "Timeline widget",
         "tags": [],
         "type": "scenario",
@@ -119,31 +109,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
+            "line": 16,
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1227000000
+              "duration": 804000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Partners logo verified",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "Partners logo verified",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
             "name": "Details on Timeline widget are verified",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 13000000
             }
           }
         ]
@@ -151,7 +141,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;banner-widget",
         "keyword": "Scenario",
-        "line": 21,
+        "line": 20,
         "name": "Banner widget",
         "tags": [],
         "type": "scenario",
@@ -159,58 +149,8 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 21,
             "name": "User lands on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 494000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Widgets are verified",
-            "result": {
-              "status": "passed",
-              "duration": 615000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "Page redirects to a youtube link on banner click",
-            "result": {
-              "status": "passed",
-              "duration": 4858000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-dashboard-page-of-investor-portal;investment-widget",
-        "keyword": "Scenario",
-        "line": 26,
-        "name": "Investment widget",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 27,
-            "name": "User lands on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 1432000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "Widgets are verified",
             "result": {
               "status": "passed",
               "duration": 594000000
@@ -219,11 +159,61 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 29,
+            "line": 22,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 706000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Page redirects to a youtube link on banner click",
+            "result": {
+              "status": "passed",
+              "duration": 5634000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-dashboard-page-of-investor-portal;investment-widget",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Investment widget",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Widgets are verified",
+            "result": {
+              "status": "passed",
+              "duration": 766000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
             "name": "Details on Investment widget are verified",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 9000000
             }
           }
         ]
@@ -231,7 +221,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;performance-widget",
         "keyword": "Scenario",
-        "line": 32,
+        "line": 30,
         "name": "Performance widget",
         "tags": [],
         "type": "scenario",
@@ -239,27 +229,27 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 33,
+            "line": 31,
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 824000000
+              "duration": 438000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 34,
+            "line": 32,
             "name": "Widgets are verified",
             "result": {
               "status": "passed",
-              "duration": 667000000
+              "duration": 618000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 35,
+            "line": 33,
             "name": "Details on Performance widget are verified",
             "result": {
               "status": "passed",
@@ -269,21 +259,21 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 36,
+            "line": 34,
             "name": "User clicks on see details in Performance widget",
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 87000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 37,
+            "line": 35,
             "name": "Should navigate to Insight page successfully",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           }
         ]
@@ -291,7 +281,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;capital-widget",
         "keyword": "Scenario",
-        "line": 39,
+        "line": 37,
         "name": "Capital widget",
         "tags": [],
         "type": "scenario",
@@ -299,27 +289,27 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 40,
+            "line": 38,
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 867000000
+              "duration": 802000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 41,
+            "line": 39,
             "name": "Widgets are verified",
             "result": {
               "status": "passed",
-              "duration": 573000000
+              "duration": 607000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 42,
+            "line": 40,
             "name": "Details on Capital widget are verified",
             "result": {
               "status": "passed",
@@ -329,17 +319,17 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 43,
+            "line": 41,
             "name": "User clicks on see details in Capital widget",
             "result": {
               "status": "passed",
-              "duration": 137000000
+              "duration": 135000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 44,
+            "line": 42,
             "name": "Should navigate to Capitalaccount successfully",
             "result": {
               "status": "passed",
@@ -351,7 +341,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;upcomming-events",
         "keyword": "Scenario",
-        "line": 46,
+        "line": 44,
         "name": "Upcomming events",
         "tags": [],
         "type": "scenario",
@@ -359,37 +349,37 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 47,
+            "line": 45,
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 784000000
+              "duration": 800000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
+            "line": 46,
             "name": "Widgets are verified",
             "result": {
               "status": "passed",
-              "duration": 597000000
+              "duration": 660000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 49,
+            "line": 47,
             "name": "User scroll the Upcoming events",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 50,
+            "line": 48,
             "name": "Should contain list of events",
             "result": {
               "status": "passed",
@@ -401,7 +391,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;news",
         "keyword": "Scenario",
-        "line": 53,
+        "line": 50,
         "name": "News",
         "tags": [],
         "type": "scenario",
@@ -409,27 +399,27 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 54,
+            "line": 51,
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 420000000
+              "duration": 791000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 55,
+            "line": 52,
             "name": "Widgets are verified",
             "result": {
               "status": "passed",
-              "duration": 702000000
+              "duration": 594000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 56,
+            "line": 53,
             "name": "User scroll the News widget",
             "result": {
               "status": "passed",
@@ -439,11 +429,11 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 57,
+            "line": 54,
             "name": "Should contain list of news",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           }
         ]
@@ -451,7 +441,7 @@
       {
         "id": "validating-the-dashboard-page-of-investor-portal;updates",
         "keyword": "Scenario",
-        "line": 60,
+        "line": 56,
         "name": "Updates",
         "tags": [],
         "type": "scenario",
@@ -459,27 +449,27 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 61,
+            "line": 57,
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 834000000
+              "duration": 877000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 62,
+            "line": 58,
             "name": "Widgets are verified",
             "result": {
               "status": "passed",
-              "duration": 584000000
+              "duration": 612000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 63,
+            "line": 59,
             "name": "User scroll the Updates widget",
             "result": {
               "status": "passed",
@@ -489,27 +479,27 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 64,
+            "line": 60,
             "name": "Should contain list of updates",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 10000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 65,
+            "line": 61,
             "name": "User clicks on the toggle button",
             "result": {
               "status": "passed",
-              "duration": 169000000
+              "duration": 170000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 66,
+            "line": 62,
             "name": "Should able to generate updates accordingly",
             "result": {
               "status": "passed",

@@ -23,87 +23,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1184000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "User clicks the profile icon on the header",
-            "result": {
-              "status": "passed",
-              "duration": 95000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "User should be navigated to account page",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "User verifies following details in profile widget",
-            "result": {
-              "status": "passed",
-              "duration": 451000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "User enter the \"Value 1\" and Interface language in the profile grid",
-            "result": {
-              "status": "passed",
-              "duration": 498000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User clicks on save button",
-            "result": {
-              "status": "passed",
-              "duration": 91000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "Profile should be successfully updated",
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-accountpage-of-investor-portal;profile-update",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Profile update",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User lands on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 1149000000
+              "duration": 801000000
             }
           },
           {
@@ -123,6 +43,86 @@
             "name": "User should be navigated to account page",
             "result": {
               "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User verifies following details in profile widget",
+            "result": {
+              "status": "passed",
+              "duration": 509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enter the \"Value 1\" and Interface language in the profile grid",
+            "result": {
+              "status": "passed",
+              "duration": 510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User clicks on save button",
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Profile should be successfully updated",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-accountpage-of-investor-portal;profile-update",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Profile update",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User lands on the Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User clicks the profile icon on the header",
+            "result": {
+              "status": "passed",
+              "duration": 93000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should be navigated to account page",
+            "result": {
+              "status": "passed",
               "duration": 6000000
             }
           },
@@ -133,7 +133,7 @@
             "name": "User verifies following details in profile widget",
             "result": {
               "status": "passed",
-              "duration": 421000000
+              "duration": 588000000
             }
           },
           {
@@ -143,7 +143,7 @@
             "name": "User enter the \"Value 11\" and Interface language in the profile grid",
             "result": {
               "status": "passed",
-              "duration": 499000000
+              "duration": 509000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "User clicks on save button",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 102000000
             }
           },
           {
@@ -183,7 +183,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 807000000
+              "duration": 452000000
             }
           },
           {
@@ -193,7 +193,7 @@
             "name": "User clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 92000000
             }
           },
           {
@@ -213,7 +213,7 @@
             "name": "User verifies following details in password widget",
             "result": {
               "status": "passed",
-              "duration": 470000000
+              "duration": 452000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "User enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password grids",
             "result": {
               "status": "passed",
-              "duration": 692000000
+              "duration": 677000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "User clicks on change password button",
             "result": {
               "status": "passed",
-              "duration": 105000000
+              "duration": 104000000
             }
           },
           {
@@ -263,7 +263,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 798000000
+              "duration": 1193000000
             }
           },
           {
@@ -273,7 +273,7 @@
             "name": "User clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 92000000
             }
           },
           {
@@ -283,7 +283,7 @@
             "name": "User should be navigated to account page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -293,7 +293,7 @@
             "name": "User verifies following details in password widget",
             "result": {
               "status": "passed",
-              "duration": 462000000
+              "duration": 619000000
             }
           },
           {
@@ -303,7 +303,7 @@
             "name": "User enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password grids",
             "result": {
               "status": "passed",
-              "duration": 722000000
+              "duration": 723000000
             }
           },
           {
@@ -313,7 +313,7 @@
             "name": "User clicks on change password button",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 103000000
             }
           },
           {
@@ -343,7 +343,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 778000000
+              "duration": 1270000000
             }
           },
           {
@@ -353,7 +353,7 @@
             "name": "User clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 96000000
             }
           },
           {
@@ -363,7 +363,7 @@
             "name": "User should be navigated to account page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
@@ -373,7 +373,7 @@
             "name": "User verifies following details in delete widget",
             "result": {
               "status": "passed",
-              "duration": 518000000
+              "duration": 439000000
             }
           },
           {
@@ -383,7 +383,7 @@
             "name": "User clicks on the Delete button",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 100000000
             }
           },
           {
@@ -393,7 +393,7 @@
             "name": "Account should be successfully deleted",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           }
         ]

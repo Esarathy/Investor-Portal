@@ -1,4 +1,4 @@
-class Navigation
+class Leftpanel
 {
     getdashboard()
     {
@@ -32,5 +32,17 @@ class Navigation
     {
         return  cy.get('.mat-toolbar > img')
     }
+    getmenuheading(){
+        return cy.get('.menuHeading')
+    }
+    gettransaction(){
+        return  cy.get('#mat-tab-label-0-1')
+    }
+    getannual(){
+        return cy.get('#mat-tab-label-0-1')
+     }
+     getinvestor() {
+        return cy.get('#mat-tab-label-0-1')
+    }
 }
-export default Navigation
+export default Leftpanel

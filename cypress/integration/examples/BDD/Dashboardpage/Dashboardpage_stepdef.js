@@ -1,6 +1,6 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Dashboard from "../../../../support/Pageobject/Dashboardpage";
-import Navigation from "../../../../support/Pageobject/Naviagtion";
+import Navigation from "../../../../support/Pageobject/Leftpanel";
 const dashboard = new Dashboard()
 const navigation = new Navigation()
 
@@ -62,11 +62,11 @@ And('Widgets are verified', () => {
 })
 
 Then('The joinfund & investor dropdown must be selected successfully', () => {
-    cy.get('#mat-select-value-1').click()
-    cy.get('#mat-option-0').click()
+    cy.get('#mat-select-value-1').contains('Join Fund 1 - XYZ').should('be.visible')
+    // cy.get('#mat-option-0').click()
 
-    cy.get('#mat-select-value-3').click()
-    cy.get('#mat-option-3').click()
+    cy.get('#mat-select-value-3').contains('Investor 1').should('be.visible')
+    // cy.get('#mat-option-3').click()
 
 })
 When('User clicks on see details in Performance widget', () => {
@@ -92,10 +92,6 @@ When('User clicks the profile icon on the header', () => {
     dashboard.getprofile().click()
 })
 
-Then('Should be navigated to account page', () => {
-    cy.url().should('include', '.cloudfront.net/account')
-
-})
 
 Then('Page redirects to a youtube link on banner click', () => {
     cy.get('mat-card > a').invoke('removeAttr', 'target').click()
