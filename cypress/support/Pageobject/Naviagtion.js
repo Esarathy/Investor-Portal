@@ -2,31 +2,31 @@ class Navigation
 {
     getdashboard()
     {
-    return cy.get('.navList').contains('Dashboard')
+    return cy.get('img[src="../../assets/home.svg"]')
     }
     getinsight()
     {
-    return cy.get('.navList').contains('Insights')
+    return cy.get('img[src="../../assets/insights.svg"]')
     }
     getcapitalaccount()
     {
-        return cy.get('.navList').contains('Capital Account')
+        return cy.get('img[src="../../assets/format_list_bulleted.svg"]')
     }
     getreports()
     {
-        return cy.get('.navList').contains('Reports')
+        return cy.get('img[src="../../assets/summarize_black.svg"]')
     }
     getdocuments()
     {
-        return cy.get('.navList').contains('Documents')
+        return cy.get('img[src="../../assets/picture_as_pdf_black.svg"]')
     }
     getsettings()
     {
-        return cy.get('.navList2').contains('Settings')
+        return cy.get('img[src="../../../../assets/settings_nav.svg"]')
     }
     getlogout()
     {
-        return cy.get('.navList2').contains('Logout')
+        return cy.get('img[src="../../../../assets/power_rounded.svg"]')
     }
     getpatnerlogo()
     {

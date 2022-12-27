@@ -5,7 +5,6 @@ const navigation = new Navigation()
 const capitalaccount = new Capitalaccount()
 
 Given('User lands on the Dashboard', () => {
-    cy.viewport(1400, 1093)
     cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
     cy.clearCookies()

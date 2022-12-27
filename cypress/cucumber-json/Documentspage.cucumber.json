@@ -23,7 +23,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1735000000
+              "duration": 1163000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "Partners logo verified",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 7000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Page redirects successfully on Documents menu click",
             "result": {
               "status": "passed",
-              "duration": 983000000
+              "duration": 519000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "User click on Sub-folder or Documents",
             "result": {
               "status": "passed",
-              "duration": 117000000
+              "duration": 285000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "User should successfully navigate to the subfolder page",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 8000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "User selects any documents",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 109000000
             }
           },
           {
@@ -83,8 +83,8 @@
             "name": "User should view the pdf",
             "result": {
               "status": "failed",
-              "duration": 4019000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#virtualListBody`, but never found it.\n    at Context.eval (cypress/integration/examples/BDD/Documentspage/Documentspage_stepdef.js:39:31)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "duration": 4010000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#pageWidgetContainer1`, but never found it.\n    at Context.eval (cypress/integration/examples/BDD/Documentspage/Documentspage_stepdef.js:38:36)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]

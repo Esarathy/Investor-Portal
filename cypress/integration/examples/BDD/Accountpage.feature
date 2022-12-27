@@ -4,9 +4,9 @@ Feature: Validating the Accountpage of investor portal
           Given User lands on the Dashboard
           When User clicks the profile icon on the header
           Then User should be navigated to account page
-          And 
-          And Enter the "<Name>" and Interface language in the profile grid
-          When User clicks on save button
+          When User verifies following details in profile widget
+          And User enter the "<Name>" and Interface language in the profile grid
+          And User clicks on save button
           Then Profile should be successfully updated
           Examples:
                | Name     |
@@ -19,8 +19,9 @@ Feature: Validating the Accountpage of investor portal
           Given User lands on the Dashboard
           When User clicks the profile icon on the header
           Then User should be navigated to account page
-          And Enter the "<Current password>","<New password>","<Confirm password>" following details in the password grids
-          When User clicks on change password button
+          When User verifies following details in password widget
+          And User enter the "<Current password>","<New password>","<Confirm password>" following details in the password grids
+          And User clicks on change password button
           Then Password should be successfully updated
           Examples:
                | Current password | New password | Confirm password |
@@ -31,5 +32,6 @@ Feature: Validating the Accountpage of investor portal
           Given User lands on the Dashboard
           When User clicks the profile icon on the header
           Then User should be navigated to account page
-          When User clicks on the Delete button
+          When User verifies following details in delete widget
+          And User clicks on the Delete button
           Then Account should be successfully deleted

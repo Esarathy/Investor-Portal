@@ -7,7 +7,6 @@ const navigation = new Navigation()
 const capitalaccount = new Capitalaccount()
 
 Given('User lands on the Dashboard', () => {
-    cy.viewport(1400, 1093)
     cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
     cy.clearCookies()
@@ -36,5 +35,5 @@ Then('User should successfully navigate to the subfolder page', () => {
 })    
 
 Then('User should view the pdf', () => {
-    cy.get('#virtualListBody').should('be.visible')
+    cy.get('#pageWidgetContainer1').should('be.visible')
 })

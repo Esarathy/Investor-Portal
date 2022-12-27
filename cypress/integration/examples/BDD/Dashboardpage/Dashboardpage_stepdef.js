@@ -6,13 +6,17 @@ const navigation = new Navigation()
 
 
 Given('User lands on the Dashboard', () => {
-    cy.viewport(1400, 1093)
     cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
 And('Partners logo verified', () => {
+    if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
+        cy.get('button > .mat-button-wrapper')
+          .should('be.visible')
+          .click()
+      }
     navigation.getpatnerlogo().should('be.visible')
 
 })
@@ -28,6 +32,11 @@ And('Details on Capital widget are verified', () => {
 })
 
 Then('Page redirects on menu click', () => {
+    if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
+        cy.get('button > .mat-button-wrapper')
+          .should('be.visible')
+          .click()
+      }
     navigation.getdashboard().click()
     dashboard.getmenuheading().should('contain', '/ Dashboard ')
     navigation.getinsight().click()
@@ -91,7 +100,7 @@ Then('Should be navigated to account page', () => {
 Then('Page redirects to a youtube link on banner click', () => {
     cy.get('mat-card > a').invoke('removeAttr', 'target').click()
     cy.origin('www.youtube.com', () => {
-        cy.url().should('include', '.youtube.com')
+        cy.url().should('include', 'youtube.com')
     })
 })
 
