@@ -1,7 +1,7 @@
 import { Given, And } from "cypress-cucumber-preprocessor/steps";
-import Navigation from "../../../../support/Pageobject/Naviagtion";
+import Leftpanel from "../../../../support/Pageobject/Leftpanel";
 import Settings from "../../../../support/Pageobject/Settings";
-const navigation = new Navigation()
+const leftpanel =new Leftpanel()
 const settings = new Settings()
 
 Given('User lands on the Dashboard', () => {
@@ -11,11 +11,11 @@ Given('User lands on the Dashboard', () => {
    cy.clearLocalStorage()
 })
 And('Partners logo verified', () => {
-   navigation.getpatnerlogo().should('be.visible')
+   leftpanel.getpatnerlogo().should('be.visible')
 
 })
 Then('Page redirects successfully on Settings menu click', () => {
-   navigation.getsettings().click()
+   leftpanel.getsettings().click()
    cy.url().should('include', '.cloudfront.net/settings')
 
 })

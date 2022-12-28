@@ -1,22 +1,82 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
-import Navigation from "../../../../support/Pageobject/Naviagtion";
+import Leftpanel from "../../../../support/Pageobject/Leftpanel";
 import Reports from "../../../../support/Pageobject/Reportspage";
-
-const navigation = new Navigation()
 const reports = new Reports()
+const leftpanel = new Leftpanel()
 
 
-
-Given('User lands on the Dashboard', () => {
+Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
-And('Partners logo verified', () => {
-    navigation.getpatnerlogo().should('be.visible')
+And('Partner logo is displayed', () => {
+    leftpanel.getpatnerlogo().should('be.visible')
 
 })
+When('The user clicks on the Reports Page', () => {
+    leftpanel.getreports().click()
+    cy.url().should('include', '.cloudfront.net/reports')
+})
+And('User selects the year and quarter dropdown', () => {
+    
+})
+Then('The user should get the following documents', () => {
+   
+
+})
+And('User able to see the pdf', () => {
+  
+    
+})
+When('Clicking on the table of contents', () => {
+   
+
+})
+Then('Respective pdf page is navigated', () => {
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Then('Page redirects successfully on Reports menu click', () => {
     navigation.getreports().click()
     cy.url().should('include', '.cloudfront.net/reports')
