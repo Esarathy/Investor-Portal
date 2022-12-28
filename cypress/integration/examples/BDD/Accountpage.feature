@@ -5,9 +5,9 @@ Feature: Validating the Accountpage of investor portal
           Given The user landed on the Dashboard page
           And Partner logo is displayed
           When The user clicks the profile icon on the header
-          Then the user should be navigated to the account page
-          And the user verifies the following details in the profile section
-          When the User is able to enter the "<Name>"
+          Then The user should be navigated to the account page
+          And The user verifies the following details in the profile section
+          When The User is able to enter the "<Name>"
           And User is able to choose the Interface language
           And User clicks on the save button
           Then Profile should be successfully updated
@@ -20,8 +20,8 @@ Feature: Validating the Accountpage of investor portal
           Given The user landed on the Dashboard page
           And Partner logo is displayed
           When The user clicks the profile icon on the header
-          Then the user should be navigated to the account page
-          And the user verifies the following details in the password section
+          Then The user should be navigated to the account page
+          And The user verifies the following details in the password section
           And User enter the "<Current password>","<New password>","<Confirm password>" following details in the password sections
           And User clicks on the change password button
           Then Password should be successfully updated
@@ -34,9 +34,9 @@ Feature: Validating the Accountpage of investor portal
           Given The user landed on the Dashboard page
           And Partner logo is displayed
           When The user clicks the profile icon on the header
-          Then the user should be navigated to the account page
-          And the user verifies the following details in the delete section
-          When the User clicks on the Delete button
+          Then The user should be navigated to the account page
+          And The user verifies the following details in the delete section
+          When The User clicks on the Delete button
           Then Account should be successfully deleted
 
 

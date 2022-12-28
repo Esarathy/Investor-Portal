@@ -22,7 +22,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1847000000
+              "duration": 1357000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 8000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 189000000
+              "duration": 139000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Choose the from quarter",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 189000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "Choose the To quarter",
             "result": {
               "status": "passed",
-              "duration": 275000000
+              "duration": 196000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "Verify the IFRS option is chosen from the drop-down",
             "result": {
               "status": "passed",
-              "duration": 262000000
+              "duration": 225000000
             }
           }
         ]
@@ -92,7 +92,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 934000000
+              "duration": 1210000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 170000000
+              "duration": 141000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "Choose the from quarter",
             "result": {
               "status": "passed",
-              "duration": 225000000
+              "duration": 187000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "Choose the To quarter",
             "result": {
               "status": "passed",
-              "duration": 212000000
+              "duration": 203000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "Verify the KFW capital account option is chosen from the drop-down",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 208000000
             }
           }
         ]
@@ -162,7 +162,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 980000000
+              "duration": 481000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 4000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 175000000
+              "duration": 138000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "Choose the from quarter",
             "result": {
               "status": "passed",
-              "duration": 222000000
+              "duration": 185000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "Choose the To quarter",
             "result": {
               "status": "passed",
-              "duration": 210000000
+              "duration": 194000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "Click on the Download link",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 105000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "Verify the display format and file format text",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 14000000
             }
           },
           {
@@ -232,7 +232,7 @@
             "name": "Clicking on the Display format",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -242,7 +242,7 @@
             "name": "Verify the display format option from the display format drop-down",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -252,7 +252,7 @@
             "name": "Clicking on the file format",
             "result": {
               "status": "passed",
-              "duration": 202000000
+              "duration": 178000000
             }
           },
           {
@@ -262,7 +262,7 @@
             "name": "Verify the file format  option from the file format drop-down",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 13000000
             }
           }
         ]
@@ -282,7 +282,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1158000000
+              "duration": 1218000000
             }
           },
           {
@@ -292,7 +292,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 6000000
             }
           },
           {
@@ -302,7 +302,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 183000000
+              "duration": 138000000
             }
           },
           {
@@ -312,7 +312,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 102000000
             }
           },
           {
@@ -322,7 +322,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 583000000
+              "duration": 322000000
             }
           },
           {
@@ -332,7 +332,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 344000000
+              "duration": 330000000
             }
           },
           {
@@ -342,7 +342,7 @@
             "name": "Choose the capital cell type",
             "result": {
               "status": "passed",
-              "duration": 262000000
+              "duration": 198000000
             }
           },
           {
@@ -352,7 +352,7 @@
             "name": "Choose the All statuses",
             "result": {
               "status": "passed",
-              "duration": 469000000
+              "duration": 406000000
             }
           },
           {
@@ -362,7 +362,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 14000000
             }
           }
         ]
@@ -382,7 +382,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 947000000
+              "duration": 1298000000
             }
           },
           {
@@ -392,7 +392,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -402,7 +402,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 175000000
+              "duration": 140000000
             }
           },
           {
@@ -412,7 +412,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 111000000
+              "duration": 101000000
             }
           },
           {
@@ -422,7 +422,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 633000000
+              "duration": 401000000
             }
           },
           {
@@ -432,7 +432,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 532000000
+              "duration": 292000000
             }
           },
           {
@@ -442,7 +442,7 @@
             "name": "Choose the capital cell type",
             "result": {
               "status": "passed",
-              "duration": 244000000
+              "duration": 200000000
             }
           },
           {
@@ -452,7 +452,7 @@
             "name": "Choose the Paid status",
             "result": {
               "status": "passed",
-              "duration": 217000000
+              "duration": 203000000
             }
           },
           {
@@ -482,7 +482,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1614000000
+              "duration": 1241000000
             }
           },
           {
@@ -492,7 +492,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 6000000
             }
           },
           {
@@ -502,7 +502,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 177000000
+              "duration": 138000000
             }
           },
           {
@@ -512,7 +512,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 220000000
             }
           },
           {
@@ -522,7 +522,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 894000000
+              "duration": 419000000
             }
           },
           {
@@ -532,7 +532,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 365000000
+              "duration": 302000000
             }
           },
           {
@@ -542,7 +542,7 @@
             "name": "Choose the capital cell type",
             "result": {
               "status": "passed",
-              "duration": 253000000
+              "duration": 208000000
             }
           },
           {
@@ -552,7 +552,7 @@
             "name": "Choose the open status",
             "result": {
               "status": "passed",
-              "duration": 225000000
+              "duration": 711000000
             }
           },
           {
@@ -562,7 +562,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 35000000
+              "duration": 14000000
             }
           }
         ]
@@ -582,7 +582,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 611000000
+              "duration": 1279000000
             }
           },
           {
@@ -602,7 +602,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 173000000
+              "duration": 137000000
             }
           },
           {
@@ -612,7 +612,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 109000000
+              "duration": 100000000
             }
           },
           {
@@ -622,7 +622,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 636000000
+              "duration": 758000000
             }
           },
           {
@@ -632,7 +632,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 589000000
+              "duration": 302000000
             }
           },
           {
@@ -642,7 +642,7 @@
             "name": "Choose the Distribution type",
             "result": {
               "status": "passed",
-              "duration": 225000000
+              "duration": 203000000
             }
           },
           {
@@ -652,7 +652,7 @@
             "name": "Choose the All statuses",
             "result": {
               "status": "passed",
-              "duration": 216000000
+              "duration": 196000000
             }
           },
           {
@@ -662,7 +662,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 15000000
             }
           }
         ]
@@ -682,7 +682,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1406000000
+              "duration": 1151000000
             }
           },
           {
@@ -692,7 +692,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 7000000
             }
           },
           {
@@ -702,7 +702,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 181000000
+              "duration": 135000000
             }
           },
           {
@@ -712,7 +712,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 126000000
+              "duration": 181000000
             }
           },
           {
@@ -722,7 +722,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 627000000
+              "duration": 604000000
             }
           },
           {
@@ -732,7 +732,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 615000000
+              "duration": 298000000
             }
           },
           {
@@ -742,7 +742,7 @@
             "name": "Choose the Distribution type",
             "result": {
               "status": "passed",
-              "duration": 266000000
+              "duration": 198000000
             }
           },
           {
@@ -752,7 +752,7 @@
             "name": "Choose the Paid status",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 202000000
             }
           },
           {
@@ -762,7 +762,7 @@
             "name": "Check the transaction text",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 16000000
             }
           }
         ]
@@ -782,7 +782,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 532000000
+              "duration": 489000000
             }
           },
           {
@@ -792,7 +792,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 6000000
             }
           },
           {
@@ -802,7 +802,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 169000000
+              "duration": 135000000
             }
           },
           {
@@ -812,7 +812,7 @@
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 123000000
+              "duration": 173000000
             }
           },
           {
@@ -822,7 +822,7 @@
             "name": "Choose the From Date",
             "result": {
               "status": "passed",
-              "duration": 628000000
+              "duration": 644000000
             }
           },
           {
@@ -832,7 +832,7 @@
             "name": "Choose the To Date",
             "result": {
               "status": "passed",
-              "duration": 579000000
+              "duration": 306000000
             }
           },
           {
@@ -842,7 +842,7 @@
             "name": "Choose the Distribution type",
             "result": {
               "status": "passed",
-              "duration": 264000000
+              "duration": 207000000
             }
           },
           {
@@ -852,7 +852,7 @@
             "name": "Choose the open status",
             "result": {
               "status": "passed",
-              "duration": 219000000
+              "duration": 198000000
             }
           },
           {
