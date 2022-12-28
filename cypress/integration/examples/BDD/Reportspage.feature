@@ -1,12 +1,11 @@
 Feature: Validating the Reports page of investor portal
 
-
     Scenario: Verify the quarterly report pdf is verified
         Given The user landed on the Dashboard page
         And Partner logo is displayed
         When The user clicks on the Reports Page
         And User selects the year and quarter dropdown
-        Then The user should get the following documents
+        Then The user should get the following documents in quarterly tab
         And User able to see the pdf
         When Clicking on the table of contents
         Then Respective pdf page is navigated
@@ -16,48 +15,7 @@ Feature: Validating the Reports page of investor portal
         And Partner logo is displayed
         When The user clicks on the Reports Page
         And The user clicks on the Annually tab
-        And select the year folder
-        And choose the pdf
-        Then The user should get the following documents
-        And user able to see the pdf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Reports page Assertions
-
-    Scenario: Ouarterly reports
-        Given User lands on the Dashboard
-        And Partners logo verified
-        Then Page redirects successfully on Reports menu click
-        When User clicks the Quarterly toggle button
-        And User selects the year and quarter drop down
-        Then User should get the following documents
+        And Select the year folder
+        And Choose the pdf
+        Then The user should get the following documents in annually tab
         And User able to see the pdf
-
-    Scenario: Annual reports
-        Given User lands on the Dashboard
-        And Partners logo verified
-        Then Page redirects successfully on Reports menu click
-        When User clicks the Annually in the toggle button
-        And Selects the year
-        Then User should preview the pdf
-

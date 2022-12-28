@@ -23,7 +23,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 1313000000
+              "duration": 2420000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "Partners logo verified",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "Page redirects successfully on Settings menu click",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 143000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "User clicks on Users in the toggle button",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 253000000
             }
           },
           {
@@ -62,8 +62,9 @@
             "line": 8,
             "name": "Should successfully navigate to User page",
             "result": {
-              "status": "passed",
-              "duration": 4000000
+              "status": "failed",
+              "duration": 4214000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem>' to be 'visible'\n\nThis element `<span.childMenuItem>` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?\n    at Context.eval (cypress/integration/examples/BDD/Settings/Settings_stepdef.js:27:27)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
@@ -72,8 +73,7 @@
             "line": 9,
             "name": "User clicks on the Username",
             "result": {
-              "status": "passed",
-              "duration": 98000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +82,7 @@
             "line": 10,
             "name": "Click on fund permit checkbox",
             "result": {
-              "status": "passed",
-              "duration": 2055000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +91,7 @@
             "line": 11,
             "name": "Should click on save button",
             "result": {
-              "status": "passed",
-              "duration": 192000000
+              "status": "skipped"
             }
           }
         ]
@@ -113,7 +111,7 @@
             "name": "User lands on the Dashboard",
             "result": {
               "status": "passed",
-              "duration": 782000000
+              "duration": 1192000000
             }
           },
           {
@@ -123,7 +121,7 @@
             "name": "Partners logo verified",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           },
           {
@@ -133,7 +131,7 @@
             "name": "Page redirects successfully on Settings menu click",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 143000000
             }
           },
           {
@@ -143,7 +141,7 @@
             "name": "User on clicks Investor in the toggle button",
             "result": {
               "status": "passed",
-              "duration": 131000000
+              "duration": 103000000
             }
           },
           {
@@ -153,7 +151,7 @@
             "name": "Should successfully navigate to Investor page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 9000000
             }
           },
           {
@@ -163,7 +161,7 @@
             "name": "User enters \"Value 1\" and \"Value 2\" in the Address widget",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 588000000
             }
           },
           {
@@ -173,7 +171,7 @@
             "name": "Should enter \"Value 3\",\"Value 4\",\"Value 5\" in More widget",
             "result": {
               "status": "passed",
-              "duration": 711000000
+              "duration": 664000000
             }
           }
         ]

@@ -24,7 +24,7 @@ When('User clicks on Users in the toggle button', () => {
 
 })
 Then('Should successfully navigate to User page', () => {
-   // cy.contains('/ Users').should('be.visible')
+    cy.contains('/ Users').should('be.visible')
 
 })
 When('User clicks on the Username', () => {

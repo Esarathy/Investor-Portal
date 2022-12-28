@@ -22,7 +22,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1268000000
+              "duration": 3828000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 9000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "The user clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 97000000
+              "duration": 100000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 381000000
+              "duration": 7000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "The user verifies the following details in the profile section",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 5000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "The User is able to enter the \"Value 1\"",
             "result": {
               "status": "passed",
-              "duration": 325000000
+              "duration": 317000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "User is able to choose the Interface language",
             "result": {
               "status": "passed",
-              "duration": 195000000
+              "duration": 189000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1279000000
+              "duration": 434000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 2000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "The user clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 84000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 526000000
+              "duration": 559000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "The user verifies the following details in the profile section",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 2000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "The User is able to enter the \"Value 11\"",
             "result": {
               "status": "passed",
-              "duration": 325000000
+              "duration": 324000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "User is able to choose the Interface language",
             "result": {
               "status": "passed",
-              "duration": 198000000
+              "duration": 175000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "User clicks on the save button",
             "result": {
               "status": "passed",
-              "duration": 103000000
+              "duration": 94000000
             }
           },
           {
@@ -201,8 +201,7 @@
             "line": 13,
             "name": "Profile should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "passed"
             }
           }
         ]
@@ -222,97 +221,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1168000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Partner logo is displayed",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "The user clicks the profile icon on the header",
-            "result": {
-              "status": "passed",
-              "duration": 95000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "The user should be navigated to the account page",
-            "result": {
-              "status": "passed",
-              "duration": 443000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "The user verifies the following details in the password section",
-            "result": {
-              "status": "passed",
-              "duration": 12000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "User enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password sections",
-            "result": {
-              "status": "passed",
-              "duration": 700000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "User clicks on the change password button",
-            "result": {
-              "status": "passed",
-              "duration": 102000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "Password should be successfully updated",
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-accountpage-of-investor-portal;verify-if-the-change-password-is-working-as-expected",
-        "keyword": "Scenario",
-        "line": 31,
-        "name": "Verify if the change password is working as expected",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "The user landed on the Dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 397000000
+              "duration": 809000000
             }
           },
           {
@@ -332,7 +241,7 @@
             "name": "The user clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 92000000
+              "duration": 89000000
             }
           },
           {
@@ -342,7 +251,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 528000000
+              "duration": 463000000
             }
           },
           {
@@ -352,17 +261,17 @@
             "name": "The user verifies the following details in the password section",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 3000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 25,
-            "name": "User enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password sections",
+            "name": "User enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password sections",
             "result": {
               "status": "passed",
-              "duration": 717000000
+              "duration": 689000000
             }
           },
           {
@@ -372,7 +281,7 @@
             "name": "User clicks on the change password button",
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 83000000
             }
           },
           {
@@ -382,7 +291,96 @@
             "name": "Password should be successfully updated",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-accountpage-of-investor-portal;verify-if-the-change-password-is-working-as-expected",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Verify if the change password is working as expected",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 821000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "The user clicks the profile icon on the header",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "The user should be navigated to the account page",
+            "result": {
+              "status": "passed",
+              "duration": 460000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "The user verifies the following details in the password section",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password sections",
+            "result": {
+              "status": "passed",
+              "duration": 687000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "User clicks on the change password button",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Password should be successfully updated",
+            "result": {
+              "status": "passed"
             }
           }
         ]
@@ -402,7 +400,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 525000000
+              "duration": 1248000000
             }
           },
           {
@@ -412,7 +410,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             }
           },
           {
@@ -422,7 +420,7 @@
             "name": "The user clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 97000000
             }
           },
           {
@@ -432,7 +430,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 488000000
+              "duration": 492000000
             }
           },
           {
@@ -442,7 +440,7 @@
             "name": "The user verifies the following details in the delete section",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 4000000
             }
           },
           {
@@ -452,7 +450,7 @@
             "name": "The User clicks on the Delete button",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 95000000
             }
           },
           {

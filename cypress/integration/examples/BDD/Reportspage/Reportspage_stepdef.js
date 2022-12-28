@@ -5,6 +5,7 @@ const reports = new Reports()
 const leftpanel = new Leftpanel()
 
 
+// Quarterly tab
 Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
     cy.url().should('include', '.cloudfront.net/dashboard')
@@ -20,110 +21,47 @@ When('The user clicks on the Reports Page', () => {
     cy.url().should('include', '.cloudfront.net/reports')
 })
 And('User selects the year and quarter dropdown', () => {
-    
+  reports.getyearandquater().eq(0).click()
+  reports.getoptions().contains('2022').click()
+  reports.getyearandquater().eq(1).click()
+  reports.getoptions().contains('Q4').click()
+
 })
-Then('The user should get the following documents', () => {
-   
+Then('The user should get the following documents in quarterly tab', () => {
+    reports.getredocumentlist().should('include.text','Fund Overview')
 
 })
 And('User able to see the pdf', () => {
-  
+  console.log("able to view the pdf")
     
 })
 When('Clicking on the table of contents', () => {
-   
-
-})
-Then('Respective pdf page is navigated', () => {
-    
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Then('Page redirects successfully on Reports menu click', () => {
-    navigation.getreports().click()
-    cy.url().should('include', '.cloudfront.net/reports')
-})
-
-When('User clicks the Quarterly toggle button', () => {
-    reports.getquarterly().click()
-    reports.getmenutitle().should('include.text', ' Quarterly')
-
-})
-And('User selects the year and quarter drop down', () => {
-    cy.get('#mat-select-4').click()
-    cy.get('#mat-option-6').click()
-    reports.getmenutitle().should('include.text', '2022')
-
-
-    cy.get('#mat-select-6').click()
-    cy.get('#mat-option-11').click()
-    reports.getmenutitle().should('include.text', 'Q4')
-
-})
-Then('User should get the following documents', () => {
     cy.get('mat-selection-list > mat-list-option').click({ multiple: true })
 
 })
-And('User able to see the pdf', () => {
-    cy.get('.pageContainer')
-    
+Then('Respective pdf page is navigated', () => {
+    console.log("able to view the pdf")
+})
+
+
+
+// Annually tab
+And('The user clicks on the Annually tab', () => {
+    leftpanel.getannual().click()
 
 })
-When('User clicks the Annually in the toggle button', () => {
-    reports.getannual().click()
-    reports.getmenutitle().should('include.text', ' Annually')
-
-})
-And('Selects the year', () => {
+And('Select the year folder', () => {
     reports.getyear().click()
-    reports.getmenutitle().should('include.text', ' 2021')
-
-    cy.get('.mat-list-text > div').then(($btn1) => {
-        const txt1 = $btn1.text()
-        cy.get('.mat-list-text > div').click()
-
-    })
-})
-And('User should preview the pdf', () => {
-    cy.get('.pageWidgetContainer1').click()
-    
 
 })
+And('Choose the pdf', () => {
+    console.log("able to view the pdf")
+
+})
+Then('The user should get the following documents in annually tab', () => {
+  reports.getredocumentlist().should('include.text',' JCF1-0061_Tax_Report_2021 ')
+
+})
+
+
+

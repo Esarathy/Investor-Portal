@@ -1,7 +1,8 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Capitalaccount from "../../../../support/Pageobject/Capitalaccountpage";
+import Documents from "../../../../support/Pageobject/Documents";
 import Leftpanel from "../../../../support/Pageobject/Leftpanel";
-
+const documnetspage = new Documents()
 const leftpanel = new Leftpanel()
 const capitalaccount = new Capitalaccount()
 
@@ -17,16 +18,17 @@ And('Partner logo is displayed', () => {
 
 When('The user clicks on the Documents Page', () => {
     leftpanel.getdocuments().click()
+    cy.url().should('include', '.cloudfront.net/documents')
  }) 
  And('Click on the Sub-folder', () => {
-    cy.get('.folderList > div ').eq(0).click()
+    documnetspage.getsubfolderlist().eq(0).click()
 })
 Then('The user should successfully navigate to the subfolder page', () => {
     capitalaccount.getchidlmenu().should('have.text','/ Subfolder 1') 
 })
 When('The User selects any documents', () => {
-    cy.get('mat-selection-list').click({multiple:true}) 
+    documnetspage.getdocuments().click({multiple:true}) 
 })
 Then('The user should view the pdf', () => {
-    
+    console.log("Able to view the pdf")
 })

@@ -22,7 +22,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1489000000
+              "duration": 4228000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 10000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "The user clicks on the Documents Page",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 118000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Click on the Sub-folder",
             "result": {
               "status": "passed",
-              "duration": 192000000
+              "duration": 87000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "The user should successfully navigate to the subfolder page",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 15000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "The User selects any documents",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 89000000
             }
           },
           {
