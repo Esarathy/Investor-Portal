@@ -22,7 +22,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 4089000000
+              "duration": 1242000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 8000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "The user clicks on the Reports Page",
             "result": {
               "status": "passed",
-              "duration": 130000000
+              "duration": 129000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "User selects the year and quarter dropdown",
             "result": {
               "status": "passed",
-              "duration": 386000000
+              "duration": 557000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "The user should get the following documents in quarterly tab",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 15000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "User able to see the pdf",
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 4000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "Clicking on the table of contents",
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 576000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "Respective pdf page is navigated",
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 7000000
             }
           }
         ]
@@ -112,7 +112,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 429000000
+              "duration": 479000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 7000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "The user clicks on the Reports Page",
             "result": {
               "status": "passed",
-              "duration": 121000000
+              "duration": 120000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "The user clicks on the Annually tab",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 176000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "Select the year folder",
             "result": {
               "status": "passed",
-              "duration": 97000000
+              "duration": 231000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "Choose the pdf",
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "The user should get the following documents in annually tab",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 11000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "User able to see the pdf",
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 3000000
             }
           }
         ]

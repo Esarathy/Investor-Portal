@@ -8,7 +8,7 @@ const leftpanel = new Leftpanel()
 //  dashboard header
 Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
-    cy.url().should('include', '.cloudfront.net/dashboard')
+    cy.url().should('include', '/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
@@ -69,7 +69,7 @@ When('Clicking on the see details link from the performance widget', () => {
     cy.get('a[href="/insights"]').click()
 })
 Then('User should navigate to the Insights page successfully', () => {
-    cy.url().should('include', '.cloudfront.net/insights')
+    cy.url().should('include', '/insights')
     leftpanel.getmenuheading().should('contain', '/ Insights ')
 })
 
@@ -89,7 +89,7 @@ When('Clicking on the see details link from the capital account widgets', () => 
     cy.get('a[href="/capital-account"]').click()
 })
 Then('User should navigate to the capital account page successfully', () => {
-    cy.url().should('include', '.cloudfront.net/capital-account')
+    cy.url().should('include', '/capital-account')
     dashboard.getmenuheading().should('contain', '/ Capital Account ')
 })
 
@@ -131,9 +131,9 @@ And('Updates Widget is verified', () => {
 })
 When('The user scrolls the last login Updates', () => {
     cy.get('.last-login').click()
-    if (cy.get('.cardBody.updatesContainer > .eventTile').length > 3) {
-        cy.get('.cardBody.updatesContainer').scrollTo("bottom")
-        cy.get('.cardBody.updatesContainer').scrollTo("top")
+    if (cy.get('.updatesContainer > .eventTile').length > 3) {
+        cy.get('.updatesContainer > .eventTile').scrollTo("bottom")
+        cy.get('.updatesContainer > .eventTile').scrollTo("top")
     }
 })
 Then('Should contain the list of the last login updates', () => {
@@ -147,9 +147,9 @@ When('User click on the last month tab', () => {
 
 })
 And('The user scrolls the last months Updates', () => {
-    if (cy.get('.cardBody.updatesContainer > .eventTile').length > 3) {
-        cy.get('.cardBody.updatesContainer').scrollTo("bottom")
-        cy.get('.cardBody.updatesContainer').scrollTo("top")
+    if (cy.get('.updatesContainer > .eventTile').length >= 3) {
+        cy.get('.eventTile').scrollTo("bottom")
+        cy.get('.eventTile').scrollTo("top")
     }
 })
 Then('Should contain the list of the last months updates', () => {

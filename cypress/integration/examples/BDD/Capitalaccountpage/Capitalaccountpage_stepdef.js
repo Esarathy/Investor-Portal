@@ -7,7 +7,7 @@ const leftpanel = new Leftpanel()
 
 Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
-    cy.url().should('include', '.cloudfront.net/dashboard')
+    cy.url().should('include', '/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
@@ -16,7 +16,8 @@ And('Partner logo is displayed', () => {
 })
 When('The user clicks on the Capital Account Page', () => {
     leftpanel.getcapitalaccount().click()
-
+    cy.url().should('include', '/capital-account')
+    
 })
 And('Choose the from quarter', () => {
     capitalaccount.getfromquater().click()
@@ -99,7 +100,7 @@ And('Choose the All statuses', () => {
 
 })
 Then('Check the transaction text', () => {
-    capitalaccount.gettransactioncount().contains('23 transactions')
+    capitalaccount.gettransactioncount().contains('23 Transactions')
 })
 
 

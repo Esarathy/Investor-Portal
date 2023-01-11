@@ -8,7 +8,7 @@ const leftpanel = new Leftpanel()
 // Quarterly tab
 Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
-    cy.url().should('include', '.cloudfront.net/dashboard')
+    cy.url().should('include', '/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
@@ -18,7 +18,7 @@ And('Partner logo is displayed', () => {
 })
 When('The user clicks on the Reports Page', () => {
     leftpanel.getreports().click()
-    cy.url().should('include', '.cloudfront.net/reports')
+    cy.url().should('include', '/reports')
 })
 And('User selects the year and quarter dropdown', () => {
   reports.getyearandquater().eq(0).click()

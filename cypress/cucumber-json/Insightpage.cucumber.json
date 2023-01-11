@@ -1,6 +1,5 @@
 [
   {
-    "description": "    Insightpage Assertions",
     "keyword": "Feature",
     "name": "Validating the Insight page of investor portal",
     "line": 1,
@@ -9,61 +8,181 @@
     "uri": "Insightpage.feature",
     "elements": [
       {
-        "id": "validating-the-insight-page-of-investor-portal;dashboard-header",
+        "id": "validating-the-insight-page-of-investor-portal;verify-the-fund-metrics---net-performance",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Dashboard header",
+        "line": 4,
+        "name": "Verify the Fund Metrics - Net performance",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "User lands on the Dashboard",
+            "line": 5,
+            "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1255000000
+              "duration": 1526000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 5,
-            "name": "Partners logo verified",
+            "line": 6,
+            "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 13000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "User click on the insight menu",
-            "result": {
-              "status": "passed",
-              "duration": 91000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 7,
-            "name": "User should be successfully redirected to the page",
+            "name": "The user clicks on the Insights Page",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 364000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "All the joinfund & investor should able to be selected successfully",
+            "name": "Details on the TVPI widget are verified",
             "result": {
               "status": "passed",
-              "duration": 347000000
+              "duration": 669000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Details on the Capital deployed widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Details on the Portfolio Value widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Details on the Net IRR widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 412000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Details on the Cumulative net cash flow widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 263000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-insight-page-of-investor-portal;verify-the-fund-metrics---gross-performance",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify the Fund Metrics - Gross performance",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 1288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "The user clicks on the Insights Page",
+            "result": {
+              "status": "passed",
+              "duration": 339000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Scrolls to Gross performance section",
+            "result": {
+              "status": "passed",
+              "duration": 173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Details on the MOIC widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 407000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Details on the Capital deployed widget in Gross performance section are verified",
+            "result": {
+              "status": "passed",
+              "duration": 252000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Details on the Portfolio Value widget in Gross performance section are verified",
+            "result": {
+              "status": "passed",
+              "duration": 254000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Details on the Gross IRR widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 414000000
             }
           }
         ]

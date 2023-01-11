@@ -22,7 +22,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 4228000000
+              "duration": 1461000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 14000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "The user clicks on the Documents Page",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 124000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Click on the Sub-folder",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 127000000
             }
           },
           {
@@ -61,8 +61,9 @@
             "line": 8,
             "name": "The user should successfully navigate to the subfolder page",
             "result": {
-              "status": "passed",
-              "duration": 15000000
+              "status": "failed",
+              "duration": 4013000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem.ng-star-inserted>' to have text ' / Subfolder 1 ', but the text was ' /  Subfolder 1 '\n    + expected - actual\n\n    -' /  Subfolder 1 '\n    +' / Subfolder 1 '\n\n    at [2] (cypress/integration/examples/BDD/Documentspage/Documentspage_stepdef.js:27:34)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
             }
           },
           {
@@ -71,8 +72,7 @@
             "line": 9,
             "name": "The User selects any documents",
             "result": {
-              "status": "passed",
-              "duration": 89000000
+              "status": "skipped"
             }
           },
           {
@@ -81,8 +81,7 @@
             "line": 10,
             "name": "The user should view the pdf",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           }
         ]

@@ -33,7 +33,7 @@ class Leftpanel
         return  cy.get('.mat-toolbar > img')
     }
     getmenuheading(){
-        return cy.get('.menuHeading')
+        return cy.get('span.menuHeading')
     }
     gettransaction(){
         return  cy.get('#mat-tab-label-0-1')
@@ -42,6 +42,9 @@ class Leftpanel
         return cy.get('#mat-tab-label-0-1')
      }
      getinvestor() {
+        return cy.get('#mat-tab-label-0-1')
+    }
+    getportfolio(){
         return cy.get('#mat-tab-label-0-1')
     }
 }

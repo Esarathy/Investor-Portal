@@ -10,7 +10,7 @@ const leftpanel = new Leftpanel()
 // Profile Section
 Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
-    cy.url().should('include', '.cloudfront.net/dashboard')
+    cy.url().should('include', '/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
@@ -23,7 +23,7 @@ When('The user clicks the profile icon on the header', () => {
 
 })
 Then('The user should be navigated to the account page', () => {
-    cy.url().should('include', '.cloudfront.net/account')
+    cy.url().should('include', '/account')
     leftpanel.getmenuheading().should('contain', '/ Account ')
 
 })
@@ -61,7 +61,7 @@ And('User clicks on the change password button', () => {
     accountpage.getbutton().contains(' Change password ').should('not.be.disabled').click()
 })
 Then('Password should be successfully updated', () => {
-    console.log('Your Password has been updated successfully')
+    cy.log('Your Password has been updated successfully')
 })
 
 
@@ -74,5 +74,5 @@ When('The User clicks on the Delete button', () => {
     accountpage.getbutton().contains(' Delete Account ').click()
 })
 Then('Account should be successfully deleted', () => {
-    console.log('Your Account has been deleted successfully')
+    cy.log('Your Account has been deleted successfully')
 })

@@ -5,7 +5,7 @@ const leftpanel = new Leftpanel()
         // Dashboard page
 Given('The user landed on the Dashboard page', () => {
     cy.visit(Cypress.env('url'))
-    cy.url().should('include', '.cloudfront.net/dashboard')
+    cy.url().should('include', 'dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()
 })
@@ -14,22 +14,35 @@ And('Partner logo is verified', () => {
 
 })
 Then('Verify Breadcrumbs - / Dashboard', () => {
-    cy.wait(5000)   
+    cy.wait(3000)   
      leftpanel.getmenuheading().should('contain', '/ Dashboard ')
 
 })
 
 
-        // Insight page
+        // Insight page 
 When('The user clicks on the insights Page', () => {
     leftpanel.getinsight().click()
 
 })
-Then('Verify Breadcrumbs - / Insights', () => {
-    cy.wait(5000)    
-    leftpanel.getmenuheading().should('contain', '/ Insights ')
+Then('Verify Breadcrumbs - / Insights / Fund Metrics', () => {
+    cy.wait(3000)  
+    leftpanel.getmenuheading().should('contain', '/ Insights')  
+    cy.get('span.childMenuItem').should('contain','/ Fund Metrics')
+    // leftpanel.getmenuheading().should('contain', '/ Insights / Fund Metrics')
 
 })
+And('The user clicks on the Portfolio Investments tab', () => {
+    leftpanel.getportfolio().click()
+
+})
+Then('Verify Breadcrumbs - / Insights / Portfolio Investments', () => {
+    cy.wait(10000)    
+    leftpanel.getmenuheading().should('contain', '/ Insights / Portfolio Investments')
+
+})
+
+
 
 
         // Capital Account page
@@ -38,7 +51,7 @@ When('The user clicks on the Capital Account Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Capital Account / Overview', () => {
-    cy.wait(5000)  
+    cy.wait(3000)  
       leftpanel.getmenuheading().should('contain', '/ Capital Account / Overview')
 
 })
@@ -47,7 +60,7 @@ And('The user clicks on the Transaction tab', () => {
 
 })
 Then('Verify Breadcrumbs - / Capital Account / Transactions', () => {
-    cy.wait(5000)   
+    cy.wait(3000)   
      leftpanel.getmenuheading().should('contain', '/ Capital Account / Transactions')
 
 })
@@ -58,15 +71,15 @@ When('The user clicks on the Reports Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Reports/ Quarterly / 2022 / Q4', () => {
-    cy.wait(5000)   
+    cy.wait(3000)   
      leftpanel.getmenuheading().should('contain', '/ Reports / Quarterly / 2022 / Q4')
 })
 
 And('The user clicks on the Annually tab', () => {
-    leftpanel.getannual().click()
+    leftpanel.getannually().click()
 })
 Then('Verify Breadcrumbs - / Reports / Annually /', () => {
-    cy.wait(5000)   
+    cy.wait(3000)   
      leftpanel.getmenuheading().should('contain', '/ Reports / Annually')
 })
 
@@ -76,7 +89,7 @@ When('The user clicks on the Documents Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Documents', () => {
-    cy.wait(5000)   
+    cy.wait(3000)   
      leftpanel.getmenuheading().should('contain', '/ Documents ')
 })
 
@@ -87,13 +100,13 @@ When('The user clicks on the Settings Page', () => {
 
 })
 Then('Verify Breadcrumbs - / Settings / User', () => {
-    cy.wait(5000)  
+    cy.wait(3000)  
       leftpanel.getmenuheading().should('contain', '/ Settings / Users')
 })
 And('The user clicks on the Investor tab', () => {
     leftpanel.getinvestor().click()
 })
-Then('Verify Breadcrumbs - / Settings / Investor /', () => {
-    cy.wait(5000)   
+Then('Verify Breadcrumbs - / Settings / Investor', () => {
+    cy.wait(3000)   
      leftpanel.getmenuheading().should('contain', '/ Settings / Investor')
 })

@@ -10,6 +10,7 @@
 //
 import "cypress-cucumber-attach-screenshots-to-failed-steps";
 import "cypress-iframe";
+import 'cypress-if'
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //

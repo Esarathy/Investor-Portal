@@ -22,7 +22,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 3828000000
+              "duration": 2551000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 7000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 498000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "The user verifies the following details in the profile section",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 12000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "The User is able to enter the \"Value 1\"",
             "result": {
               "status": "passed",
-              "duration": 317000000
+              "duration": 325000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "User is able to choose the Interface language",
             "result": {
               "status": "passed",
-              "duration": 189000000
+              "duration": 202000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "User clicks on the save button",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 108000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 434000000
+              "duration": 775000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 5000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "The user clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 89000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 559000000
+              "duration": 722000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "The user verifies the following details in the profile section",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 11000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "The User is able to enter the \"Value 11\"",
             "result": {
               "status": "passed",
-              "duration": 324000000
+              "duration": 341000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "User is able to choose the Interface language",
             "result": {
               "status": "passed",
-              "duration": 175000000
+              "duration": 196000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "User clicks on the save button",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 106000000
             }
           },
           {
@@ -201,7 +201,8 @@
             "line": 13,
             "name": "Profile should be successfully updated",
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 3000000
             }
           }
         ]
@@ -221,7 +222,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 809000000
+              "duration": 1425000000
             }
           },
           {
@@ -231,7 +232,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 7000000
             }
           },
           {
@@ -241,7 +242,7 @@
             "name": "The user clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 89000000
+              "duration": 98000000
             }
           },
           {
@@ -251,7 +252,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 463000000
+              "duration": 487000000
             }
           },
           {
@@ -261,7 +262,7 @@
             "name": "The user verifies the following details in the password section",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 13000000
             }
           },
           {
@@ -271,7 +272,7 @@
             "name": "User enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password sections",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 697000000
             }
           },
           {
@@ -281,7 +282,7 @@
             "name": "User clicks on the change password button",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 123000000
             }
           },
           {
@@ -291,7 +292,7 @@
             "name": "Password should be successfully updated",
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 6000000
             }
           }
         ]
@@ -311,7 +312,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 821000000
+              "duration": 951000000
             }
           },
           {
@@ -321,7 +322,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 5000000
             }
           },
           {
@@ -341,7 +342,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 460000000
+              "duration": 674000000
             }
           },
           {
@@ -351,7 +352,7 @@
             "name": "The user verifies the following details in the password section",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 11000000
             }
           },
           {
@@ -361,7 +362,7 @@
             "name": "User enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password sections",
             "result": {
               "status": "passed",
-              "duration": 687000000
+              "duration": 737000000
             }
           },
           {
@@ -371,7 +372,7 @@
             "name": "User clicks on the change password button",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 109000000
             }
           },
           {
@@ -380,7 +381,8 @@
             "line": 27,
             "name": "Password should be successfully updated",
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 5000000
             }
           }
         ]
@@ -400,7 +402,7 @@
             "name": "The user landed on the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 1248000000
+              "duration": 946000000
             }
           },
           {
@@ -410,7 +412,7 @@
             "name": "Partner logo is displayed",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 6000000
             }
           },
           {
@@ -420,7 +422,7 @@
             "name": "The user clicks the profile icon on the header",
             "result": {
               "status": "passed",
-              "duration": 97000000
+              "duration": 89000000
             }
           },
           {
@@ -430,7 +432,7 @@
             "name": "The user should be navigated to the account page",
             "result": {
               "status": "passed",
-              "duration": 492000000
+              "duration": 511000000
             }
           },
           {
@@ -440,7 +442,7 @@
             "name": "The user verifies the following details in the delete section",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 10000000
             }
           },
           {
@@ -450,7 +452,7 @@
             "name": "The User clicks on the Delete button",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 96000000
             }
           },
           {
@@ -460,7 +462,7 @@
             "name": "Account should be successfully deleted",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 5000000
             }
           }
         ]

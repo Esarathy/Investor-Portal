@@ -5,11 +5,18 @@ Feature: Validating the Leftpanel of investor portal
         And Partner logo is verified
         Then Verify Breadcrumbs - / Dashboard
 
-    Scenario: Verify the user is redirected to the Insights page and verify the breadcrumbs
+    Scenario: Verify the user is redirected to the Insights page - Fund Metrics and verify the breadcrumbs
         Given The user landed on the Dashboard page
         And Partner logo is verified
         When The user clicks on the insights Page
-        Then Verify Breadcrumbs - / Insights
+        Then Verify Breadcrumbs - / Insights / Fund Metrics
+
+    Scenario: Verify the user is redirected to the Insights page - Portfolio Investments and verify the breadcrumbs
+        Given The user landed on the Dashboard page
+        And Partner logo is verified
+        When The user clicks on the insights Page
+        And The user clicks on the Portfolio Investments tab
+        Then Verify Breadcrumbs - / Insights / Portfolio Investments
 
     Scenario: Verify the user is redirected to the Capital Account page- Overview and verify the breadcrumbs
         Given The user landed on the Dashboard page
@@ -54,5 +61,5 @@ Feature: Validating the Leftpanel of investor portal
         And Partner logo is verified
         When The user clicks on the Settings Page
         And The user clicks on the Investor tab
-        Then Verify Breadcrumbs - / Settings / Investor /
+        Then Verify Breadcrumbs - / Settings / Investor
 
