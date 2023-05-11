@@ -22,8 +22,7 @@
             "line": 4,
             "name": "User lands on the Dashboard",
             "result": {
-              "status": "passed",
-              "duration": 1284000000
+              "status": "skipped"
             }
           },
           {
@@ -32,8 +31,7 @@
             "line": 5,
             "name": "Partners logo verified",
             "result": {
-              "status": "passed",
-              "duration": 10000000
+              "status": "skipped"
             }
           },
           {
@@ -42,8 +40,7 @@
             "line": 6,
             "name": "Page redirects successfully on Settings menu click",
             "result": {
-              "status": "passed",
-              "duration": 161000000
+              "status": "skipped"
             }
           },
           {
@@ -52,8 +49,7 @@
             "line": 7,
             "name": "User clicks on Users in the toggle button",
             "result": {
-              "status": "passed",
-              "duration": 109000000
+              "status": "skipped"
             }
           },
           {
@@ -62,8 +58,7 @@
             "line": 8,
             "name": "Should successfully navigate to User page",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
@@ -72,8 +67,7 @@
             "line": 9,
             "name": "User clicks on the Username",
             "result": {
-              "status": "passed",
-              "duration": 108000000
+              "status": "skipped"
             }
           },
           {
@@ -82,8 +76,7 @@
             "line": 10,
             "name": "Click on fund permit checkbox",
             "result": {
-              "status": "passed",
-              "duration": 2198000000
+              "status": "skipped"
             }
           },
           {
@@ -92,8 +85,7 @@
             "line": 11,
             "name": "Should click on save button",
             "result": {
-              "status": "passed",
-              "duration": 203000000
+              "status": "skipped"
             }
           }
         ]
@@ -112,8 +104,7 @@
             "line": 14,
             "name": "User lands on the Dashboard",
             "result": {
-              "status": "passed",
-              "duration": 852000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +113,7 @@
             "line": 15,
             "name": "Partners logo verified",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -132,8 +122,7 @@
             "line": 16,
             "name": "Page redirects successfully on Settings menu click",
             "result": {
-              "status": "passed",
-              "duration": 145000000
+              "status": "skipped"
             }
           },
           {
@@ -142,8 +131,7 @@
             "line": 17,
             "name": "User on clicks Investor in the toggle button",
             "result": {
-              "status": "passed",
-              "duration": 114000000
+              "status": "skipped"
             }
           },
           {
@@ -152,8 +140,7 @@
             "line": 18,
             "name": "Should successfully navigate to Investor page",
             "result": {
-              "status": "passed",
-              "duration": 13000000
+              "status": "skipped"
             }
           },
           {
@@ -162,8 +149,7 @@
             "line": 19,
             "name": "User enters \"Value 1\" and \"Value 2\" in the Address widget",
             "result": {
-              "status": "passed",
-              "duration": 759000000
+              "status": "skipped"
             }
           },
           {
@@ -172,8 +158,7 @@
             "line": 20,
             "name": "Should enter \"Value 3\",\"Value 4\",\"Value 5\" in More widget",
             "result": {
-              "status": "passed",
-              "duration": 780000000
+              "status": "skipped"
             }
           }
         ]

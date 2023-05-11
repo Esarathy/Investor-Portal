@@ -1,39 +1,50 @@
+@Test
 Feature: Validating the Insight page of investor portal
 
+  Background:
+          Given The user lands on the authentication page
+          When User enter the user name or mailid and password
+          And Clicks on the sign in button
+          Then Verify user should be successfully navigated to home page
+          When User selects the Investor from LPS drop-down
+          And User selects the fund from vehicle drop-down
+          And The user hits the api request for insights
 
     Scenario: Verify the Fund Metrics - Net performance
-        Given The user landed on the Dashboard page
-        And Partner logo is displayed
+       
         When The user clicks on the Insights Page
         Then Details on the TVPI widget are verified
         And Details on the Capital deployed widget are verified
         And Details on the Portfolio Value widget are verified
         And Details on the Net IRR widget are verified
         And Details on the Cumulative net cash flow widget are verified
+        When User clicks on the right side arrow of the Net perfromance sub heading
+        Then Verify if all the charts are collapsed under Net performance
 
 
     Scenario: Verify the Fund Metrics - Gross performance
-        Given The user landed on the Dashboard page
-        And Partner logo is displayed
+       
         When The user clicks on the Insights Page
-        And Scrolls to Gross performance section
         Then Details on the MOIC widget are verified
         And Details on the Capital deployed widget in Gross performance section are verified
         And Details on the Portfolio Value widget in Gross performance section are verified
         And Details on the Gross IRR widget are verified
+        When User clicks on the right side arrow of the Gross perfromance sub heading
+        Then Verify if all the charts are collapsed under Gross performance
 
 
-    # Scenario: Verify the Fund Metrics - LP details
-    #     Given The user landed on the Dashboard page
-    #     And Partner logo is displayed
-    #     When The user clicks on the Insights Page
-    #     And Scrolls to LP details section
-    #     Then Details on the Net LP proceeds widget are verified
-    #     And Details on the Net LP proceeds over time widget are verified
-    #     And Details on the LP called capital widget are verified
-    #     And Details on the LP return of contributed capital widget are verified
-    #     And Details on the Proceeds to LPs - Hurdle rate widget are verified
-    #     And Details on the Proceeds to LPs - after catch-up and carried interest are verified
+    Scenario: Verify the Fund Metrics - LP details
+
+        When The user clicks on the Insights Page
+        And Scrolls to LP details section
+        Then Details on the Net LP proceeds widget are verified
+        And Details on the Net LP proceeds over time widget are verified
+        And Details on the LP called capital widget are verified
+        And Details on the LP return of contributed capital widget are verified
+        And Details on the Proceeds to LPs - Hurdle rate widget are verified
+        And Details on the Proceeds to LPs - after catch-up and carried interest are verified
+        When User clicks on the right side arrow of the LP details sub heading
+        Then Verify if all the charts are collapsed under LP details
 
 
     # Scenario: Verify the Fund Metrics - GP details

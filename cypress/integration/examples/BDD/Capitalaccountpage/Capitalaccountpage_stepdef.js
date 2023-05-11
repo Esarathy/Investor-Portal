@@ -1,19 +1,56 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
+import Dashboard from "../../../../support/Pageobject/Dashboardpage";
 import Capitalaccount from "../../../../support/Pageobject/Capitalaccountpage";
 import Leftpanel from "../../../../support/Pageobject/Leftpanel";
-
+import Credential from "../../../../fixtures/Credential.json"
+import Loginpage from "../../../../support/Pageobject/Loginpage";
+import Investorandfund from "../../../../fixtures/Investorandfund.json";
+const loginpage = new Loginpage()
+const dashboard = new Dashboard()
 const capitalaccount = new Capitalaccount()
 const leftpanel = new Leftpanel()
 
-Given('The user landed on the Dashboard page', () => {
-    cy.visit(Cypress.env('url'))
+
+
+
+
+
+// Login
+Given('The user lands on the authentication page', () => {
+    cy.visit(Cypress.env('qaurl'))
+
+})
+
+When('User enter the user name or mailid and password', () => {
+    loginpage.getusername().type(Credential.Test.username)
+    loginpage.getpassword().type(Credential.Test.password)
+})
+
+And('Clicks on the sign in button', () => {
+    loginpage.getsignin().click()
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        return false;
+    });
+})
+
+Then('Verify user should be successfully navigated to home page', () => {
     cy.url().should('include', '/dashboard')
-    cy.clearCookies()
-    cy.clearLocalStorage()
+
 })
-And('Partner logo is displayed', () => {
-    leftpanel.getpatnerlogo().should('be.visible')
+
+When('User selects the Investor from LPS drop-down', () => {
+    dashboard.getinvestordropdown().click()
+    cy.contains(Investorandfund.lps).dblclick({ force: true })
+
 })
+
+And('User selects the fund from vehicle drop-down', () => {
+    dashboard.getfunddropdown().click().click({ force: true })
+    cy.contains(Investorandfund.vehicle).click({ force: true })
+
+})
+
+
 When('The user clicks on the Capital Account Page', () => {
     leftpanel.getcapitalaccount().click()
     cy.url().should('include', '/capital-account')
@@ -21,12 +58,12 @@ When('The user clicks on the Capital Account Page', () => {
 })
 And('Choose the from quarter', () => {
     capitalaccount.getfromquater().click()
-    cy.get('#mat-option-6').click()
+    // cy.get('#mat-option-6').click()
 
 })
 And('Choose the To quarter', () => {
     capitalaccount.gettoquater().click()
-    cy.get('#mat-option-10').click()
+    // cy.get('#mat-option-10').click()
 
 })
 Then('Verify the IFRS option is chosen from the drop-down', () => {

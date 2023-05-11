@@ -35,6 +35,9 @@ class Leftpanel
     getmenuheading(){
         return cy.get('span.menuHeading')
     }
+    getchildmenuheading(){
+        return cy.get('.childMenuItem')
+    }
     gettransaction(){
         return  cy.get('#mat-tab-label-0-1')
     }

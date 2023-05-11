@@ -1,6 +1,6 @@
 import {Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Accountpage from "../../../../support/Pageobject/Accountpage";
-import Dashboard from "../../../../support/Pageobject/Dashboardpage";
+import Dashboard from "../../../../support/Pageobject/Dashboard/Dashboardpage";
 import Leftpanel from "../../../../support/Pageobject/Leftpanel";
 const accountpage = new Accountpage()
 const dashboard = new Dashboard()
@@ -9,7 +9,7 @@ const leftpanel = new Leftpanel()
 
 // Profile Section
 Given('The user landed on the Dashboard page', () => {
-    cy.visit(Cypress.env('url'))
+    cy.visit(Cypress.env('qaurl'))
     cy.url().should('include', '/dashboard')
     cy.clearCookies()
     cy.clearLocalStorage()

@@ -1,57 +1,72 @@
-class Dashboard
-{
+class Dashboard {
 
-gettimeline()
-{
-    return  cy.get('mat-card').contains(' Timeline ')
-}
-getperformance()
-{
-    return  cy.get('mat-card').contains(' Performance ')
-}
-getcapitalinusd()
-{
-    return   cy.get('mat-card').contains(' Capital in USD ')
-}
-getupcommingevents()
-{
-    return   cy.get('mat-card').contains(' Upcoming events ')
-}
-getnews()
-{
-    return   cy.get('mat-card').contains(' News ')
-}
-getupdates()
-{
-    return  cy.get('mat-card').contains(' Updates ')
-}
-getbanner()
-{
-    return  cy.get('mat-card > a')
-}
-getprofile(){
-    return  cy.get('.profile')
-}
-getinvestor()
-{
-    return cy.get('#mat-select-2 > div')
-}
-getjoinfond()
-{
-    return cy.get('#mat-select-0')
-}
-getoptiontext()
-{
-    return cy.get('span[class="mat-option-text"]')
-}
-getoptions(){
-    return cy.get('div > mat-option')
-}
-getinvestments(){
-    return cy.get('mat-card').contains(' 40% of 15 Investments ')
-}
-getmenuheading(){
-    return cy.get('.menuHeading')
-}
+    gettimeline() {
+        return cy.get('.card-container').contains(' Timeline ')
+    }
+    gettimelinedot(){
+        return cy.get('.timeline-body').find('.event-dot')
+    }
+    getinvetsmentstartdate(){
+        return cy.get('.progressDate.start')
+    }
+    getliquidationenddate(){
+        return cy.get('.progressDate.end')
+    }
+    gettooltip(){
+        return cy.get('mat-tooltip-component')
+    }
+    getperformance() {
+        return cy.get('.card-container').contains(' Performance ')
+    }
+    getseedetails(){
+        return cy.get("a").contains(" See details ")
+    }
+    getcapitalinusd() {
+        return cy.get('.card-container').contains(' Capital in EUR ')
+    }
+    getupcommingevents() {
+        return cy.get('.card-container').contains(' Upcoming events ')
+    }
+    getnews() {
+        return cy.get('.card-container').contains(' News ')
+    }
+    getupdates() {
+        return cy.get('.card-container').contains(' Updates ')
+    }
+    getbanner() {
+        return cy.get('.dashboard-card > a')
+    }
+    getinvestmentkpis(){
+        return cy.get('.realized-unrealized')
+    }
+    getprofile() {
+        return cy.get('.profile')
+    }
+    getoptions() {
+        return cy.get('div > mat-option')
+    }
+    getmenuheading() {
+        return cy.get('span.menuHeading')
+    }
+    getinvestordropdown() {
+        return cy.get('div.investorDropdown')
+    }
+    getfunddropdown() {
+        return cy.get('.fundDropdown>div')
+    }
+    getinvestmentheader() {
+        return cy.get('.cardHeadLeft.ng-star-inserted')
+    }
+    getupdateslist(){
+        return cy.get('.updatesContainer').find('.eventTile')
+    }
+    getnewslist(){
+        return cy.get('.newsContainer').find('.newsTile')
+    }
+    geteventslist(){
+        return cy.get('div.eventsContainer')
+    }
+
+   
 }
 export default Dashboard

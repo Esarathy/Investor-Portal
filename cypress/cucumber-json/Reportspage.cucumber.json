@@ -1,65 +1,115 @@
 [
   {
     "keyword": "Feature",
-    "name": "Validating the Reports page of investor portal",
-    "line": 1,
-    "id": "validating-the-reports-page-of-investor-portal",
-    "tags": [],
+    "name": "Validating the Reports page",
+    "line": 2,
+    "id": "validating-the-reports-page",
+    "tags": [
+      {
+        "name": "@Test",
+        "line": 1
+      }
+    ],
     "uri": "Reportspage.feature",
     "elements": [
       {
-        "id": "validating-the-reports-page-of-investor-portal;verify-the-quarterly-report-pdf-is-verified",
+        "id": "validating-the-reports-page;verify-the-report-page-pdf-is-verified",
         "keyword": "Scenario",
-        "line": 3,
-        "name": "Verify the quarterly report pdf is verified",
-        "tags": [],
+        "line": 13,
+        "name": "Verify the report page pdf is verified",
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "The user landed on the Dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 1242000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 5,
-            "name": "Partner logo is displayed",
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 1067000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "The user clicks on the Reports Page",
+            "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 129000000
+              "duration": 2207000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "User selects the year and quarter dropdown",
+            "name": "Clicks on the sign in button",
             "result": {
               "status": "passed",
-              "duration": 557000000
+              "duration": 1276000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "The user should get the following documents in quarterly tab",
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 1628000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User selects the Investor from LPS drop-down",
+            "result": {
+              "status": "passed",
+              "duration": 191000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User selects the fund from vehicle drop-down",
+            "result": {
+              "status": "passed",
+              "duration": 259000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The user hits the api request for the reports",
+            "result": {
+              "status": "passed",
+              "duration": 1151000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "The user clicks on the Reports Page",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User should sucessfully navigated to the report page",
             "result": {
               "status": "passed",
               "duration": 15000000
@@ -67,122 +117,52 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User able to see the pdf",
-            "result": {
-              "status": "passed",
-              "duration": 4000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "Clicking on the table of contents",
-            "result": {
-              "status": "passed",
-              "duration": 576000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "Respective pdf page is navigated",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-reports-page-of-investor-portal;verify-the-annually-report-pdf-is-verified",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Verify the annually report pdf is verified",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "The user landed on the Dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 479000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "Partner logo is displayed",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "When ",
             "line": 16,
-            "name": "The user clicks on the Reports Page",
+            "name": "User selects the year from dropdown",
             "result": {
               "status": "passed",
-              "duration": 120000000
+              "duration": 680000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "The user clicks on the Annually tab",
+            "name": "User selects the quarter from the dropdown",
             "result": {
               "status": "passed",
-              "duration": 176000000
+              "duration": 200000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 18,
-            "name": "Select the year folder",
+            "name": "The user should get the following reports for the selected quarter",
             "result": {
               "status": "passed",
-              "duration": 231000000
+              "duration": 1287000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 19,
-            "name": "Choose the pdf",
+            "name": "User clicks on any of the reports",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 100000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "The user should get the following documents in annually tab",
+            "name": "User should able to see the pdf for the selected report",
             "result": {
               "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "User able to see the pdf",
-            "result": {
-              "status": "passed",
-              "duration": 3000000
+              "duration": 6000000
             }
           }
         ]

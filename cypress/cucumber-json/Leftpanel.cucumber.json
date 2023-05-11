@@ -2,47 +2,77 @@
   {
     "keyword": "Feature",
     "name": "Validating the Leftpanel of investor portal",
-    "line": 1,
+    "line": 2,
     "id": "validating-the-leftpanel-of-investor-portal",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@Test",
+        "line": 1
+      }
+    ],
     "uri": "Leftpanel.feature",
     "elements": [
       {
         "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-dashboard-page-and-verify-the-breadcrumbs",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 11,
         "name": "Verify the user is redirected to the dashboard page and verify the breadcrumbs",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "The user landed on the Dashboard page",
+            "line": 6,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1261000000
+              "duration": 1434000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User enter the user name or mailid and password",
+            "result": {
+              "status": "passed",
+              "duration": 2126000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 5,
-            "name": "Partner logo is verified",
+            "line": 8,
+            "name": "Clicks on the sign in button",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 1030000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
+            "line": 9,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 1150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
             "name": "Verify Breadcrumbs - / Dashboard",
             "result": {
               "status": "passed",
-              "duration": 3035000000
+              "duration": 359000000
             }
           }
         ]
@@ -50,49 +80,74 @@
       {
         "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-insights-page---fund-metrics-and-verify-the-breadcrumbs",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 14,
         "name": "Verify the user is redirected to the Insights page - Fund Metrics and verify the breadcrumbs",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
-            "name": "The user landed on the Dashboard page",
+            "line": 6,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 474000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
+              "duration": 1438000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
-            "name": "The user clicks on the insights Page",
+            "line": 7,
+            "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 349000000
+              "duration": 2728000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Clicks on the sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 1045000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 9,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 906000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "The user clicks on the insights Page",
+            "result": {
+              "status": "passed",
+              "duration": 403000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
             "name": "Verify Breadcrumbs - / Insights / Fund Metrics",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem.ng-star-inserted>' to contain '/ Fund Metrics'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:31:33)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
+              "status": "passed",
+              "duration": 19000000
             }
           }
         ]
@@ -100,59 +155,84 @@
       {
         "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-insights-page---portfolio-investments-and-verify-the-breadcrumbs",
         "keyword": "Scenario",
-        "line": 14,
+        "line": 18,
         "name": "Verify the user is redirected to the Insights page - Portfolio Investments and verify the breadcrumbs",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 15,
-            "name": "The user landed on the Dashboard page",
+            "line": 6,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1290000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
+              "duration": 1422000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
-            "name": "The user clicks on the insights Page",
+            "line": 7,
+            "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 278000000
+              "duration": 1598000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
-            "name": "The user clicks on the Portfolio Investments tab",
+            "line": 8,
+            "name": "Clicks on the sign in button",
             "result": {
               "status": "passed",
-              "duration": 381000000
+              "duration": 1309000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 9,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 892000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 19,
+            "name": "The user clicks on the insights Page",
+            "result": {
+              "status": "passed",
+              "duration": 384000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "The user clicks on the Portfolio Investments tab",
+            "result": {
+              "status": "passed",
+              "duration": 139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
             "name": "Verify Breadcrumbs - / Insights / Portfolio Investments",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Insights / Portfolio Investments'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:41:31)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
+              "status": "passed",
+              "duration": 11000000
             }
           }
         ]
@@ -160,29 +240,54 @@
       {
         "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-capital-account-page--overview-and-verify-the-breadcrumbs",
         "keyword": "Scenario",
-        "line": 21,
+        "line": 23,
         "name": "Verify the user is redirected to the Capital Account page- Overview and verify the breadcrumbs",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
-            "name": "The user landed on the Dashboard page",
+            "line": 6,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1225000000
+              "duration": 1582000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User enter the user name or mailid and password",
+            "result": {
+              "status": "passed",
+              "duration": 1685000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "Partner logo is verified",
+            "line": 8,
+            "name": "Clicks on the sign in button",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 1435000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 914000000
             }
           },
           {
@@ -192,7 +297,7 @@
             "name": "The user clicks on the Capital Account Page",
             "result": {
               "status": "passed",
-              "duration": 171000000
+              "duration": 418000000
             }
           },
           {
@@ -201,8 +306,8 @@
             "line": 25,
             "name": "Verify Breadcrumbs - / Capital Account / Overview",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Capital Account / Overview'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:55:33)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
+              "status": "passed",
+              "duration": 16000000
             }
           }
         ]
@@ -212,166 +317,157 @@
         "keyword": "Scenario",
         "line": 27,
         "name": "Verify the user is redirected to the Capital Account - Transactions page and verify the breadcrumbs",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 28,
-            "name": "The user landed on the Dashboard page",
+            "line": 6,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1277000000
+              "duration": 1281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User enter the user name or mailid and password",
+            "result": {
+              "status": "passed",
+              "duration": 1693000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Clicks on the sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 1445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 940000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "The user clicks on the Capital Account Page",
+            "result": {
+              "status": "passed",
+              "duration": 396000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 29,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 30,
-            "name": "The user clicks on the Capital Account Page",
-            "result": {
-              "status": "passed",
-              "duration": 172000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
             "name": "The user clicks on the Transaction tab",
             "result": {
               "status": "passed",
-              "duration": 118000000
+              "duration": 149000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
+            "line": 30,
             "name": "Verify Breadcrumbs - / Capital Account / Transactions",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Capital Account / Transactions'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:64:32)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
+              "status": "passed",
+              "duration": 19000000
             }
           }
         ]
       },
       {
-        "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-reports-page--quarterly-and-verify-the-breadcrumbs",
+        "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-reports-page-and-verify-the-breadcrumbs",
         "keyword": "Scenario",
-        "line": 34,
-        "name": "Verify the user is redirected to the Reports page- Quarterly and verify the breadcrumbs",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
+        "line": 32,
+        "name": "Verify the user is redirected to the Reports page and verify the breadcrumbs",
+        "tags": [
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 35,
-            "name": "The user landed on the Dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 1242000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 36,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 37,
-            "name": "The user clicks on the Reports Page",
-            "result": {
-              "status": "passed",
-              "duration": 126000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "Verify Breadcrumbs - / Reports/ Quarterly / 2022 / Q4",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Reports / Quarterly / 2022 / Q4'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:75:32)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
-            }
+            "name": "@Test",
+            "line": 1
           }
-        ]
-      },
-      {
-        "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-reports-page---annually-page-and-verify-the-breadcrumbs",
-        "keyword": "Scenario",
-        "line": 40,
-        "name": "Verify the user is redirected to the Reports page - Annually page and verify the breadcrumbs",
-        "tags": [],
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 41,
-            "name": "The user landed on the Dashboard page",
+            "line": 6,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1249000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 15000000
+              "duration": 1048000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 43,
-            "name": "The user clicks on the Reports Page",
+            "line": 7,
+            "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 1843000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 44,
-            "name": "The user clicks on the Annually tab",
+            "line": 8,
+            "name": "Clicks on the sign in button",
             "result": {
-              "status": "failed",
-              "error_message": "TypeError: leftpanel.getannually is not a function\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:79:14)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\nFrom previous event:\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\nFrom previous event:\n    at runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155069:8)\n    at next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155267:19)\n    at ../driver/src/cypress/command_queue.ts/run/next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155289:16)\nFrom previous event:\n    at next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155267:39)\nFrom previous event:\n    at ../driver/src/util/queue.ts/run/promise< (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:170148:77)\nFrom previous event:\n    at run (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:170143:21)\n    at run (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155339:15)\n    at runQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156290:14)\n    at ../driver/src/cypress/cy.ts/addCommand/cy[name] (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156384:12)\n    at runTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:48:0)\n    at ../driver/src/cypress/cy.ts/setRunnable/runnable.fn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156580:43)\n    at callFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:107972:21)\n    at ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:107959:13)\n    at ../driver/src/cypress/runner.ts/create/onRunnableRun (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:164209:30)\nFrom previous event:\n    at onRunnableRun (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:164194:46)\n    at action (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:152590:28)\n    at ../driver/src/cypress/mocha.ts/patchRunnableRun/Runnable.prototype.run (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:161905:13)\n    at ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.runTest (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108631:10)\n    at ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.runTests/next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108757:12)\n    at next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108540:14)\n    at ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hooks/next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108550:11)\n    at next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108452:14)\n    at ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hook/next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108513:11)\n    at next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:164100:24)\n    at ../driver/src/cypress/runner.ts/create/onRunnableRun/onNext (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:164129:17)\nFrom previous event:\n    at onNext (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:164126:59)\n    at done (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:107912:7)\n    at callFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:107995:7)\n    at ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:107959:13)\n    at ../driver/src/cypress/runner.ts/create/onRunnableRun (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:164209:30)\nFrom previous event:\n    at onRunnableRun (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:164194:46)\n    at action (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:152590:28)\n    at ../driver/src/cypress/mocha.ts/patchRunnableRun/Runnable.prototype.run (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:161905:13)\n    at next (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108474:10)\n    at ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hook (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:108518:9)\n    at timeslice (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:102444:27)"
+              "status": "passed",
+              "duration": 1499000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 45,
-            "name": "Verify Breadcrumbs - / Reports / Annually /",
+            "line": 9,
+            "name": "Verify user should be successfully navigated to home page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1063000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "The user clicks on the Reports Page",
+            "result": {
+              "status": "passed",
+              "duration": 376000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "Verify Breadcrumb - Reports / year / quarter",
+            "result": {
+              "status": "passed",
+              "duration": 264000000
             }
           }
         ]
@@ -379,159 +475,74 @@
       {
         "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-documents-page-and-verify-the-breadcrumbs",
         "keyword": "Scenario",
-        "line": 47,
+        "line": 42,
         "name": "Verify the user is redirected to the Documents page and verify the breadcrumbs",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 48,
-            "name": "The user landed on the Dashboard page",
+            "line": 6,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1160000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 7000000
+              "duration": 1411000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 50,
+            "line": 7,
+            "name": "User enter the user name or mailid and password",
+            "result": {
+              "status": "passed",
+              "duration": 2354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Clicks on the sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 1496000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 1223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
             "name": "The user clicks on the Documents Page",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 347000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 51,
+            "line": 44,
             "name": "Verify Breadcrumbs - / Documents",
             "result": {
               "status": "passed",
-              "duration": 3038000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-settings-page---user-and-verify-the-breadcrumbs",
-        "keyword": "Scenario",
-        "line": 53,
-        "name": "Verify the user is redirected to the Settings page - User and verify the breadcrumbs",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 54,
-            "name": "The user landed on the Dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 1224000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 55,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 56,
-            "name": "The user clicks on the Settings Page",
-            "result": {
-              "status": "passed",
-              "duration": 151000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 57,
-            "name": "Verify Breadcrumbs - / Settings / User",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Settings / Users'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:104:33)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-leftpanel-of-investor-portal;verify-the-user-is-redirected-to-the-settings-page---investor-page-and-verify-the-breadcrumbs",
-        "keyword": "Scenario",
-        "line": 59,
-        "name": "Verify the user is redirected to the Settings page - Investor page and verify the breadcrumbs",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 60,
-            "name": "The user landed on the Dashboard page",
-            "result": {
-              "status": "passed",
-              "duration": 1282000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 61,
-            "name": "Partner logo is verified",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 62,
-            "name": "The user clicks on the Settings Page",
-            "result": {
-              "status": "passed",
-              "duration": 150000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 63,
-            "name": "The user clicks on the Investor tab",
-            "result": {
-              "status": "passed",
-              "duration": 121000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 64,
-            "name": "Verify Breadcrumbs - / Settings / Investor",
-            "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.menuHeading>' to contain '/ Settings / Investor'\n    at [2] (cypress/integration/examples/BDD/Leftpanel/Leftpanel_stepdef.js:111:32)\n    at resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at stepTest (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139293:20)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:8601:29)\n    at thenFn (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139307:60)\n    at then (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:139587:21)\n    at wrapped (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:156314:19)\n    at ../driver/src/cypress/command_queue.ts/runCommand (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:155103:15)\n    at tryCatcher (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:11327:23)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9262:31)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9319:18)\n    at ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:9356:10)\n    at _drainQueueStep (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6038:12)\n    at _drainQueue (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6027:24)\n    at ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:6043:16)\n    at ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues (https://investorportal.dev.ace-alternatives.com/__cypress/runner/cypress_runner.js:5913:14)"
+              "duration": 8000000
             }
           }
         ]

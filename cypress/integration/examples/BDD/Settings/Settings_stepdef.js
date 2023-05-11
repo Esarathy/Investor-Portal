@@ -5,7 +5,7 @@ const leftpanel =new Leftpanel()
 const settings = new Settings()
 
 Given('User lands on the Dashboard', () => {
-   cy.visit(Cypress.env('url'))
+   cy.visit(Cypress.env('qaurl'))
    cy.url().should('include', '/dashboard')
    cy.clearCookies()
    cy.clearLocalStorage()

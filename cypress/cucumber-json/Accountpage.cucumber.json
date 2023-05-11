@@ -21,8 +21,7 @@
             "line": 5,
             "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 2551000000
+              "status": "skipped"
             }
           },
           {
@@ -31,8 +30,7 @@
             "line": 6,
             "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -41,8 +39,7 @@
             "line": 7,
             "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 100000000
+              "status": "skipped"
             }
           },
           {
@@ -51,8 +48,7 @@
             "line": 8,
             "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 498000000
+              "status": "skipped"
             }
           },
           {
@@ -61,8 +57,7 @@
             "line": 9,
             "name": "The user verifies the following details in the profile section",
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -71,8 +66,7 @@
             "line": 10,
             "name": "The User is able to enter the \"Value 1\"",
             "result": {
-              "status": "passed",
-              "duration": 325000000
+              "status": "skipped"
             }
           },
           {
@@ -81,8 +75,7 @@
             "line": 11,
             "name": "User is able to choose the Interface language",
             "result": {
-              "status": "passed",
-              "duration": 202000000
+              "status": "skipped"
             }
           },
           {
@@ -91,8 +84,7 @@
             "line": 12,
             "name": "User clicks on the save button",
             "result": {
-              "status": "passed",
-              "duration": 108000000
+              "status": "skipped"
             }
           },
           {
@@ -101,8 +93,7 @@
             "line": 13,
             "name": "Profile should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           }
         ]
@@ -121,8 +112,7 @@
             "line": 5,
             "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 775000000
+              "status": "skipped"
             }
           },
           {
@@ -131,8 +121,7 @@
             "line": 6,
             "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
@@ -141,8 +130,7 @@
             "line": 7,
             "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 89000000
+              "status": "skipped"
             }
           },
           {
@@ -151,8 +139,7 @@
             "line": 8,
             "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 722000000
+              "status": "skipped"
             }
           },
           {
@@ -161,8 +148,7 @@
             "line": 9,
             "name": "The user verifies the following details in the profile section",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -171,8 +157,7 @@
             "line": 10,
             "name": "The User is able to enter the \"Value 11\"",
             "result": {
-              "status": "passed",
-              "duration": 341000000
+              "status": "skipped"
             }
           },
           {
@@ -181,8 +166,7 @@
             "line": 11,
             "name": "User is able to choose the Interface language",
             "result": {
-              "status": "passed",
-              "duration": 196000000
+              "status": "skipped"
             }
           },
           {
@@ -191,8 +175,7 @@
             "line": 12,
             "name": "User clicks on the save button",
             "result": {
-              "status": "passed",
-              "duration": 106000000
+              "status": "skipped"
             }
           },
           {
@@ -201,8 +184,7 @@
             "line": 13,
             "name": "Profile should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           }
         ]
@@ -221,8 +203,7 @@
             "line": 20,
             "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 1425000000
+              "status": "skipped"
             }
           },
           {
@@ -231,8 +212,7 @@
             "line": 21,
             "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "skipped"
             }
           },
           {
@@ -241,8 +221,7 @@
             "line": 22,
             "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 98000000
+              "status": "skipped"
             }
           },
           {
@@ -251,8 +230,7 @@
             "line": 23,
             "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 487000000
+              "status": "skipped"
             }
           },
           {
@@ -261,8 +239,7 @@
             "line": 24,
             "name": "The user verifies the following details in the password section",
             "result": {
-              "status": "passed",
-              "duration": 13000000
+              "status": "skipped"
             }
           },
           {
@@ -271,8 +248,7 @@
             "line": 25,
             "name": "User enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password sections",
             "result": {
-              "status": "passed",
-              "duration": 697000000
+              "status": "skipped"
             }
           },
           {
@@ -281,8 +257,7 @@
             "line": 26,
             "name": "User clicks on the change password button",
             "result": {
-              "status": "passed",
-              "duration": 123000000
+              "status": "skipped"
             }
           },
           {
@@ -291,8 +266,7 @@
             "line": 27,
             "name": "Password should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           }
         ]
@@ -311,8 +285,7 @@
             "line": 20,
             "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 951000000
+              "status": "skipped"
             }
           },
           {
@@ -321,8 +294,7 @@
             "line": 21,
             "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
@@ -331,8 +303,7 @@
             "line": 22,
             "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 89000000
+              "status": "skipped"
             }
           },
           {
@@ -341,8 +312,7 @@
             "line": 23,
             "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 674000000
+              "status": "skipped"
             }
           },
           {
@@ -351,8 +321,7 @@
             "line": 24,
             "name": "The user verifies the following details in the password section",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -361,8 +330,7 @@
             "line": 25,
             "name": "User enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password sections",
             "result": {
-              "status": "passed",
-              "duration": 737000000
+              "status": "skipped"
             }
           },
           {
@@ -371,8 +339,7 @@
             "line": 26,
             "name": "User clicks on the change password button",
             "result": {
-              "status": "passed",
-              "duration": 109000000
+              "status": "skipped"
             }
           },
           {
@@ -381,8 +348,7 @@
             "line": 27,
             "name": "Password should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           }
         ]
@@ -401,8 +367,7 @@
             "line": 34,
             "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 946000000
+              "status": "skipped"
             }
           },
           {
@@ -411,8 +376,7 @@
             "line": 35,
             "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
@@ -421,8 +385,7 @@
             "line": 36,
             "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 89000000
+              "status": "skipped"
             }
           },
           {
@@ -431,8 +394,7 @@
             "line": 37,
             "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 511000000
+              "status": "skipped"
             }
           },
           {
@@ -441,8 +403,7 @@
             "line": 38,
             "name": "The user verifies the following details in the delete section",
             "result": {
-              "status": "passed",
-              "duration": 10000000
+              "status": "skipped"
             }
           },
           {
@@ -451,8 +412,7 @@
             "line": 39,
             "name": "The User clicks on the Delete button",
             "result": {
-              "status": "passed",
-              "duration": 96000000
+              "status": "skipped"
             }
           },
           {
@@ -461,8 +421,7 @@
             "line": 40,
             "name": "Account should be successfully deleted",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           }
         ]

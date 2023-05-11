@@ -1,47 +1,105 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Leftpanel from "../../../../support/Pageobject/Leftpanel";
 import Reports from "../../../../support/Pageobject/Reportspage";
+import Dashboard from "../../../../support/Pageobject/Dashboard/Dashboardpage";
+import Credential from "../../../../fixtures/Credential.json"
+import Loginpage from "../../../../support/Pageobject/Loginpage";
+import Investorandfund from "../../../../fixtures/Investorandfund.json";
+import Apiurl from "../../../../fixtures/Apiurl.json"
+const loginpage = new Loginpage()
+const dashboard = new Dashboard()
 const reports = new Reports()
 const leftpanel = new Leftpanel()
+let resbody = "";
 
 
-// Quarterly tab
-Given('The user landed on the Dashboard page', () => {
-    cy.visit(Cypress.env('url'))
-    cy.url().should('include', '/dashboard')
-    cy.clearCookies()
-    cy.clearLocalStorage()
+
+
+// Login
+Given('The user lands on the authentication page', () => {
+    cy.visit(Cypress.env('qaurl'))
+
 })
-And('Partner logo is displayed', () => {
-    leftpanel.getpatnerlogo().should('be.visible')
 
+When('User enter the user name or mailid and password', () => {
+    loginpage.getusername().type(Credential.Test.username)
+    loginpage.getpassword().type(Credential.Test.password)
+})
+
+And('Clicks on the sign in button', () => {
+    loginpage.getsignin().click()
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        return false;
+    });
+})
+
+Then('Verify user should be successfully navigated to home page', () => {
+    cy.url().should('include', '/dashboard')
+
+})
+When('User selects the Investor from LPS drop-down', () => {
+    dashboard.getinvestordropdown().click()
+    cy.contains(Investorandfund.lps).dblclick({ force: true })
+
+})
+
+And('User selects the fund from vehicle drop-down', () => {
+    dashboard.getfunddropdown().click().click({ force: true })
+    cy.contains(Investorandfund.vehicle).click({ force: true })
+
+})
+
+
+
+
+// Reports page 
+When('The user hits the api request for the reports', () => {
+    const token = localStorage.getItem('access_token')
+    const authorization = `Bearer ${token}`
+    cy.request({
+        method: 'GET',
+        url: Cypress.env('baseurl') + (Apiurl.reports),
+        headers: {
+            authorization
+        }
+    }).then((response) => {
+        expect(response.status).to.eq(200)
+        resbody = response;
+    })
 })
 When('The user clicks on the Reports Page', () => {
     leftpanel.getreports().click()
+
+})
+Then('User should sucessfully navigated to the report page', () => {
     cy.url().should('include', '/reports')
-})
-And('User selects the year and quarter dropdown', () => {
-  reports.getyearandquater().eq(0).click()
-  reports.getoptions().contains('2022').click()
-  reports.getyearandquater().eq(1).click()
-  reports.getoptions().contains('Q4').click()
+    leftpanel.getmenuheading().should('contain', '/ Reports')
 
 })
-Then('The user should get the following documents in quarterly tab', () => {
-    reports.getredocumentlist().should('include.text','Fund Overview')
+When('User selects the year from dropdown', () => {
+    reports.getyeardropdown().click()
+    cy.get('mat-option').contains(JSON.parse(resbody.body.data[0].year)).click()
 
 })
-And('User able to see the pdf', () => {
-  console.log("able to view the pdf")
-    
-})
-When('Clicking on the table of contents', () => {
-    cy.get('mat-selection-list > mat-list-option').click({ multiple: true })
+And('User selects the quarter from the dropdown', () => {
+    reports.getquarterdropdown().click()
+    cy.get('mat-option').contains(JSON.parse(resbody.body.data[0].quarter)).click()
 
 })
-Then('Respective pdf page is navigated', () => {
-    console.log("able to view the pdf")
+
+Then('The user should get the following reports for the selected quarter', () => {
+    reports.getdocumentlist().should('have.length',resbody.body.data[0].toc.length)
+    reports.getdocumentlist().eq(0).should('have.text',resbody.body.data[0].toc[0].index +' '+ resbody.body.data[0].toc[0].title)
 })
+When('User clicks on any of the reports', () => {
+    reports.getdocumentlist().eq(0).click()
+
+})
+Then('User should able to see the pdf for the selected report', () => {
+    cy.log("able to view the pdf")
+
+})
+
 
 
 
@@ -55,11 +113,11 @@ And('Select the year folder', () => {
 
 })
 And('Choose the pdf', () => {
-    console.log("able to view the pdf")
+    cy.log("able to view the pdf")
 
 })
 Then('The user should get the following documents in annually tab', () => {
-  reports.getredocumentlist().should('include.text',' JCF1-0061_Tax_Report_2021 ')
+    reports.getredocumentlist().should('include.text', ' JCF1-0061_Tax_Report_2021 ')
 
 })
 

@@ -2,97 +2,173 @@
   {
     "keyword": "Feature",
     "name": "Validating the Insight page of investor portal",
-    "line": 1,
+    "line": 2,
     "id": "validating-the-insight-page-of-investor-portal",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@Test",
+        "line": 1
+      }
+    ],
     "uri": "Insightpage.feature",
     "elements": [
       {
         "id": "validating-the-insight-page-of-investor-portal;verify-the-fund-metrics---net-performance",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 13,
         "name": "Verify the Fund Metrics - Net performance",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "The user landed on the Dashboard page",
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1526000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "Partner logo is displayed",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
+              "duration": 1691000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "The user clicks on the Insights Page",
+            "line": 6,
+            "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 364000000
+              "duration": 1876000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Clicks on the sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 1501000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "Details on the TVPI widget are verified",
+            "name": "Verify user should be successfully navigated to home page",
             "result": {
               "status": "passed",
-              "duration": 669000000
+              "duration": 913000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 9,
-            "name": "Details on the Capital deployed widget are verified",
+            "name": "User selects the Investor from LPS drop-down",
             "result": {
               "status": "passed",
-              "duration": 411000000
+              "duration": 236000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "Details on the Portfolio Value widget are verified",
+            "name": "User selects the fund from vehicle drop-down",
             "result": {
               "status": "passed",
-              "duration": 411000000
+              "duration": 262000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "Details on the Net IRR widget are verified",
+            "name": "The user hits the api request for insights",
             "result": {
               "status": "passed",
-              "duration": 412000000
+              "duration": 738000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "The user clicks on the Insights Page",
+            "result": {
+              "status": "passed",
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Details on the TVPI widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 872000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
+            "line": 17,
+            "name": "Details on the Capital deployed widget are verified",
+            "result": {
+              "status": "failed",
+              "duration": 5034000000,
+              "error_message": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'capitalDeployed' within the element: <div.insights-title.ng-tns-c139-22> but never did.\n    at Context.eval (cypress/integration/examples/BDD/Insightpage/Insightpage_stepdef.js:95:63)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Details on the Portfolio Value widget are verified",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Details on the Net IRR widget are verified",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
             "name": "Details on the Cumulative net cash flow widget are verified",
             "result": {
-              "status": "passed",
-              "duration": 263000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User clicks on the right side arrow of the Net perfromance sub heading",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Verify if all the charts are collapsed under Net performance",
+            "result": {
+              "status": "skipped"
             }
           }
         ]
@@ -100,89 +176,331 @@
       {
         "id": "validating-the-insight-page-of-investor-portal;verify-the-fund-metrics---gross-performance",
         "keyword": "Scenario",
-        "line": 15,
+        "line": 25,
         "name": "Verify the Fund Metrics - Gross performance",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
-            "name": "The user landed on the Dashboard page",
+            "line": 5,
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1288000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "Partner logo is displayed",
-            "result": {
-              "status": "passed",
-              "duration": 9000000
+              "duration": 1624000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
-            "name": "The user clicks on the Insights Page",
+            "line": 6,
+            "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 339000000
+              "duration": 10658000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "Scrolls to Gross performance section",
+            "line": 7,
+            "name": "Clicks on the sign in button",
             "result": {
               "status": "passed",
-              "duration": 173000000
+              "duration": 1997000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 8,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 1298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User selects the Investor from LPS drop-down",
+            "result": {
+              "status": "passed",
+              "duration": 261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User selects the fund from vehicle drop-down",
+            "result": {
+              "status": "passed",
+              "duration": 383000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user hits the api request for insights",
+            "result": {
+              "status": "passed",
+              "duration": 400000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "The user clicks on the Insights Page",
+            "result": {
+              "status": "passed",
+              "duration": 202000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
             "name": "Details on the MOIC widget are verified",
             "result": {
-              "status": "passed",
-              "duration": 407000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 5000ms: expected '<div.cardHeadLeft>' to be 'visible'\n\nThis element `<div.cardHeadLeft>` is not visible because its content is being clipped by one of its parent elements, which has a CSS property of overflow: `hidden`, `scroll` or `auto`\n    at Context.eval (cypress/integration/examples/BDD/Insightpage/Insightpage_stepdef.js:138:53)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
+            "line": 29,
             "name": "Details on the Capital deployed widget in Gross performance section are verified",
             "result": {
-              "status": "passed",
-              "duration": 252000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 30,
             "name": "Details on the Portfolio Value widget in Gross performance section are verified",
             "result": {
-              "status": "passed",
-              "duration": 254000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
+            "line": 31,
             "name": "Details on the Gross IRR widget are verified",
             "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "User clicks on the right side arrow of the Gross perfromance sub heading",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Verify if all the charts are collapsed under Gross performance",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-insight-page-of-investor-portal;verify-the-fund-metrics---lp-details",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Verify the Fund Metrics - LP details",
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user lands on the authentication page",
+            "result": {
               "status": "passed",
-              "duration": 414000000
+              "duration": 1737000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enter the user name or mailid and password",
+            "result": {
+              "status": "passed",
+              "duration": 1936000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Clicks on the sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 1574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify user should be successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 955000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User selects the Investor from LPS drop-down",
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User selects the fund from vehicle drop-down",
+            "result": {
+              "status": "passed",
+              "duration": 355000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "The user hits the api request for insights",
+            "result": {
+              "status": "passed",
+              "duration": 373000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "The user clicks on the Insights Page",
+            "result": {
+              "status": "passed",
+              "duration": 187000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "Scrolls to LP details section",
+            "result": {
+              "status": "passed",
+              "duration": 458000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Details on the Net LP proceeds widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "Details on the Net LP proceeds over time widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "Details on the LP called capital widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "Details on the LP return of contributed capital widget are verified",
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "Details on the Proceeds to LPs - Hurdle rate widget are verified",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'Proceeds to LPs - Hurdle rate' within the element: <div.cardHead> but never did.\n    at Context.eval (cypress/integration/examples/BDD/Insightpage/Insightpage_stepdef.js:200:76)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "Details on the Proceeds to LPs - after catch-up and carried interest are verified",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "User clicks on the right side arrow of the LP details sub heading",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "Verify if all the charts are collapsed under LP details",
+            "result": {
+              "status": "skipped"
             }
           }
         ]

@@ -7,10 +7,10 @@ class Capitalaccount {
     }
 
     getfromquater() {
-        return cy.get('#mat-select-value-5')
+        return cy.get('.mat-select.dropdown:nth-child(1)')
     }
     gettoquater() {
-        return cy.get('#mat-select-value-7')
+        return cy.get('.mat-select.dropdown:nth-child(2)')
     }
     getdropdown() {
         return cy.get('#mat-select-value-9')
