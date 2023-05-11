@@ -1,7 +1,7 @@
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Leftpanel from "../../../../support/Pageobject/Leftpanel";
 import Reports from "../../../../support/Pageobject/Reportspage";
-import Dashboard from "../../../../support/Pageobject/Dashboard/Dashboardpage";
+import Dashboard from "../../../../support/Pageobject/Dashboardpage";
 import Credential from "../../../../fixtures/Credential.json"
 import Loginpage from "../../../../support/Pageobject/Loginpage";
 import Investorandfund from "../../../../fixtures/Investorandfund.json";
@@ -88,8 +88,13 @@ And('User selects the quarter from the dropdown', () => {
 })
 
 Then('The user should get the following reports for the selected quarter', () => {
-    reports.getdocumentlist().should('have.length',resbody.body.data[0].toc.length)
-    reports.getdocumentlist().eq(0).should('have.text',resbody.body.data[0].toc[0].index +' '+ resbody.body.data[0].toc[0].title)
+    cy.wait(5000)
+    reports.getdocumentlist().should('have.length', resbody.body.data[0].toc.length)
+    // reports.getdocumentlist().eq(0).should('have.text', resbody.body.data[0].toc[0].index + ' ' + resbody.body.data[0].toc[0].title)
+    for (let i = 0; i < resbody.body.data[0].toc.length; i++) {
+       cy.log(reports.getdocumentlist().eq(i).should('have.text', resbody.body.data[0].toc[i].index + ' ' + resbody.body.data[0].toc[i].title))
+        
+    }
 })
 When('User clicks on any of the reports', () => {
     reports.getdocumentlist().eq(0).click()

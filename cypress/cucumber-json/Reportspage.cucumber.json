@@ -32,7 +32,7 @@
             "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1067000000
+              "duration": 4244000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 2207000000
+              "duration": 3539000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Clicks on the sign in button",
             "result": {
               "status": "passed",
-              "duration": 1276000000
+              "duration": 5037000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "Verify user should be successfully navigated to home page",
             "result": {
               "status": "passed",
-              "duration": 1628000000
+              "duration": 1026000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "User selects the Investor from LPS drop-down",
             "result": {
               "status": "passed",
-              "duration": 191000000
+              "duration": 250000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "User selects the fund from vehicle drop-down",
             "result": {
               "status": "passed",
-              "duration": 259000000
+              "duration": 279000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "The user hits the api request for the reports",
             "result": {
               "status": "passed",
-              "duration": 1151000000
+              "duration": 941000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "The user clicks on the Reports Page",
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 109000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "User should sucessfully navigated to the report page",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 16000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "User selects the year from dropdown",
             "result": {
               "status": "passed",
-              "duration": 680000000
+              "duration": 940000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "User selects the quarter from the dropdown",
             "result": {
               "status": "passed",
-              "duration": 200000000
+              "duration": 582000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "The user should get the following reports for the selected quarter",
             "result": {
               "status": "passed",
-              "duration": 1287000000
+              "duration": 9784000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "User clicks on any of the reports",
             "result": {
               "status": "passed",
-              "duration": 100000000
+              "duration": 117000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "User should able to see the pdf for the selected report",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 10000000
             }
           }
         ]
