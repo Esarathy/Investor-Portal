@@ -90,7 +90,6 @@ And('User selects the quarter from the dropdown', () => {
 Then('The user should get the following reports for the selected quarter', () => {
     cy.wait(5000)
     reports.getdocumentlist().should('have.length', resbody.body.data[0].toc.length)
-    // reports.getdocumentlist().eq(0).should('have.text', resbody.body.data[0].toc[0].index + ' ' + resbody.body.data[0].toc[0].title)
     for (let i = 0; i < resbody.body.data[0].toc.length; i++) {
        cy.log(reports.getdocumentlist().eq(i).should('have.text', resbody.body.data[0].toc[i].index + ' ' + resbody.body.data[0].toc[i].title))
         

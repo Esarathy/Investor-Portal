@@ -1,17 +1,17 @@
 @Test
 Feature: Validating the Insight page of investor portal
 
-  Background:
-          Given The user lands on the authentication page
-          When User enter the user name or mailid and password
-          And Clicks on the sign in button
-          Then Verify user should be successfully navigated to home page
-          When User selects the Investor from LPS drop-down
-          And User selects the fund from vehicle drop-down
-          And The user hits the api request for insights
+    Background:
+        Given The user lands on the authentication page
+        When User enter the user name or mailid and password
+        And Clicks on the sign in button
+        Then Verify user should be successfully navigated to home page
+        When User selects the Investor from LPS drop-down
+        And User selects the fund from vehicle drop-down
+        And The user hits the api request for insights
 
     Scenario: Verify the Fund Metrics - Net performance
-       
+
         When The user clicks on the Insights Page
         Then Details on the TVPI widget are verified
         And Details on the Capital deployed widget are verified
@@ -23,8 +23,9 @@ Feature: Validating the Insight page of investor portal
 
 
     Scenario: Verify the Fund Metrics - Gross performance
-       
+
         When The user clicks on the Insights Page
+        And Scrolls to Gross performance section
         Then Details on the MOIC widget are verified
         And Details on the Capital deployed widget in Gross performance section are verified
         And Details on the Portfolio Value widget in Gross performance section are verified
@@ -47,40 +48,44 @@ Feature: Validating the Insight page of investor portal
         Then Verify if all the charts are collapsed under LP details
 
 
-    # Scenario: Verify the Fund Metrics - GP details
-    #     Given The user landed on the Dashboard page
-    #     And Partner logo is displayed
-    #     When The user clicks on the Insights Page
-    #     And Scrolls to GP details section
-    #     Then Details on the GP proceeds widget are verified
-    #     And Details on the GP contributed capital widget in Gross performance section are verified
-    #     And Details on the Proceeds to GP widget in Gross performance section are verified
-    #     And Details on the GP Catch-up widget are verified
-    #     And Details on the Carried interest widget are verified
-    #     And Details on the Net GP proceeds widget are verified
-    #     And Details on the Management fees widget are verified
+    Scenario: Verify the Fund Metrics - GP details
+
+        When The user clicks on the Insights Page
+        And Scrolls to GP details section
+        Then Details on the GP proceeds widget are verified
+        And Details on the GP contributed capital widget in Gross performance section are verified
+        And Details on the Proceeds to GP widget in Gross performance section are verified
+        And Details on the GP Catch-up widget are verified
+        And Details on the Carried interest widget are verified
+        And Details on the Net GP proceeds widget are verified
+        And Details on the Management fees widget are verified
+        When User clicks on the right side arrow of the GP details sub heading
+        Then Verify if all the charts are collapsed under LP details
 
 
-    # Scenario: Verify the Portfolio Investment - Capital deployment
-    #     Given The user landed on the Dashboard page
-    #     And Partner logo is displayed
-    #     When The user clicks on the Insights Page
-    #     Then Details on the Initial investments vs. follow-on investments widget are verified
-    #     And Details on the No. of initial investments by entry round widget are verified
-    #     And Details on the Capital deployment pacing widget are verified
-    #     And Details on the Initial investment pacing widget are verified
-    #     And Details on the Follow-on investment pacing widget are verified
+    Scenario: Verify the Portfolio Investment - Capital deployment
+
+        When The user clicks on the Insights Page
+        And User selects the portfolio investment tab
+        Then Details on the Initial investments vs. follow-on investments widget under the capital deployment are verified
+        And Details on the No. of initial investments by entry round widget are verified
+        And Details on the Capital deployment pacing widget are verified
+        And Details on the Initial investment pacing widget are verified
+        And Details on the Follow-on investment pacing widget are verified
+        When User clicks on the right side arrow of the Capital deployment sub heading
+        Then Verify if all the charts are collapsed under Capital deployment
 
 
-    # Scenario: Verify the Portfolio Investment - Exits
-    #     Given The user landed on the Dashboard page
-    #     And Partner logo is displayed
-    #     When The user clicks on the Insights Page
-    #     And Scrolls to Exits section
-    #     Then Details on the Distribution of exit multiples widget are verified
-    #     And Details on the Deals by sector widget are verified
-    #     And Details on the Average MOIC at exit by sector widget are verified
-    #     And Details on the Average holding period per month widget are verified
+    Scenario: Verify the Portfolio Investment - Exits
+        When The user clicks on the Insights Page
+        And User selects the portfolio investment tab
+        And Scrolls to Exits section
+        Then Details on the Distribution of exit multiples widget are verified
+        And Details on the Deals by sector widget are verified
+        And Details on the Average MOIC at exit by sector widget are verified
+        And Details on the Average holding period per month widget are verified
+        When User clicks on the right side arrow of the Exits sub heading
+        Then Verify if all the charts are collapsed under Exits
 
 
 

@@ -11,5 +11,8 @@ class Insightpage {
     getkpis() {
         return cy.get('div>p.title')
     }
+    getexpansionindicatior(){
+       return cy.get('span.mat-expansion-indicator')
+    }
 }
 export default Insightpage

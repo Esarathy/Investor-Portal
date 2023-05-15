@@ -1,9 +1,9 @@
 import Apiurl from "../../fixtures/Apiurl.json";
 
-let resbody ="";
+let resbody = "";
 class Common {
     getresponse() {
-       
+
         const token = localStorage.getItem("access_token");
         const authorization = `Bearer ${token}`;
         cy.request({
@@ -15,11 +15,11 @@ class Common {
         }).then((response) => {
             expect(response.status).to.eq(200);
             resbody = response
-            
-             cy.wrap(response).as('resultAllias')
+
+            //  cy.wrap(response).as('resultAllias')
         })
-       
+
     }
-     
+
 }
 export default Common

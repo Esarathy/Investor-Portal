@@ -80,49 +80,58 @@ Then('Details on the TVPI widget are verified', () => {
     // cy.log((str2))
     // cy.log((str3))
 
+    // insightpage.getwidgetheading().should('include.text', resbody.body.data[0].labelKey)
 
     insightpage.getwidgetheading().should('contain', 'Net Performance')
-    insightpage.getchartheading().contains('tvpi')
+    insightpage.getchartheading().should('contain', resbody.body.data[0].boxes[0].labelKey)
 
-    insightpage.getkpis().should('contain', 'TVPIGross')
-    insightpage.getkpis().should('contain', 'TVPINet')
-    insightpage.getkpis().should('contain', 'RVPI')
-    insightpage.getkpis().should('contain', 'DPI')
+    insightpage.getkpis().should('contain', resbody.body.data[0].boxes[0].views[0].kpis[0].labelKey)
+    insightpage.getkpis().should('contain', resbody.body.data[0].boxes[0].views[0].kpis[1].labelKey)
+    insightpage.getkpis().should('contain', resbody.body.data[0].boxes[0].views[0].kpis[2].labelKey)
+    insightpage.getkpis().should('contain', resbody.body.data[0].boxes[0].views[0].kpis[3].labelKey)
 
 })
 
 And('Details on the Capital deployed widget are verified', () => {
-    insightpage.getwidgetheading().contains('capitalDeployed').should('be.visible')
-    insightpage.getwidgetcontent().should('contain', 'Total Deployed')
-    insightpage.getwidgetcontent().should('contain', 'Exit proceeds')
-    insightpage.getwidgetcontent().should('contain', 'Remaining')
+    insightpage.getchartheading().should('contain', resbody.body.data[0].boxes[1].labelKey)
+
+    insightpage.getkpis().should('contain', 'Total Deployed')
+    insightpage.getkpis().should('contain', 'Exit proceeds')
+    insightpage.getkpis().should('contain', 'Remaining')
 })
 
 And('Details on the Portfolio Value widget are verified', () => {
-    insightpage.getwidgetheading().contains('Portfolio value').should('be.visible')
-    insightpage.getwidgetcontent().should('contain', 'Total')
-    insightpage.getwidgetcontent().should('contain', 'Realized')
-    insightpage.getwidgetcontent().should('contain', 'Unrealized')
+    insightpage.getchartheading().should('contain', 'Portfolio value')
+
+    insightpage.getkpis().should('contain', 'Total')
+    insightpage.getkpis().should('contain', 'Realized')
+    insightpage.getkpis().should('contain', 'Unrealized')
 })
 
 And('Details on the Net IRR widget are verified', () => {
-    insightpage.getwidgetheading().contains('Net IRR').should('be.visible')
-    insightpage.getwidgetcontent().should('contain', 'Combined')
-    insightpage.getwidgetcontent().should('contain', 'Realized')
-    insightpage.getwidgetcontent().should('contain', 'Unrealized')
+    insightpage.getchartheading().contains('Net IRR').should('be.visible')
+
+    insightpage.getkpis().should('contain', 'Combined')
+    insightpage.getkpis().should('contain', 'Realized')
+    insightpage.getkpis().should('contain', 'Unrealized')
 })
 
 And('Details on the Cumulative net cash flow widget are verified', () => {
-    insightpage.getwidgetheading().contains('Cumulative net cash flow (J Curve Analysis)').scrollIntoView().should('be.visible')
-    insightpage.getwidgetcontent().should('contain', 'Actual')
+    insightpage.getchartheading().contains('Cumulative net cash flow (J Curve Analysis)').scrollIntoView().should('be.visible')
+    insightpage.getkpis().should('contain', 'Actual')
 
 })
 When('User clicks on the right side arrow of the Net perfromance sub heading', () => {
-    insightpage.getwidgetheading().should('contain', 'Net Performance').find('span.mat-expansion-indicator').click()
+    insightpage.getexpansionindicatior().eq(0).click()
 
 })
 Then('Verify if all the charts are collapsed under Net performance', () => {
-    
+    insightpage.getchartheading().should('contain', 'tvpi').should('be.hidden')
+    insightpage.getchartheading().should('contain', 'capitalDeployed').should('be.hidden')
+    insightpage.getchartheading().should('contain', 'Portfolio value').should('be.hidden')
+    insightpage.getchartheading().contains('Net IRR').should('be.hidden')
+    insightpage.getchartheading().contains('Cumulative net cash flow (J Curve Analysis)').should('be.hidden')
+
 
 })
 
@@ -130,43 +139,43 @@ Then('Verify if all the charts are collapsed under Net performance', () => {
 // Fund Metrics - Gross performance
 And('Scrolls to Gross performance section', () => {
     insightpage.getwidgetheading().contains('Gross Performance').scrollIntoView().should('be.visible')
-
-
 })
 
 Then('Details on the MOIC widget are verified', () => {
-    insightpage.getchartheading().contains(' MOIC ').should('be.visible')
+    insightpage.getchartheading().contains(' MOIC ')
     insightpage.getkpis().should('contain', 'Combined')
     insightpage.getkpis().should('contain', 'Realized')
     insightpage.getkpis().should('contain', 'Unrealized')
 
 })
 And('Details on the Capital deployed widget in Gross performance section are verified', () => {
-    insightpage.getchartheading().contains('Capital deployed').should('be.visible')
+    insightpage.getchartheading().contains('Capital deployed')
     insightpage.getkpis().should('contain', 'Total Deployed')
     insightpage.getkpis().should('contain', 'Exit proceeds')
     insightpage.getkpis().should('contain', 'Remaining')
 })
 And('Details on the Portfolio Value widget in Gross performance section are verified', () => {
-    insightpage.getchartheading().contains(' Portfolio value ').should('be.visible')
+    insightpage.getchartheading().contains('Portfolio value')
     insightpage.getkpis().should('contain', 'Total')
     insightpage.getkpis().should('contain', 'Realized')
     insightpage.getkpis().should('contain', 'Unrealized')
 })
 And('Details on the Gross IRR widget are verified', () => {
-    insightpage.getchartheading().contains('Gross IRR').should('be.visible')
+    insightpage.getchartheading().contains('Gross IRR')
     insightpage.getkpis().should('contain', 'Combined')
     insightpage.getkpis().should('contain', 'Realized')
     insightpage.getkpis().should('contain', 'Unrealized')
 
 })
 When('User clicks on the right side arrow of the Gross perfromance sub heading', () => {
-    insightpage.getwidgetheading().should('contain', 'Net Performance').find('span.mat-expansion-indicator').click()
+    insightpage.getexpansionindicatior().eq(1).click()
 
 })
 Then('Verify if all the charts are collapsed under Gross performance', () => {
-    
-
+    insightpage.getchartheading().contains(' MOIC ').should('be.hidden')
+    insightpage.getchartheading().contains('Capital deployed').should('be.hidden')
+    insightpage.getchartheading().contains(' Portfolio value ').should('be.hidden')
+    insightpage.getchartheading().contains('Gross IRR').should('be.hidden')
 })
 
 
@@ -175,51 +184,173 @@ Then('Verify if all the charts are collapsed under Gross performance', () => {
 And('Scrolls to LP details section', () => {
     insightpage.getwidgetheading().contains('LP Details').scrollIntoView().should('be.visible')
 
-
 })
 
 Then('Details on the Net LP proceeds widget are verified', () => {
-    insightpage.getchartheading().contains('Net LP proceeds').should('be.visible')
+    insightpage.getchartheading().contains('Net LP proceeds')
 
 
 })
 And('Details on the Net LP proceeds over time widget are verified', () => {
-    insightpage.getchartheading().contains(' Net LP proceeds over time').should('be.visible')
+    insightpage.getchartheading().contains(' Net LP proceeds over time')
     insightpage.getkpis().should('contain', 'Actual')
 })
 And('Details on the LP called capital widget are verified', () => {
-    insightpage.getchartheading().contains('LP called capital').should('be.visible')
+    insightpage.getchartheading().contains('LP called capital')
     insightpage.getkpis().should('contain', 'Actual')
 })
 And('Details on the LP return of contributed capital widget are verified', () => {
-    insightpage.getchartheading().contains('LP return of contributed capital').scrollIntoView().should('be.visible')
+    insightpage.getchartheading().contains('LP return of contributed capital').scrollIntoView()
     insightpage.getkpis().should('contain', 'Actual')
 
 })
 And('Details on the Proceeds to LPs - Hurdle rate widget are verified', () => {
-    insightpage.getchartheading().contains('Proceeds to LPs - Hurdle rate').should('be.visible')
+    insightpage.getchartheading().contains(' Proceeds to LPs – Hurdle rate ')
     insightpage.getkpis().should('contain', 'Actual')
 
 })
 And('Details on the Proceeds to LPs - after catch-up and carried interest are verified', () => {
-    insightpage.getchartheading().contains('Proceeds to LPs - after catch-up and carried interest').should('be.visible')
+    insightpage.getchartheading().contains(' Proceeds to LPs – after catch-up and carried interest ')
     insightpage.getkpis().should('contain', 'Actual')
 
 })
 When('User clicks on the right side arrow of the LP details sub heading', () => {
-    insightpage.getwidgetheading().should('contain', 'Net Performance').find('span.mat-expansion-indicator').click()
+    insightpage.getexpansionindicatior().eq(2).click()
+})
+Then('Verify if all the charts are collapsed under LP details', () => {
+    insightpage.getchartheading().contains(' Net LP proceeds over time').should('be.hidden')
+    insightpage.getchartheading().contains('LP called capital').should('be.hidden')
+    insightpage.getchartheading().contains('LP return of contributed capital').should('be.hidden')
+    insightpage.getchartheading().contains(' Proceeds to LPs – Hurdle rate ').should('be.hidden')
+    insightpage.getchartheading().contains(' Proceeds to LPs – after catch-up and carried interest ').should('be.hidden')
+
+})
+
+
+// Fund MEtrics - GP Details
+And('Scrolls to GP details section', () => {
+    insightpage.getwidgetheading().contains('GP Details').scrollIntoView().should('be.visible')
+
+})
+Then('Details on the GP proceeds widget are verified', () => {
+    insightpage.getchartheading().contains(' GP proceeds ')
+
+})
+And('Details on the GP contributed capital widget in Gross performance section are verified', () => {
+    insightpage.getchartheading().contains(' GP contributed capital ')
+
+})
+And('Details on the Proceeds to GP widget in Gross performance section are verified', () => {
+    insightpage.getchartheading().contains(' Proceeds to GP ')
+
+})
+And('Details on the GP Catch-up widget are verified', () => {
+    insightpage.getchartheading().contains(' GP Catch-up ')
+
+})
+And('Details on the Carried interest widget are verified', () => {
+    insightpage.getchartheading().contains(' Carried interest ')
+
+})
+And('Details on the Net GP proceeds widget are verified', () => {
+    insightpage.getchartheading().contains(' Net GP proceeds ')
+
+})
+And('Details on the Management fees widget are verified', () => {
+    insightpage.getchartheading().contains(' Management fees ')
+
+})
+When('User clicks on the right side arrow of the GP details sub heading', () => {
+    insightpage.getexpansionindicatior().eq(3).click()
 
 })
 Then('Verify if all the charts are collapsed under LP details', () => {
-    
+    insightpage.getchartheading().contains(' GP proceeds ').should('be.hidden')
+    insightpage.getchartheading().contains(' GP contributed capital ').should('be.hidden')
+    insightpage.getchartheading().contains(' Proceeds to GP ').should('be.hidden')
+    insightpage.getchartheading().contains(' GP Catch-up ').should('be.hidden')
+    insightpage.getchartheading().contains(' Carried interest ').should('be.hidden')
+    insightpage.getchartheading().contains(' Net GP proceeds ').should('be.hidden')
+    insightpage.getchartheading().contains(' Management fees ').should('be.hidden')
+
 
 })
 
 
 
+// Portfolios investment - Capital deployment
+And('User selects the portfolio investment tab', () => {
+    leftpanel.getportfolio().click()
+    leftpanel.getchildmenuheading().should('contain', ' Portfolio Investments ')
+
+})
+Then('Details on the Initial investments vs. follow-on investments widget under the capital deployment are verified', () => {
+    insightpage.getwidgetheading().contains('Capital Deployment')
+    insightpage.getchartheading().contains(' Initial investments vs. follow-on investments ')
+
+})
+And('Details on the No. of initial investments by entry round widget are verified', () => {
+    insightpage.getchartheading().contains(' No. of inital investments by entry round ')
+
+})
+And('Details on the Capital deployment pacing widget are verified', () => {
+    insightpage.getchartheading().contains(' Capital deployment pacing ')
+
+})
+And('Details on the Initial investment pacing widget are verified', () => {
+    insightpage.getchartheading().contains(' Inital investment pacing (No. of deals) ')
+
+})
+And('Details on the Follow-on investment pacing widget are verified', () => {
+    insightpage.getchartheading().contains(' Follow-on investment pacing (No. of deals) ')
+
+})
+When('User clicks on the right side arrow of the Capital deployment sub heading', () => {
+    insightpage.getexpansionindicatior().eq(0).click()
+
+})
+Then('Verify if all the charts are collapsed under Capital deployment', () => {
+    insightpage.getchartheading().contains(' Initial investments vs. follow-on investments ').should('be.hidden')
+    insightpage.getchartheading().contains(' No. of inital investments by entry round ').should('be.hidden')
+    insightpage.getchartheading().contains(' Capital deployment pacing ').should('be.hidden')
+    insightpage.getchartheading().contains(' Inital investment pacing (No. of deals) ').should('be.hidden')
+    insightpage.getchartheading().contains(' Follow-on investment pacing (No. of deals) ').should('be.hidden')
+})
 
 
 
+// Portfolio Investment - Exits
+And('Scrolls to Exits section', () => {
+    insightpage.getwidgetheading().contains('Exits').scrollIntoView().should('be.visible')
+
+})
+Then('Details on the Distribution of exit multiples widget are verified', () => {
+    insightpage.getchartheading().contains(' Distribution of exit multiples ')
+
+})
+And('Details on the Deals by sector widget are verified', () => {
+    insightpage.getchartheading().contains(' Deals by sector ')
+
+})
+And('Details on the Average MOIC at exit by sector widget are verified', () => {
+    insightpage.getchartheading().contains(' Average MOIC at exit by sector ')
+
+})
+And('Details on the Average holding period per month widget are verified', () => {
+    insightpage.getchartheading().contains(' Average holding period per month ')
+
+})
+When('User clicks on the right side arrow of the Exits sub heading', () => {
+    insightpage.getexpansionindicatior().eq(1).click()
+
+})
+Then('Verify if all the charts are collapsed under Exits', () => {
+    insightpage.getchartheading().contains(' Distribution of exit multiples ').should('be.hidden')
+    insightpage.getchartheading().contains(' Deals by sector ').should('be.hidden')
+    insightpage.getchartheading().contains(' Average MOIC at exit by sector ').should('be.hidden')
+    insightpage.getchartheading().contains(' Average holding period per month ').should('be.hidden')
+
+})
 
 
 
