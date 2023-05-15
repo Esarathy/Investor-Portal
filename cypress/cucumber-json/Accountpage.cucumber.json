@@ -1,6 +1,5 @@
 [
   {
-    "description": "     Accountpage Assertions",
     "keyword": "Feature",
     "name": "Validating the Accountpage of investor portal",
     "line": 1,
@@ -9,391 +8,420 @@
     "uri": "Accountpage.feature",
     "elements": [
       {
-        "id": "validating-the-accountpage-of-investor-portal;profile-update",
+        "id": "validating-the-accountpage-of-investor-portal;verify-the-profile-information-and-its-actions-are-working-as-expected",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "Profile update",
+        "line": 16,
+        "name": "Verify the profile information and its actions are working as expected",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "User lands on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 801000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 5,
-            "name": "User clicks the profile icon on the header",
+            "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 94000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 6,
-            "name": "User should be navigated to account page",
+            "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "User verifies following details in profile widget",
+            "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 509000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 8,
-            "name": "User enter the \"Value 1\" and Interface language in the profile grid",
+            "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 510000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "User clicks on save button",
+            "name": "The user verifies the following details in the profile section",
             "result": {
-              "status": "passed",
-              "duration": 99000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is able to enter the \"Value 1\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User is able to choose the Interface language",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User clicks on the save button",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 13,
             "name": "Profile should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           }
         ]
       },
       {
-        "id": "validating-the-accountpage-of-investor-portal;profile-update",
+        "id": "validating-the-accountpage-of-investor-portal;verify-the-profile-information-and-its-actions-are-working-as-expected",
         "keyword": "Scenario",
-        "line": 14,
-        "name": "Profile update",
+        "line": 17,
+        "name": "Verify the profile information and its actions are working as expected",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
-            "name": "User lands on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 447000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 5,
-            "name": "User clicks the profile icon on the header",
+            "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 93000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 6,
-            "name": "User should be navigated to account page",
+            "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "User verifies following details in profile widget",
+            "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 588000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 8,
-            "name": "User enter the \"Value 11\" and Interface language in the profile grid",
+            "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 509000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "User clicks on save button",
+            "name": "The user verifies the following details in the profile section",
             "result": {
-              "status": "passed",
-              "duration": 102000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The User is able to enter the \"Value 11\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User is able to choose the Interface language",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User clicks on the save button",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 13,
             "name": "Profile should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           }
         ]
       },
       {
-        "id": "validating-the-accountpage-of-investor-portal;password-update",
+        "id": "validating-the-accountpage-of-investor-portal;verify-if-the-change-password-is-working-as-expected",
         "keyword": "Scenario",
-        "line": 28,
-        "name": "Password update",
+        "line": 30,
+        "name": "Verify if the change password is working as expected",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 19,
-            "name": "User lands on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 452000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
             "line": 20,
-            "name": "User clicks the profile icon on the header",
+            "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 92000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 21,
-            "name": "User should be navigated to account page",
+            "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 5000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 22,
-            "name": "User verifies following details in password widget",
+            "name": "The user clicks the profile icon on the header",
             "result": {
-              "status": "passed",
-              "duration": 452000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 23,
-            "name": "User enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password grids",
+            "name": "The user should be navigated to the account page",
             "result": {
-              "status": "passed",
-              "duration": 677000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 24,
-            "name": "User clicks on change password button",
+            "name": "The user verifies the following details in the password section",
             "result": {
-              "status": "passed",
-              "duration": 104000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "Password should be successfully updated",
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-accountpage-of-investor-portal;password-update",
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "Password update",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 19,
-            "name": "User lands on the Dashboard",
-            "result": {
-              "status": "passed",
-              "duration": 1193000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "User clicks the profile icon on the header",
-            "result": {
-              "status": "passed",
-              "duration": 92000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "User should be navigated to account page",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "User verifies following details in password widget",
-            "result": {
-              "status": "passed",
-              "duration": 619000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 23,
-            "name": "User enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password grids",
+            "line": 25,
+            "name": "User enter the \"Value 1\",\"Value 2\",\"Value 3\" following details in the password sections",
             "result": {
-              "status": "passed",
-              "duration": 723000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
-            "name": "User clicks on change password button",
+            "line": 26,
+            "name": "User clicks on the change password button",
             "result": {
-              "status": "passed",
-              "duration": 103000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
+            "line": 27,
             "name": "Password should be successfully updated",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           }
         ]
       },
       {
-        "id": "validating-the-accountpage-of-investor-portal;delete-account",
+        "id": "validating-the-accountpage-of-investor-portal;verify-if-the-change-password-is-working-as-expected",
         "keyword": "Scenario",
         "line": 31,
-        "name": "Delete account",
+        "name": "Verify if the change password is working as expected",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 32,
-            "name": "User lands on the Dashboard",
+            "line": 20,
+            "name": "The user landed on the Dashboard page",
             "result": {
-              "status": "passed",
-              "duration": 1270000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 33,
-            "name": "User clicks the profile icon on the header",
-            "result": {
-              "status": "passed",
-              "duration": 96000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 34,
-            "name": "User should be navigated to account page",
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 35,
-            "name": "User verifies following details in delete widget",
-            "result": {
-              "status": "passed",
-              "duration": 439000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 36,
-            "name": "User clicks on the Delete button",
+            "line": 21,
+            "name": "Partner logo is displayed",
             "result": {
-              "status": "passed",
-              "duration": 100000000
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "The user clicks the profile icon on the header",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "The user should be navigated to the account page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "The user verifies the following details in the password section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User enter the \"Value 11\",\"Value 12\",\"Value 13\" following details in the password sections",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "User clicks on the change password button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Password should be successfully updated",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validating-the-accountpage-of-investor-portal;verify-if-the-user-is-able-to-delete-the-account",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Verify if the user is able to delete the account",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "The user landed on the Dashboard page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Partner logo is displayed",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "The user clicks the profile icon on the header",
+            "result": {
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 37,
+            "name": "The user should be navigated to the account page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "The user verifies the following details in the delete section",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "The User clicks on the Delete button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
             "name": "Account should be successfully deleted",
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           }
         ]

@@ -12,5 +12,17 @@ class Reports{
      getyear(){
         return cy.get('.folderStructure')
      }
+     getyeardropdown()
+     {
+      return cy.get('div.year_selector')
+     }
+     getquarterdropdown()
+     {
+      return cy.get('div.quarter_selector')
+     }
+     getdocumentlist(){
+      return cy.get('.reportsList>mat-list-option')
+     }
+    
 }
 export default Reports

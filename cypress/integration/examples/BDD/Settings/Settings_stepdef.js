@@ -1,22 +1,22 @@
 import { Given, And } from "cypress-cucumber-preprocessor/steps";
-import Navigation from "../../../../support/Pageobject/Naviagtion";
+import Leftpanel from "../../../../support/Pageobject/Leftpanel";
 import Settings from "../../../../support/Pageobject/Settings";
-const navigation = new Navigation()
+const leftpanel =new Leftpanel()
 const settings = new Settings()
 
 Given('User lands on the Dashboard', () => {
-   cy.visit(Cypress.env('url'))
-   cy.url().should('include', '.cloudfront.net/dashboard')
+   cy.visit(Cypress.env('qaurl'))
+   cy.url().should('include', '/dashboard')
    cy.clearCookies()
    cy.clearLocalStorage()
 })
 And('Partners logo verified', () => {
-   navigation.getpatnerlogo().should('be.visible')
+   leftpanel.getpatnerlogo().should('be.visible')
 
 })
 Then('Page redirects successfully on Settings menu click', () => {
-   navigation.getsettings().click()
-   cy.url().should('include', '.cloudfront.net/settings')
+   leftpanel.getsettings().click()
+   cy.url().should('include', '/settings')
 
 })
 When('User clicks on Users in the toggle button', () => {
@@ -24,7 +24,8 @@ When('User clicks on Users in the toggle button', () => {
 
 })
 Then('Should successfully navigate to User page', () => {
-   // cy.contains('/ Users').should('be.visible')
+   //  cy.contains('/ Users').should('be.visible')
+   
 
 })
 When('User clicks on the Username', () => {

@@ -1,39 +1,120 @@
+/// <reference types  = "Cypress" />
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
-import Capitalaccount from "../../../../support/Pageobject/Capitalaccountpage";
+import Documents from "../../../../support/Pageobject/Documents";
 import Dashboard from "../../../../support/Pageobject/Dashboardpage";
-import Navigation from "../../../../support/Pageobject/Naviagtion";
+import Investorandfund from "../../../../fixtures/Investorandfund.json";
+import Leftpanel from "../../../../support/Pageobject/Leftpanel";
+import Apiurl from "../../../../fixtures/Apiurl.json";
+import Credential from "../../../../fixtures/Credential.json"
+import Loginpage from "../../../../support/Pageobject/Loginpage";
+const loginpage = new Loginpage()
+const documentspage = new Documents()
+const leftpanel = new Leftpanel()
 const dashboard = new Dashboard()
-const navigation = new Navigation()
-const capitalaccount = new Capitalaccount()
 
-Given('User lands on the Dashboard', () => {
-    cy.visit(Cypress.env('url'))
-    cy.url().should('include', '.cloudfront.net/dashboard')
-    cy.clearCookies()
-    cy.clearLocalStorage()
-})
-And('Partners logo verified', () => {
-    navigation.getpatnerlogo().should('be.visible')
-     
+
+let resbody = "";
+
+//Login
+Given('The user lands on the authentication page', () => {
+    cy.visit(Cypress.env('qaurl'))
+
 })
 
-Then('Page redirects successfully on Documents menu click', () => {
-    navigation.getdocuments().click()
-    dashboard.getmenuheading().should('contain', '/ Documents ')
-})  
+When('User enter the user name or mailid and password', () => {
+    loginpage.getusername().type(Credential.Test.username)
+    loginpage.getpassword().type(Credential.Test.password)
+})
 
-When('User click on Sub-folder or Documents', () => {
-   cy.get('.folderList > div ').eq(0).click() 
-}) 
+And('Clicks on the sign in button', () => {
+    loginpage.getsignin().click()
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        return false;
+    });
+})
 
+Then('User should successfully be navigated to the home page', () => {
+    cy.url().should('include', '/dashboard')
+
+})
+
+// Given('The user landed on the Dashboard page', () => {
+//     cy.visit(Cypress.env('qaurl'))
+//     cy.url().should('include', '/dashboard')
+//     cy.clearCookies()
+//     cy.clearLocalStorage()
+// })
+// And('Partner logo is displayed', () => {
+//     leftpanel.getpatnerlogo().should('be.visible')
+// })
+
+
+//Documents page
+When('User selects the Investor from lps drop-down', () => {
+    dashboard.getinvestordropdown().click()
+    cy.contains(Investorandfund.lps).dblclick({ force: true })
+
+})
+
+And('Selects the fund from vehicle drop-down', () => {
+    dashboard.getfunddropdown().click().click({ force: true })
+    cy.contains(Investorandfund.vehicle).click({ force: true })
+
+})
+
+
+And('Hits the api request for the documents page', () => {
+    const token = localStorage.getItem('access_token')
+    const authorization = `Bearer ${token}`
+    cy.request({
+        method: 'GET',
+        url: Cypress.env('baseurl') + (Apiurl.documents),
+        headers: {
+            authorization
+        }
+    }).then((response) => {
+        expect(response.status).to.eq(200)
+        resbody = response;
+    })
+
+})
+When('User clicks on the Documents Page', () => {
+    leftpanel.getdocuments().click()
+
+})
+Then('User should be sucessfully navigated to the documents page', () => {
+    cy.url().should('include', '/documents')
+
+})
+And('Should contain list of folder', () => {
+    documentspage.getsubfolderlist().should('have.length', resbody.body.data.length)
+
+})
+When('User click on the folder', () => {
+    documentspage.getfolder().eq(1).click()
+
+})
 Then('User should successfully navigate to the subfolder page', () => {
-    capitalaccount.getchidlmenu().should('have.text','/ Subfolder 1') 
-     
- })
- When('User selects any documents', () => {
-    cy.get('mat-selection-list').click({multiple:true}) 
-})    
+    // capitalaccount.getchidlmenu().should('have.text', resbody.body.data[1].name) 
+    leftpanel.getmenuheading().should('contain', resbody.body.data[1].name)
 
-Then('User should view the pdf', () => {
-    cy.get('#pageWidgetContainer1').should('be.visible')
+})
+When('User clicks on the sub folder', () => {
+    documentspage.getfolder().eq(0).click()
+
+})
+And('Clicks on the pdf file for preview', () => {
+    documentspage.getpdffile().click()
+
+})
+When('User clicks on the download button on the pdf view', () => {
+    cy.wait(4000)
+    cy.get('iframe')
+    
+
+
+})
+Then('The pdf must be downloaded sucessfully', () => {
+    // cy.readFile('cypress/downloads/').should('exist')
+
 })

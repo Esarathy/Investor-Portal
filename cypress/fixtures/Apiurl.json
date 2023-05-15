@@ -1,0 +1,13 @@
+{
+    "basedata": "/base-data",
+    "dashboard": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/dashboard",
+    "events": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/events?sort=start",
+    "news": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/news?sort=dateTime&order=desc",
+    "updates": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/updates?sort=date&order=desc",
+    "documents": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/documents",
+    "reports": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/quarterly-reports",
+    "insights": {
+        "fund-metrics": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/insights/fund-metrics",
+        "portfolio-investments": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/insights/portfolio-investments"
+    }
+}

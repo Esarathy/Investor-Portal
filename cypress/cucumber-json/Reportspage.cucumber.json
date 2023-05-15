@@ -1,155 +1,168 @@
 [
   {
-    "description": "    Reports page Assertions",
     "keyword": "Feature",
-    "name": "Validating the Reports page of investor portal",
-    "line": 1,
-    "id": "validating-the-reports-page-of-investor-portal",
-    "tags": [],
+    "name": "Validating the Reports page",
+    "line": 2,
+    "id": "validating-the-reports-page",
+    "tags": [
+      {
+        "name": "@Test",
+        "line": 1
+      }
+    ],
     "uri": "Reportspage.feature",
     "elements": [
       {
-        "id": "validating-the-reports-page-of-investor-portal;ouarterly-reports",
+        "id": "validating-the-reports-page;verify-the-report-page-pdf-is-verified",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Ouarterly reports",
-        "tags": [],
+        "line": 13,
+        "name": "Verify the report page pdf is verified",
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 1
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "User lands on the Dashboard",
+            "name": "The user lands on the authentication page",
             "result": {
               "status": "passed",
-              "duration": 1205000000
+              "duration": 4244000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 6,
-            "name": "Partners logo verified",
+            "name": "User enter the user name or mailid and password",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 3539000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 7,
-            "name": "Page redirects successfully on Reports menu click",
+            "name": "Clicks on the sign in button",
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 5037000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 8,
-            "name": "User clicks the Quarterly toggle button",
-            "result": {
-              "status": "failed",
-              "duration": 4290000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem>' to contain text ' Quarterly', but the text was '/ translations.reports.quarter / 2022 / Q4'\n    + expected - actual\n\n    -'/ translations.reports.quarter / 2022 / Q4'\n    +' Quarterly'\n\n    at Context.eval (cypress/integration/examples/BDD/Reportspage/Reportspage_stepdef.js:27:27)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "User selects the year and quarter drop down",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "User should get the following documents",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "User able to see the pdf",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "validating-the-reports-page-of-investor-portal;annual-reports",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Annual reports",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "User lands on the Dashboard",
+            "name": "Verify user should be successfully navigated to home page",
             "result": {
               "status": "passed",
-              "duration": 1211000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "Partners logo verified",
-            "result": {
-              "status": "passed",
-              "duration": 8000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Page redirects successfully on Reports menu click",
-            "result": {
-              "status": "passed",
-              "duration": 207000000
+              "duration": 1026000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
-            "name": "User clicks the Annually in the toggle button",
+            "line": 9,
+            "name": "User selects the Investor from LPS drop-down",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span.childMenuItem>' to contain text ' Annually', but the text was '/ translations.reports.annual'\n    + expected - actual\n\n    -'/ translations.reports.annual'\n    +' Annually'\n\n    at Context.eval (cypress/integration/examples/BDD/Reportspage/Reportspage_stepdef.js:52:27)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 250000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
-            "name": "Selects the year",
+            "line": 10,
+            "name": "User selects the fund from vehicle drop-down",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 279000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The user hits the api request for the reports",
+            "result": {
+              "status": "passed",
+              "duration": 941000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "The user clicks on the Reports Page",
+            "result": {
+              "status": "passed",
+              "duration": 109000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "User should preview the pdf",
+            "line": 15,
+            "name": "User should sucessfully navigated to the report page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User selects the year from dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 940000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User selects the quarter from the dropdown",
+            "result": {
+              "status": "passed",
+              "duration": 582000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "The user should get the following reports for the selected quarter",
+            "result": {
+              "status": "passed",
+              "duration": 9784000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User clicks on any of the reports",
+            "result": {
+              "status": "passed",
+              "duration": 117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "User should able to see the pdf for the selected report",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
             }
           }
         ]

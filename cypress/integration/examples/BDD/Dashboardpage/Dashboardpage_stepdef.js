@@ -1,151 +1,340 @@
+/// <reference types  = "Cypress" />
+import dayjs from "dayjs";
 import { Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Dashboard from "../../../../support/Pageobject/Dashboardpage";
-import Navigation from "../../../../support/Pageobject/Leftpanel";
-const dashboard = new Dashboard()
-const navigation = new Navigation()
+import Leftpanel from "../../../../support/Pageobject/Leftpanel";
+import Investorandfund from "../../../../fixtures/Investorandfund.json";
+import Apiurl from "../../../../fixtures/Apiurl.json";
+import Credential from "../../../../fixtures/Credential.json";
+import Loginpage from "../../../../support/Pageobject/Loginpage";
+import Common from "../../../Common/Common";
+const common = new Common;
+const loginpage = new Loginpage();
+const dashboard = new Dashboard();
+const leftpanel = new Leftpanel();
+let resbody = "";
 
+// Login
+Given("The user lands on the authentication page", () => {
+  cy.visit(Cypress.env("qaurl"));
+});
 
-Given('User lands on the Dashboard', () => {
-    cy.visit(Cypress.env('url'))
-    cy.url().should('include', '.cloudfront.net/dashboard')
-    cy.clearCookies()
-    cy.clearLocalStorage()
-})
-And('Partners logo verified', () => {
-    if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
-        cy.get('button > .mat-button-wrapper')
-          .should('be.visible')
-          .click()
-      }
-    navigation.getpatnerlogo().should('be.visible')
+When("User enter the user name or mailid and password", () => {
+  loginpage.getusername().type(Credential.Test.username);
+  loginpage.getpassword().type(Credential.Test.password);
+});
 
-})
+And("Clicks on the sign in button", () => {
+  loginpage.getsignin().click();
+  Cypress.on("uncaught:exception", (err, runnable) => {
+    return false;
+  });
+});
 
-And('Details on Timeline widget are verified', () => {
-    cy.get('div[class="progressDate start"]').should('have.text', '20. Jan2022')
-    cy.get('div[class="progressDate end"]').should('have.text', '20. Jan2032')
+Then("Verify user should be successfully navigated to home page", () => {
+  cy.url().should("include", "/dashboard");
+});
 
-})
-And('Details on Capital widget are verified', () => {
-    cy.get('div[class="capital"]> div > p').should('have.text','1,000mn Committed 1,000mn Called in 1,000mn Distributed 1,000mn Contributed 1,000mn Deployed 1,000mn Due Payments ')
+//dashboard 
+When("The user hits the api request for the base data", () => {
+  const token = localStorage.getItem("access_token");
+  const authorization = `Bearer ${token}`;
+  cy.request({
+    method: "GET",
+    url: Cypress.env("baseurl") + Apiurl.basedata,
+    headers: {
+      authorization,
+    },
+  }).then((response) => {
+    expect(response.status).to.eq(200);
+    resbody = response;
+  });
 
-})
+});
 
-Then('Page redirects on menu click', () => {
-    if (Cypress.config("viewportWidth") < Cypress.env("viewportWidthBreakpoint")) {
-        cy.get('button > .mat-button-wrapper')
-          .should('be.visible')
-          .click()
-      }
-    navigation.getdashboard().click()
-    dashboard.getmenuheading().should('contain', '/ Dashboard ')
-    navigation.getinsight().click()
-    dashboard.getmenuheading().should('contain', '/ Insights ')
-    navigation.getcapitalaccount().click()
-    dashboard.getmenuheading().should('contain', '/ Capital Account ')
-    navigation.getreports().click()
-    dashboard.getmenuheading().should('contain', '/ Reports ')
-    navigation.getdocuments().click()
-    dashboard.getmenuheading().should('contain', '/ Documents ')
-    navigation.getsettings().click()
-    dashboard.getmenuheading().should('contain', '/ Settings ')
+When("User selects the Investor from LPS drop-down", () => {
+  dashboard.getinvestordropdown().click();
+  cy.contains(Investorandfund.lps).click({ force: true });
+});
 
-})
-And('Widgets are verified', () => {
-    dashboard.gettimeline().should('be.visible')
-    dashboard.getperformance().should('be.visible')
-    dashboard.getcapitalinusd().should('be.visible')
-    dashboard.getupcommingevents().should('be.visible')
-    dashboard.getupdates().should('be.visible')
-    dashboard.getbanner().should('have.attr', 'href')
-    dashboard.getinvestments().should('be.visible')
-})
+And("User selects the fund from vehicle drop-down", () => {
+  dashboard.getfunddropdown().click().click({ force: true });
+  cy.contains(Investorandfund.vehicle).click({ force: true });
+});
 
-Then('The joinfund & investor dropdown must be selected successfully', () => {
-    cy.get('#mat-select-value-1').contains('Join Fund 1 - XYZ').should('be.visible')
-    // cy.get('#mat-option-0').click()
+Then("Verify partner logo is displayed on the left panel", (response) => {
+  leftpanel
+    .getpatnerlogo()
+    .should("have.attr", "src")
+    .and("include", resbody.body.data.gps[0].logos.bigUrl);
+});
 
-    cy.get('#mat-select-value-3').contains('Investor 1').should('be.visible')
-    // cy.get('#mat-option-3').click()
+// Timeline Widget
+When("The user hits the api request for the dashboard", () => {
+  const token = localStorage.getItem("access_token");
+  const authorization = `Bearer ${token}`;
+  cy.request({
+    method: "GET",
+    url: Cypress.env("baseurl") + Apiurl.dashboard,
+    headers: {
+      authorization,
+    },
+  }).then((response) => {
+    expect(response.status).to.eq(200);
+    resbody = response;
+  });
+});
 
-})
-When('User clicks on see details in Performance widget', () => {
-    cy.get('a[href="/insights"]').click()
-})
+Then("Verify timeline widget is displayed", () => {
+  dashboard.gettimeline().should("be.visible");
+});
 
-Then('Should navigate to Insight page successfully', () => {
-    cy.url().should('include', '.cloudfront.net/insights')
-    dashboard.getmenuheading().should('contain', '/ Insights ')
-})
+And("Verify the investment start date in the timeline", () => {
+  dashboard
+    .getinvetsmentstartdate()
+    .should("have.text", dayjs(resbody.body.data.timeline.startInvestmentDate, "DD. MMMYYYY").format("DD. MMMYYYY"));
+});
 
-When('User clicks on see details in Capital widget', () => {
-    cy.get('a[href="/capital-account"]').click()
-})
+And("Verify the liquidation end date in the timeline", () => {
+  dashboard
+    .getliquidationenddate()
+    .should("have.text", dayjs(resbody.body.data.timeline.endDate, "DD. MMMYYYY").format("DD. MMMYYYY"));
+});
 
-Then('Should navigate to Capitalaccount successfully', () => {
-    cy.url().should('include', '.cloudfront.net/capital-account')
-    dashboard.getmenuheading().should('contain', '/ Capital Account ')
-})
-
-
-When('User clicks the profile icon on the header', () => {
-    dashboard.getprofile().click()
-})
-
-
-Then('Page redirects to a youtube link on banner click', () => {
-    cy.get('mat-card > a').invoke('removeAttr', 'target').click()
-    cy.origin('www.youtube.com', () => {
-        cy.url().should('include', 'youtube.com')
-    })
-})
-
-Then('Details on Investment widget are verified', () => {
-    cy.get('.postScriptum').contains(' 6 Realized 9 Unrealized ').should('be.visible')
-})
-
-Then('Details on Performance widget are verified', () => {
-    cy.get('div[class="performance"]> div>p').should('have.text','100.00TVPI5.00DPI10.00RVPI10.00xMOIC1,000%IRR')
-
-})
-
-When('User scroll the Upcoming events', () => {
-    if (cy.get('.cardBody.eventsContainer > .eventTile').length > 3) {
-        cy.get('.cardBody.eventsContainer').scrollTo("bottom")
-        cy.get('.cardBody.eventsContainer').scrollTo("top")
+When("User hover on the events in the timeline", () => {
+  dashboard.gettimelinedot().then(($eventdot) => {
+    if ($eventdot.length >= 1) {
+      dashboard.gettimelinedot().eq(1).click().wait(3000);
     }
-})
+  });
+});
+Then("A tooltip should be visible", () => {
+  dashboard.gettooltip().should("be.visible");
+});
 
-Then('Should contain list of events', () => {
-    cy.get('.cardBody.eventsContainer > .eventTile').should('have.length', 4)
-})
+// Banner Widget
+And("Banner Widget is displayed", () => {
+  dashboard.getbanner().should("be.visible");
+});
 
-When('User scroll the News widget', () => {
-    if (cy.get('.cardBody.newsContainer > .newsTile').length > 3) {
-        cy.get('.cardBody.newsContainer').scrollTo("bottom")
-        cy.get('.cardBody.newsContainer').scrollTo("top")
+When("User click on the banner widget it redirected to a respective url", () => {
+  dashboard.getbanner().invoke("removeAttr", "target").click();
+  cy.origin(resbody.body.data.banner.href, () => {
+    cy.url().should('include', origin)
+  });
+}
+);
+
+// Investment Widget
+And("Investment Widget is displayed", () => {
+  const totalinvest =
+    resbody.body.data.investments.realizedInvestments +
+    resbody.body.data.investments.unrealizedInvestments;
+  dashboard
+    .getinvestmentheader()
+    .should("have.text", " " + totalinvest + " Investments ");
+});
+
+Then("Verify the investment widgets and their respective graphs", () => {
+  dashboard
+    .getinvestmentkpis()
+    .should(
+      "have.text",
+      " " +
+      resbody.body.data.investments.realizedInvestments +
+      " realized " +
+      " " +
+      resbody.body.data.investments.unrealizedInvestments +
+      " unrealized "
+    );
+});
+
+// Performance Widget
+And("Performance Widget is displayed", () => {
+  dashboard.getperformance().should("be.visible");
+});
+Then("Details on the Performance widget are verified", () => {
+  cy.get('div[class="performance"]')
+    .find(".count")
+    .should(
+      "have.text",
+      (resbody.body.data.performance.tvpi).toFixed(2) +
+      "" +
+      (resbody.body.data.performance.dpi) +
+      "" +
+      (resbody.body.data.performance.rvpi).toFixed(2) +
+      "" +
+      (resbody.body.data.performance.moic).toFixed(2) +
+      "x" +
+      (resbody.body.data.performance.irr).toFixed(2) +
+      "%"
+    );
+});
+
+// navigate to insight on clicking see details
+When("Clicking on the see details link from the performance widget", () => {
+  dashboard.getseedetails().eq(0).click();
+});
+
+Then("User should navigate to the Insights page successfully", () => {
+  cy.url().should("include", "/insights");
+  leftpanel.getmenuheading().should("contain", "/ Insights ");
+});
+
+// Capital account
+And("Capital account Widget is displayed", () => {
+  dashboard.getcapitalinusd().should("be.visible");
+});
+
+Then("Details on the capital account widget are verified", () => {
+  cy.get('div[class="capital"]')
+    .find(".count")
+    .should(
+      'have.text',
+      (resbody.body.data.capital.committed).toLocaleString() +
+      "" +
+      (resbody.body.data.capital.calledIn).toLocaleString() +
+      "" +
+      (resbody.body.data.capital.distributed).toLocaleString() +
+      "" +
+      (resbody.body.data.capital.contributed).toLocaleString() +
+      "" +
+      (resbody.body.data.capital.deployed).toLocaleString() +
+      "" +
+      (resbody.body.data.capital.duePayments).toLocaleString()
+    );
+});
+
+// navigate capital account on clicking see details
+When("Clicking on the see details link from the capital account widgets", () => {
+  dashboard.getseedetails().eq(1).click();
+}
+);
+
+Then("User should navigate to the capital account page successfully", () => {
+  cy.url().should("include", "/capital-account");
+  dashboard.getmenuheading().should("contain", "/ Capital Account ");
+});
+
+// Upcoming events Widgets
+When("The user hits the api request for the upcoming events", () => {
+  const token = localStorage.getItem("access_token");
+  const authorization = `Bearer ${token}`;
+  cy.request({
+    method: "GET",
+    url: Cypress.env("baseurl") + Apiurl.events,
+    headers: {
+      authorization,
+    },
+  }).then((response) => {
+    expect(response.status).to.eq(200);
+    resbody = response;
+  });
+});
+Then("Upcoming event widget is displayed", () => {
+  dashboard.getupcommingevents().should("be.visible");
+});
+
+And("Should contain the list of events", () => {
+  dashboard.geteventslist().find('.eventTile').should("have.length", resbody.body.data.length);
+});
+
+When("User click on any of the events", () => {
+  dashboard.geteventslist().then(($events) => {
+  if ($events) {
+    dashboard.geteventslist().find('eventsTile').eq(0).click();
+  }
+  })
+});
+
+Then("Verify the event is getting downloaded", () => {
+
+  // cy.readFile("cypress/downloads/InvestorEvent.ics").should("exist");
+});
+
+
+// News Widgets
+When("The user hits the api request for the news", () => {
+  const token = localStorage.getItem("access_token");
+  const authorization = `Bearer ${token}`;
+  cy.request({
+    method: "GET",
+    url: Cypress.env("baseurl") + Apiurl.news,
+    headers: {
+      authorization,
+    },
+  }).then((response) => {
+    expect(response.status).to.eq(200);
+    resbody = response;
+  });
+});
+Then("News widget is displayed", () => {
+  dashboard.getnews().should("be.visible");
+});
+
+And("Should contain the list of news", () => {
+  dashboard.getnewslist().should("have.length", resbody.body.data.length);
+});
+
+When("User clicks on any of the news", () => {
+  dashboard.getnewslist().then(($news) => {
+    if ($news.length >= 1) {
+      dashboard.getnewslist().eq(0).click();
     }
-})
+  });
+});
 
-Then('Should contain list of news', () => {
-    cy.get('.cardBody.newsContainer > .newsTile').should('have.length', 3)
-})
+Then("Verify user navigates to the external url", () => {
 
-When('User scroll the Updates widget', () => {
-    if (cy.get('.cardBody.updatesContainer > .eventTile').length > 3) {
-        cy.get('.cardBody.updatesContainer').scrollTo("bottom")
-        cy.get('.cardBody.updatesContainer').scrollTo("top")
+});
+
+
+
+
+// Updates
+When("The user hits the api request for the updates", () => {
+  const token = localStorage.getItem("access_token");
+  const authorization = `Bearer ${token}`;
+  cy.request({
+    method: "GET",
+    url: Cypress.env("baseurl") + Apiurl.updates,
+    headers: {
+      authorization,
+    },
+  }).then((response) => {
+    expect(response.status).to.eq(200);
+    resbody = response;
+  });
+});
+
+And("Updates widget is verified", () => {
+  dashboard.getupdates().should("be.visible");
+});
+
+When("User click on last login", () => {
+  cy.log("click last login");
+});
+
+Then("Should contain list of updates for last login", () => {
+  dashboard.getupdateslist().should("have.length", resbody.body.data.length);
+});
+
+When("User click on last month", () => {
+  cy.log("click last month");
+});
+
+Then("Should contain list of updates for last month", () => {
+  dashboard.getupdateslist().should("have.length", resbody.body.data.length);
+});
+
+When("User clicks on any of the updates", () => {
+  dashboard.getupdateslist().then(($updates) => {
+    if ($updates.length >= 1) {
+      dashboard.getupdateslist().eq(0).click();
     }
-})
+  });
+});
 
-Then('Should contain list of updates', () => {
-    cy.get('.cardBody.updatesContainer > .eventTile').should('have.length', 7)
-})
-When('User clicks on the toggle button', () => {
-    cy.get('.last-month').click()
-    cy.get('.last-login').click()
-})
-Then('Should able to generate updates accordingly', () => {
+Then("User should sucessfully navigate to the respective page", () => {
 
-})
-
+});

@@ -18,11 +18,11 @@ report.generate({
     customData: {
         title: 'Run info',
         data: [
-            {label: 'Project', value: 'Investor-capital'},
+            {label: 'Project', value: 'Investor-portal'},
             {label: 'Release', value: '1.2.3'},
             {label: 'Cycle', value: 'B11221.34321'},
-            {label: 'Execution Start Time', value: 'Nov 19th 2022, 02:31 PM EST'},
-            {label: 'Execution End Time', value: 'Nov 19th 2017, 02:56 PM EST'}
+            {label: 'Execution Start Time', value: 'Jan 18th 2023, 02:31 PM EST'},
+            {label: 'Execution End Time', value: 'Jan 18th 2023, 02:56 PM EST'}
         ]
     }
 });

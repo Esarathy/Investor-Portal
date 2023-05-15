@@ -1,5 +1,5 @@
 {
-  "name": "investor-capital",
+  "name": "investor-portal",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserstack-cypress-cli": "^1.19.2",
     "cypress-cucumber-preprocessor": "^14.0.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
@@ -27,8 +28,10 @@
     "cypress": "^12.1.0",
     "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-if": "^1.10.2",
+    "cypress-xpath": "^2.0.1",
     "mocha": "^10.1.0",
     "mochawesome": "^7.1.3",
-    "multiple-cucumber-html-reporter": "^3.0.1"
+    "multiple-cucumber-html-reporter": "^3.1.0"
   }
 }
