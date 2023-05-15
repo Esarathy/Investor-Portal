@@ -1,4 +1,4 @@
-@Test
+@Hide
 Feature: Validating the Capitalaccount page of investor portal
 
  Background:

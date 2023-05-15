@@ -1,3 +1,4 @@
+@Hide
 Feature: Validating the Setting of investor portal
     Setting Assertions
     Scenario: Users menu

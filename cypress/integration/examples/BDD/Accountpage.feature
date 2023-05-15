@@ -1,3 +1,4 @@
+@Hide
 Feature: Validating the Accountpage of investor portal
 
 

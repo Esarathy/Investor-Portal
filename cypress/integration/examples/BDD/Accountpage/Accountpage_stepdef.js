@@ -1,6 +1,6 @@
 import {Given, When, And, Then } from "cypress-cucumber-preprocessor/steps";
 import Accountpage from "../../../../support/Pageobject/Accountpage";
-import Dashboard from "../../../../support/Pageobject/Dashboard/Dashboardpage";
+import Dashboard from "../../../../support/Pageobject/Dashboardpage";
 import Leftpanel from "../../../../support/Pageobject/Leftpanel";
 const accountpage = new Accountpage()
 const dashboard = new Dashboard()
