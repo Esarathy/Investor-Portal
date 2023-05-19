@@ -1,25 +1,19 @@
-import Apiurl from "../../fixtures/Apiurl.json";
+import Capitalaccount from "../../support/Pageobject/Capitalaccountpage"
 
-let resbody = "";
+
+const capitalaccount = new Capitalaccount
+
+
+
 class Common {
-    getresponse() {
-
-        const token = localStorage.getItem("access_token");
-        const authorization = `Bearer ${token}`;
-        cy.request({
-            method: "GET",
-            url: Cypress.env("baseurl") + Apiurl.basedata,
-            headers: {
-                authorization,
-            },
-        }).then((response) => {
-            expect(response.status).to.eq(200);
-            resbody = response
-
-            //  cy.wrap(response).as('resultAllias')
-        })
-
+    setdate(year, month, date) {
+        capitalaccount.getdatepicker().click()
+        capitalaccount.getyearmonthdate().contains(year).click()
+        capitalaccount.getyearmonthdate().contains(month).click()
+        capitalaccount.getyearmonthdate().contains(date).click()
     }
 
 }
+
+
 export default Common

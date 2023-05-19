@@ -1,17 +1,73 @@
 class Capitalaccount {
+
+    getyear() {
+        return cy.get('.select-container>mat-select').eq(0)
+    }
+    getquarter() {
+        return cy.get('.select-container>mat-select').eq(1)
+    }
+    getfileformat() {
+        return cy.get('div.select-wrapper')
+    }
+    getifrs() {
+        return cy.get('span.mat-option-text').eq(0)
+    }
+    getkfw() {
+        return cy.get('span.mat-option-text').eq(1)
+    }
     getoverview() {
-        return cy.get('#mat-tab-label-0-0')
+        return cy.get('div.mat-tab-label-content').contains(' Overview ')
     }
     gettransaction() {
-        return cy.get('#mat-tab-label-0-1')
+        return cy.get('.mat-tab-label-content').contains('Transactions')
+    }
+    getfromdate() {
+        return cy.get('.mat-button-wrapper>svg').eq(0)
+    }
+    gettodate() {
+        return cy.get('.mat-button-wrapper>svg').eq(1)
+    }
+    gettransactioncount() {
+        return cy.get('.transaction-count')
+    }
+    getclearbutton() {
+        return cy.get('.mat-button-wrapper').contains('Clear Filter')
+    }
+    gettransactiontype() {
+        return cy.get('.transaction-select').eq(0)
+    }
+    gettransactionstatus() {
+        return cy.get('.transaction-select').eq(1)
+    }
+    getcapitalcall() {
+        return cy.get('span.mat-option-text').contains(' Capital call ')
+    }
+    getcapitaldistribution() {
+        return cy.get('span.mat-option-text').contains(' Capital distribution ')
+    }
+    getpaidstatus() {
+        return cy.get('span.mat-option-text').contains(' Paid ')
+    }
+    getopenstatus() {
+        return cy.get('span.mat-option-text').contains(' Open ')
+    }
+    getdatepicker() {
+        return cy.get('.mat-calendar-period-button')
+    }
+    getyearmonthdate() {
+        return cy.get('button.mat-calendar-body-cell')
+    }
+    getnorecordfound(){
+        return cy.get('div.noRecord')
     }
 
-    getfromquater() {
-        return cy.get('.mat-select.dropdown:nth-child(1)')
-    }
-    gettoquater() {
-        return cy.get('.mat-select.dropdown:nth-child(2)')
-    }
+
+
+
+
+
+
+
     getdropdown() {
         return cy.get('#mat-select-value-9')
     }
@@ -27,47 +83,27 @@ class Capitalaccount {
     getdownloadlink() {
         return cy.get('.desc > span')
     }
-    gettransactioncount() {
-        return cy.get('.transaction-count')
-    }
+
     gettitle() {
         return cy.get('.title')
     }
-    getfromdate() {
-        return cy.get('#mat-input-0')
-    }
-    gettodate() {
-        return cy.get('#mat-input-1')
-    }
+
     getcelltype() {
         return cy.get('#mat-select-10')
     }
     getstatus() {
         return cy.get('#mat-select-12')
     }
-    getfileformat() {
-        return cy.get('#mat-select-16')
-    }
+
     getdisplayformat() {
         return cy.get('#mat-select-14')
     }
     getallstatus() {
         return cy.get('#mat-option-19')
     }
-    getpaidstatus() {
-        return cy.get('#mat-option-20')
-    }
-    getopenstatus() {
-        return cy.get('#mat-option-21')
-    }
-    getlistbox(){
+    getlistbox() {
         return cy.get('div[role="listbox"]')
     }
-    getcapitalcall(){
-        return cy.get('#mat-option-17')
-    }
-    getdistribution(){
-       return cy.get('#mat-option-18')
-    }
+
 }
 export default Capitalaccount

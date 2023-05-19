@@ -9,5 +9,12 @@
     "insights": {
         "fund-metrics": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/insights/fund-metrics",
         "portfolio-investments": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/insights/portfolio-investments"
+    },
+    "capitalaccount": {
+        "overview": {
+            "ifrs": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/capital-account-overviews/2022/4/b93d2197-e8fc-459a-8bfe-58fef79d3086",
+            "kfw": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/capital-account-overviews/2022/4/12e89c58-2275-4cab-b3cc-891895a0c07d"
+        },
+        "transaction": "/lps/0409c59e-e368-497d-8c7e-e3084c996c07/vehicles/2801c07a-9b8e-4f17-aaae-cb50cf21c728/transactions"
     }
 }
