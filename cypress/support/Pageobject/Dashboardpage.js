@@ -5,6 +5,7 @@ class Dashboard {
     }
     gettimelinedot(){
         return cy.get('.timeline-body').find('.event-dot')
+        
     }
     getinvetsmentstartdate(){
         return cy.get('.progressDate.start')
@@ -64,7 +65,16 @@ class Dashboard {
         return cy.get('.newsContainer').find('.newsTile')
     }
     geteventslist(){
-        return cy.get('div.eventsContainer')
+        return cy.get('div.eventsContainer').find('eventsTile')
+    }
+    getperformancekpis(){
+        return  cy.get('div[class="performance"]')
+    }
+    getcapitalkpis(){
+        return cy.get('div[class="capital"]')
+    }
+    getnorecordfound(){
+        return cy.get('div.noRecordFound')
     }
 
    

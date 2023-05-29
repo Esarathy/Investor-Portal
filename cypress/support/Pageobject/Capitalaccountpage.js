@@ -22,22 +22,22 @@ class Capitalaccount {
         return cy.get('.mat-tab-label-content').contains('Transactions')
     }
     getfromdate() {
-        return cy.get('.mat-button-wrapper>svg').eq(0)
+        return cy.get('[data-mat-calendar="mat-datepicker-0"]>button')
     }
     gettodate() {
-        return cy.get('.mat-button-wrapper>svg').eq(1)
+        return cy.get('[data-mat-calendar="mat-datepicker-1"]>button')
     }
     gettransactioncount() {
-        return cy.get('.transaction-count')
+        return cy.get('.transaction-count>div')
     }
     getclearbutton() {
         return cy.get('.mat-button-wrapper').contains('Clear Filter')
     }
     gettransactiontype() {
-        return cy.get('.transaction-select').eq(0)
+        return cy.get('#type')
     }
     gettransactionstatus() {
-        return cy.get('.transaction-select').eq(1)
+        return cy.get('#status')
     }
     getcapitalcall() {
         return cy.get('span.mat-option-text').contains(' Capital call ')
@@ -57,10 +57,12 @@ class Capitalaccount {
     getyearmonthdate() {
         return cy.get('button.mat-calendar-body-cell')
     }
-    getnorecordfound(){
+    getnorecordfound() {
         return cy.get('div.noRecord')
     }
-
+    gettablerow() {
+        return cy.get('tbody>tr')
+    }
 
 
 

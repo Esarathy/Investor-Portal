@@ -9,21 +9,21 @@ Feature: Validating the Capitalaccount page of investor portal
         When User selects the Investor from LPS drop-down
         And User selects the fund from vehicle drop-down
 
-    # Scenario: Verify the Overview of IFRS vertical
-    #     And User hits the api request for the capital account overview
-    #     When The user clicks on the Capital Account Page
-    #     And Choose the year
-    #     And Choose the quarter
-    #     When User select IFRS vertical from the drop down as the file format
-    #     Then Verify if the datas for selected year and quarter are been displayed for IFRS vertical
+    Scenario: Verify the Overview of IFRS vertical
+        And User hits the api request for the capital account overview
+        When The user clicks on the Capital Account Page
+        And Choose the year
+        And Choose the quarter
+        When User select IFRS vertical from the drop down as the file format
+        Then Verify if the datas for selected year and quarter are been displayed for IFRS vertical
 
-    # Scenario: Verify the Overview KFW capital account
-    #     And User hits the api request for the capital account overview
-    #     When The user clicks on the Capital Account Page
-    #     And Choose the year
-    #     And Choose the quarter
-    #     When User select KFW capital account from the drop down as the file format
-    #     Then Verify if the datas for selected year and quarter are been displayed for KFW capital account
+    Scenario: Verify the Overview KFW capital account
+        And User hits the api request for the capital account overview
+        When The user clicks on the Capital Account Page
+        And Choose the year
+        And Choose the quarter
+        When User select KFW capital account from the drop down as the file format
+        Then Verify if the datas for selected year and quarter are been displayed for KFW capital account
 
     # Scenario: Verify the display format options from the drop-down
     #     When The user clicks on the Capital Account Page
@@ -54,8 +54,8 @@ Feature: Validating the Capitalaccount page of investor portal
         And The user clicks on the Transaction tab
         When User choose the From Date in the date picker
         And User choose the To Date in the date picker
-        Then Verify if no transaction for the selected dates are displayed
-        And Verify if a no record found message is been displayed
+        Then Verify if a no record found message is been displayed
+        And Verify if no transaction for the selected dates are displayed
         When User clicks on clear filter button
         Then Verify all the transactions are displayed
 

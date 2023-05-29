@@ -35,6 +35,7 @@ Then("Verify user should be successfully navigated to home page", () => {
   cy.url().should("include", "/dashboard");
 });
 
+
 //dashboard 
 When("The user hits the api request for the base data", () => {
   const token = localStorage.getItem("access_token");
@@ -49,7 +50,6 @@ When("The user hits the api request for the base data", () => {
     expect(response.status).to.eq(200);
     resbody = response;
   });
-
 });
 
 When("User selects the Investor from LPS drop-down", () => {
@@ -69,6 +69,7 @@ Then("Verify partner logo is displayed on the left panel", (response) => {
     .and("include", resbody.body.data.gps[0].logos.bigUrl);
 });
 
+
 // Timeline Widget
 When("The user hits the api request for the dashboard", () => {
   const token = localStorage.getItem("access_token");
@@ -83,6 +84,7 @@ When("The user hits the api request for the dashboard", () => {
     expect(response.status).to.eq(200);
     resbody = response;
   });
+
 });
 
 Then("Verify timeline widget is displayed", () => {
@@ -102,15 +104,13 @@ And("Verify the liquidation end date in the timeline", () => {
 });
 
 When("User hover on the events in the timeline", () => {
-  dashboard.gettimelinedot().then(($eventdot) => {
-    if ($eventdot.length >= 1) {
-      dashboard.gettimelinedot().eq(1).click().wait(3000);
-    }
-  });
+  dashboard.gettimelinedot().should('be.visible').eq(1).click()
 });
+
 Then("A tooltip should be visible", () => {
   dashboard.gettooltip().should("be.visible");
 });
+
 
 // Banner Widget
 And("Banner Widget is displayed", () => {
@@ -124,6 +124,7 @@ When("User click on the banner widget it redirected to a respective url", () => 
   });
 }
 );
+
 
 // Investment Widget
 And("Investment Widget is displayed", () => {
@@ -149,12 +150,13 @@ Then("Verify the investment widgets and their respective graphs", () => {
     );
 });
 
+
 // Performance Widget
 And("Performance Widget is displayed", () => {
   dashboard.getperformance().should("be.visible");
 });
 Then("Details on the Performance widget are verified", () => {
-  cy.get('div[class="performance"]')
+  dashboard.getperformancekpis()
     .find(".count")
     .should(
       "have.text",
@@ -171,6 +173,7 @@ Then("Details on the Performance widget are verified", () => {
     );
 });
 
+
 // navigate to insight on clicking see details
 When("Clicking on the see details link from the performance widget", () => {
   dashboard.getseedetails().eq(0).click();
@@ -181,13 +184,14 @@ Then("User should navigate to the Insights page successfully", () => {
   leftpanel.getmenuheading().should("contain", "/ Insights ");
 });
 
+
 // Capital account
 And("Capital account Widget is displayed", () => {
   dashboard.getcapitalinusd().should("be.visible");
 });
 
 Then("Details on the capital account widget are verified", () => {
-  cy.get('div[class="capital"]')
+  dashboard.getcapitalkpis()
     .find(".count")
     .should(
       'have.text',
@@ -205,6 +209,7 @@ Then("Details on the capital account widget are verified", () => {
     );
 });
 
+
 // navigate capital account on clicking see details
 When("Clicking on the see details link from the capital account widgets", () => {
   dashboard.getseedetails().eq(1).click();
@@ -216,7 +221,9 @@ Then("User should navigate to the capital account page successfully", () => {
   dashboard.getmenuheading().should("contain", "/ Capital Account ");
 });
 
+
 // Upcoming events Widgets
+let eventlist;
 When("The user hits the api request for the upcoming events", () => {
   const token = localStorage.getItem("access_token");
   const authorization = `Bearer ${token}`;
@@ -236,21 +243,23 @@ Then("Upcoming event widget is displayed", () => {
 });
 
 And("Should contain the list of events", () => {
-  dashboard.geteventslist().find('.eventTile').should("have.length", resbody.body.data.length);
+  eventlist = dashboard.geteventslist().should("have.length", resbody.body.data.length);
 });
 
 When("User click on any of the events", () => {
-  dashboard.geteventslist().then(($events) => {
-  if ($events) {
-    dashboard.geteventslist().find('eventsTile').eq(0).click();
-  }
+  eventlist.then(($events) => {
+    if ($events != 0 || undefined) {
+      dashboard.getnorecordfound().should('contain', ' No upcoming events. ')
+    } else {
+      dashboard.geteventslist().eq(0).click();
+    }
   })
 });
 
 Then("Verify the event is getting downloaded", () => {
 
-  // cy.readFile("cypress/downloads/InvestorEvent.ics").should("exist");
 });
+
 
 
 // News Widgets
@@ -290,8 +299,8 @@ Then("Verify user navigates to the external url", () => {
 
 
 
-
 // Updates
+let updateslist;
 When("The user hits the api request for the updates", () => {
   const token = localStorage.getItem("access_token");
   const authorization = `Bearer ${token}`;
@@ -316,7 +325,7 @@ When("User click on last login", () => {
 });
 
 Then("Should contain list of updates for last login", () => {
-  dashboard.getupdateslist().should("have.length", resbody.body.data.length);
+  updateslist = dashboard.getupdateslist().should("have.length", resbody.body.data.length);
 });
 
 When("User click on last month", () => {
@@ -324,12 +333,14 @@ When("User click on last month", () => {
 });
 
 Then("Should contain list of updates for last month", () => {
-  dashboard.getupdateslist().should("have.length", resbody.body.data.length);
+  updateslist = dashboard.getupdateslist().should("have.length", resbody.body.data.length);
 });
 
 When("User clicks on any of the updates", () => {
-  dashboard.getupdateslist().then(($updates) => {
-    if ($updates.length >= 1) {
+  updateslist.then(($updates) => {
+    if ($updates == 0 || undefined) {
+      dashboard.getnorecordfound().should('contain', ' No updates within the last 30 days. ')
+    } else {
       dashboard.getupdateslist().eq(0).click();
     }
   });

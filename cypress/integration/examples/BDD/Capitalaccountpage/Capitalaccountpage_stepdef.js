@@ -8,6 +8,7 @@ import Apiurl from "../../../../fixtures/Apiurl.json";
 import Loginpage from "../../../../support/Pageobject/Loginpage";
 import Investorandfund from "../../../../fixtures/Investorandfund.json";
 import Common from "../../../Common/Common";
+import Datequarter from "../../../../fixtures/Datequarter.json"
 
 const common = new Common()
 const loginpage = new Loginpage()
@@ -84,7 +85,7 @@ And('Choose the quarter', () => {
 
 })
 When('User select IFRS vertical from the drop down as the file format', () => {
-    capitalaccount.getfileformat().click()
+    capitalaccount.getfileformat().wait(3000).click()
     capitalaccount.getifrs().click()
 
 
@@ -98,7 +99,7 @@ Then('Verify if the datas for selected year and quarter are been displayed for I
 
 // Overview KFW
 When('User select KFW capital account from the drop down as the file format', () => {
-    capitalaccount.getfileformat().click()
+    capitalaccount.getfileformat().wait(3000).click()
     capitalaccount.getkfw().click()
 
 
@@ -147,6 +148,7 @@ Then('Verify the file format  option from the file format drop-down', () => {
 
 
 // Transaction details for the selected dates are displayed
+let filteredDate;
 And("User hits the api request for the capital account transaction", () => {
     const token = localStorage.getItem("access_token");
     const authorization = `Bearer ${token}`;
@@ -168,32 +170,32 @@ And('The user clicks on the Transaction tab', () => {
 })
 When('User choose the From Date', () => {
     capitalaccount.getfromdate().click()
-    common.setdate("2015", "FEB", "12")
+    common.setdate(Datequarter.startdate.year, Datequarter.startdate.month, Datequarter.startdate.date)
 
 })
 And('User choose the To Date', () => {
     capitalaccount.gettodate().click()
-    common.setdate("2023", "MAY", "15")
+    common.setdate(Datequarter.enddate.year, Datequarter.enddate.month, Datequarter.enddate.date)
 })
 Then('Verify if the list of transaction are displayed for the selected dates', () => {
-    const filteredData = resbody.body.data.filter(item => {
+    filteredDate = resbody.body.data.filter(item => {
         const sendDate = new Date(item.sendDate);
-        const startDate = new Date("2018-12-19");
-        const endDate = new Date("2019-11-12");
+        const startDate = new Date(Datequarter.startdate.year +'-'+ Datequarter.startdate.month +'-'+ Datequarter.startdate.date);
+        const endDate = new Date(Datequarter.enddate.year +'-'+ Datequarter.enddate.month +'-'+ Datequarter.enddate.date);
         return sendDate >= startDate && sendDate <= endDate;
     });
-    cy.log(filteredData);
+    capitalaccount.gettablerow().should('have.length', filteredDate.length)
 
 })
 And('Verify if total no. of transaction are been displayed in the right corner of the header tab', () => {
-    cy.get('.transaction-count>div').contains('23' + ' Transactions')
+    capitalaccount.gettransactioncount().contains(filteredDate.length + ' Transactions')
 })
 When('User clicks on clear filter button', () => {
     capitalaccount.getclearbutton().click()
 
 })
 Then('Verify all the transactions are displayed', () => {
-    cy.get('.transaction-count>div').contains(resbody.body.data.length + ' Transactions')
+    capitalaccount.gettransactioncount().contains(resbody.body.data.length + ' Transactions')
 
 })
 
@@ -207,13 +209,12 @@ And('User choose the To Date in the date picker', () => {
     capitalaccount.gettodate().click()
     common.setdate("2023", "MAY", "15")
 })
-Then('Verify if no transaction for the selected dates are displayed', () => {
-
-})
-And('Verify if a no record found message is been displayed', () => {
+Then('Verify if a no record found message is been displayed', () => {
     capitalaccount.getnorecordfound().contains('No records found').should('be.visible')
-    const transactioncount = capitalaccount.gettransactioncount().invoke("text")
-    cy.log(transactioncount)
+})
+And('Verify if no transaction for the selected dates are displayed', () => {
+    capitalaccount.gettransactioncount().contains('0' + ' Transactions')
+
 })
 
 
@@ -222,18 +223,18 @@ And('Verify if a no record found message is been displayed', () => {
 // transaction are filtered based on capital call
 let capitalcall;
 And('Choose the transaction type as capital call', () => {
-    cy.get('.transaction-select').eq(0).click()
+    capitalaccount.gettransactiontype().click()
     capitalaccount.getcapitalcall().click()
 
 
 })
 Then('Verify if only the capital call are filtered and displayed', () => {
     capitalcall = resbody.body.data.filter(item => item.type === "capitalCall");
-    cy.get('tbody>tr').should('have.length', capitalcall.length)
+    capitalaccount.gettablerow().should('have.length', capitalcall.length)
 
 })
 And('Verify the no.of transaction for capital call', () => {
-    cy.get('.transaction-count>div').contains(capitalcall.length + ' Transactions')
+    capitalaccount.gettransactioncount().contains(capitalcall.length + ' Transactions')
 
 })
 
@@ -247,11 +248,11 @@ And('Choose the transaction type as capital distribution', () => {
 })
 Then('Verify if only the capital distribution are filtered and displayed', () => {
     cashdistribution = resbody.body.data.filter(item => item.type === "cashDistribution");
-    cy.get('tbody>tr').should('have.length', cashdistribution.length)
+    capitalaccount.gettablerow().should('have.length', cashdistribution.length)
 
 })
 And('Verify the no.of transaction for capital distribution', () => {
-    cy.get('.transaction-count>div').contains(cashdistribution.length + ' Transactions')
+    capitalaccount.gettransactioncount().contains(cashdistribution.length + ' Transactions')
 
 })
 
@@ -266,11 +267,11 @@ And('Choose the transaction status as Paid', () => {
 })
 Then('Verify if only the Paid status transations are filtered and displayed', () => {
     paidstatus = resbody.body.data.filter(item => item.status === "paid");
-    cy.get('tbody>tr').should('have.length', paidstatus.length)
+    capitalaccount.gettablerow().should('have.length', paidstatus.length)
 
 })
 And('Verify the no.of transaction for Paid status', () => {
-    cy.get('.transaction-count>div').contains(paidstatus.length + ' Transactions')
+    capitalaccount.gettransactioncount().contains(paidstatus.length + ' Transactions')
 
 })
 
@@ -285,12 +286,12 @@ And('Choose the transaction status as Open', () => {
 })
 Then('Verify if only the Open status transations are filtered and displayed', () => {
     openstatus = resbody.body.data.filter(item => item.status === "open");
-    cy.get('tbody>tr').should('have.length', openstatus.length)
+    capitalaccount.gettablerow().should('have.length', openstatus.length)
 
 
 })
 And('Verify the no.of transaction for Paid transaction', () => {
-    cy.get('.transaction-count>div').contains(openstatus.length + ' Transactions')
+    capitalaccount.gettransactioncount().contains(openstatus.length + ' Transactions')
 
 })
 
