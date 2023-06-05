@@ -13,8 +13,12 @@ import "cypress-iframe";
 import 'cypress-if'
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
-//
-
+        // Cypress.Commands.add('getApiUrl', (lpsUuid, vehicleUuid) => {
+        //     const baseUrl = Cypress.env("baseurl");
+        //     const endpoint = `/lps/${lpsUuid}/vehicles/${vehicleUuid}/dashboard`;
+        //     let url = baseUrl + endpoint;
+        //     return url;
+        // })
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })

@@ -14,7 +14,7 @@ class Dashboard {
         return cy.get('.progressDate.end')
     }
     gettooltip(){
-        return cy.get('mat-tooltip-component')
+        return cy.get('.tooltip')
     }
     getperformance() {
         return cy.get('.card-container').contains(' Performance ')

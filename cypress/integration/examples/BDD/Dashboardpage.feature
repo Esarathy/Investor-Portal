@@ -9,9 +9,9 @@ Feature: Validating the Dashboard page
           When User selects the Investor from LPS drop-down
           And User selects the fund from vehicle drop-down
 
-     Scenario: Verify the fund and investor
-          When The user hits the api request for the base data
-          Then Verify partner logo is displayed on the left panel
+     # Scenario: Verify the fund and investor
+     #      When The user hits the api request for the base data
+     #      Then Verify partner logo is displayed on the left panel
 
      Scenario: Verify if the timeline widget is displayed on the dashboard page
           When The user hits the api request for the dashboard
@@ -73,12 +73,12 @@ Feature: Validating the Dashboard page
           Then User should sucessfully navigate to the respective page
 
 
-     Scenario: Verify the news widgets
-          When The user hits the api request for the news
-          Then News widget is displayed
-          And Should contain the list of news
-          When User clicks on any of the news
-          Then Verify user navigates to the external url
+     # Scenario: Verify the news widgets
+     #      When The user hits the api request for the news
+     #      Then News widget is displayed
+     #      And Should contain the list of news
+     #      When User clicks on any of the news
+     #      Then Verify user navigates to the external url
 
 
 

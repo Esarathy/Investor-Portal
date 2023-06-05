@@ -16,7 +16,7 @@ let resbody = "";
 
 // Login
 Given("The user lands on the authentication page", () => {
-  cy.visit(Cypress.env("qaurl"));
+  cy.visit('/');
 });
 
 When("User enter the user name or mailid and password", () => {
@@ -53,12 +53,12 @@ When("The user hits the api request for the base data", () => {
 });
 
 When("User selects the Investor from LPS drop-down", () => {
-  dashboard.getinvestordropdown().click();
+  dashboard.getinvestordropdown().click()
   cy.contains(Investorandfund.lps).click({ force: true });
 });
 
 And("User selects the fund from vehicle drop-down", () => {
-  dashboard.getfunddropdown().click().click({ force: true });
+  dashboard.getfunddropdown().click()
   cy.contains(Investorandfund.vehicle).click({ force: true });
 });
 
@@ -76,7 +76,7 @@ When("The user hits the api request for the dashboard", () => {
   const authorization = `Bearer ${token}`;
   cy.request({
     method: "GET",
-    url: Cypress.env("baseurl") + Apiurl.dashboard,
+    url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'dashboard'),
     headers: {
       authorization,
     },
@@ -229,7 +229,7 @@ When("The user hits the api request for the upcoming events", () => {
   const authorization = `Bearer ${token}`;
   cy.request({
     method: "GET",
-    url: Cypress.env("baseurl") + Apiurl.events,
+    url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'events'),
     headers: {
       authorization,
     },
@@ -268,7 +268,7 @@ When("The user hits the api request for the news", () => {
   const authorization = `Bearer ${token}`;
   cy.request({
     method: "GET",
-    url: Cypress.env("baseurl") + Apiurl.news,
+    url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'news'),
     headers: {
       authorization,
     },
@@ -306,7 +306,7 @@ When("The user hits the api request for the updates", () => {
   const authorization = `Bearer ${token}`;
   cy.request({
     method: "GET",
-    url: Cypress.env("baseurl") + Apiurl.updates,
+    url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'updates'),
     headers: {
       authorization,
     },
