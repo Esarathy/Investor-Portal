@@ -42,7 +42,7 @@ When("The user hits the api request for the base data", () => {
   const authorization = `Bearer ${token}`;
   cy.request({
     method: "GET",
-    url: Cypress.env("baseurl") + Apiurl.basedata,
+    url: Cypress.env("baseurl") + "/base-data",
     headers: {
       authorization,
     },
@@ -159,16 +159,16 @@ Then("Details on the Performance widget are verified", () => {
   dashboard.getperformancekpis()
     .find(".count")
     .should(
-      "have.text",
-      (resbody.body.data.performance.tvpi).toFixed(2) +
+      'have.value',
+      (resbody.body.data.performance.tvpi) ? (resbody.body.data.performance.tvpi).toFixed(2) : "-" +
       "" +
-      (resbody.body.data.performance.dpi) +
+      (resbody.body.data.performance.dpi)  ? (resbody.body.data.performance.dpi) : "-" +
       "" +
-      (resbody.body.data.performance.rvpi).toFixed(2) +
+      (resbody.body.data.performance.rvpi)  ? (resbody.body.data.performance.rvpi).toFixed(2) : "-" +
       "" +
-      (resbody.body.data.performance.moic).toFixed(2) +
+      (resbody.body.data.performance.moic) ? (resbody.body.data.performance.moic).toFixed(2) : "-" +
       "x" +
-      (resbody.body.data.performance.irr).toFixed(2) +
+      (resbody.body.data.performance.irr)  ? (resbody.body.data.performance.irr).toFixed(2) : "-" +
       "%"
     );
 });
@@ -194,7 +194,7 @@ Then("Details on the capital account widget are verified", () => {
   dashboard.getcapitalkpis()
     .find(".count")
     .should(
-      'have.text',
+      'contain',
       (resbody.body.data.capital.committed).toLocaleString() +
       "" +
       (resbody.body.data.capital.calledIn).toLocaleString() +

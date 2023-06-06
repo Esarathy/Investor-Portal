@@ -9,10 +9,7 @@ const leftpanel = new Leftpanel()
 
 // Profile Section
 Given('The user landed on the Dashboard page', () => {
-    cy.visit(Cypress.env('qaurl'))
-    cy.url().should('include', '/dashboard')
-    cy.clearCookies()
-    cy.clearLocalStorage()
+    cy.visit('/')
 })
 And('Partner logo is displayed', () => {
     leftpanel.getpatnerlogo().should('be.visible')

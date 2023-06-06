@@ -8,10 +8,10 @@ Feature: Validating the Insight page of investor portal
         Then Verify user should be successfully navigated to home page
         When User selects the Investor from LPS drop-down
         And User selects the fund from vehicle drop-down
-        And The user hits the api request for insights
+
 
     Scenario: Verify the Fund Metrics - Net performance
-
+        And The user hits the api request for insights - Fund Metrics
         When The user clicks on the Insights Page
         Then Details on the TVPI widget are verified
         And Details on the Capital deployed widget are verified
@@ -23,7 +23,7 @@ Feature: Validating the Insight page of investor portal
 
 
     Scenario: Verify the Fund Metrics - Gross performance
-
+        And The user hits the api request for insights - Fund Metrics
         When The user clicks on the Insights Page
         And Scrolls to Gross performance section
         Then Details on the MOIC widget are verified
@@ -35,7 +35,7 @@ Feature: Validating the Insight page of investor portal
 
 
     Scenario: Verify the Fund Metrics - LP details
-
+        And The user hits the api request for insights - Fund Metrics
         When The user clicks on the Insights Page
         And Scrolls to LP details section
         Then Details on the Net LP proceeds widget are verified
@@ -49,7 +49,7 @@ Feature: Validating the Insight page of investor portal
 
 
     Scenario: Verify the Fund Metrics - GP details
-
+        And The user hits the api request for insights - Fund Metrics
         When The user clicks on the Insights Page
         And Scrolls to GP details section
         Then Details on the GP proceeds widget are verified
@@ -64,7 +64,7 @@ Feature: Validating the Insight page of investor portal
 
 
     Scenario: Verify the Portfolio Investment - Capital deployment
-
+        And The user hits the api request for insights - Portfolio Investment
         When The user clicks on the Insights Page
         And User selects the portfolio investment tab
         Then Details on the Initial investments vs. follow-on investments widget under the capital deployment are verified
@@ -77,6 +77,7 @@ Feature: Validating the Insight page of investor portal
 
 
     Scenario: Verify the Portfolio Investment - Exits
+        And The user hits the api request for insights - Portfolio Investment
         When The user clicks on the Insights Page
         And User selects the portfolio investment tab
         And Scrolls to Exits section

@@ -17,7 +17,7 @@ let resbody = "";
 
 //Login
 Given('The user lands on the authentication page', () => {
-    cy.visit(Cypress.env('qaurl'))
+    cy.visit('/')
 
 })
 
@@ -37,16 +37,6 @@ Then('User should successfully be navigated to the home page', () => {
     cy.url().should('include', '/dashboard')
 
 })
-
-// Given('The user landed on the Dashboard page', () => {
-//     cy.visit(Cypress.env('qaurl'))
-//     cy.url().should('include', '/dashboard')
-//     cy.clearCookies()
-//     cy.clearLocalStorage()
-// })
-// And('Partner logo is displayed', () => {
-//     leftpanel.getpatnerlogo().should('be.visible')
-// })
 
 
 //Documents page
@@ -68,7 +58,7 @@ And('Hits the api request for the documents page', () => {
     const authorization = `Bearer ${token}`
     cy.request({
         method: 'GET',
-        url: Cypress.env('baseurl') + (Apiurl.documents),
+        url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'documents'),
         headers: {
             authorization
         }
@@ -110,8 +100,6 @@ And('Clicks on the pdf file for preview', () => {
 When('User clicks on the download button on the pdf view', () => {
     cy.wait(4000)
     cy.get('iframe')
-    
-
 
 })
 Then('The pdf must be downloaded sucessfully', () => {

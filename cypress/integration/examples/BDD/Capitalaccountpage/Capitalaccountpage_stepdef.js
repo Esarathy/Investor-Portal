@@ -23,7 +23,7 @@ let resbody = "";
 
 // Login
 Given('The user lands on the authentication page', () => {
-    cy.visit(Cypress.env('qaurl'))
+    cy.visit('/')
 
 })
 When('User enter the user name or mailid and password', () => {
@@ -54,12 +54,12 @@ And('User selects the fund from vehicle drop-down', () => {
 
 
 // IFRS vertical
-And("User hits the api request for the capital account overview", () => {
+And("User hits the api request for the capital account overview - IFRS vertical", () => {
     const token = localStorage.getItem("access_token");
     const authorization = `Bearer ${token}`;
     cy.request({
         method: "GET",
-        url: Cypress.env("baseurl") + (Apiurl.capitalaccount.overview["ifrs"]),
+        url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'capital-account-overviews/2023/1/b93d2197-e8fc-459a-8bfe-58fef79d3086'),
         headers: {
             authorization,
         },
@@ -98,11 +98,24 @@ Then('Verify if the datas for selected year and quarter are been displayed for I
 
 
 // Overview KFW
+And("User hits the api request for the capital account overview - KFW capital account", () => {
+    const token = localStorage.getItem("access_token");
+    const authorization = `Bearer ${token}`;
+    cy.request({
+        method: "GET",
+        url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'capital-account-overviews/2023/1/12e89c58-2275-4cab-b3cc-891895a0c07d'),
+        headers: {
+            authorization,
+        },
+    }).then((response) => {
+        expect(response.status).to.eq(200);
+        resbody = response;
+    });
+
+});
 When('User select KFW capital account from the drop down as the file format', () => {
     capitalaccount.getfileformat().wait(3000).click()
     capitalaccount.getkfw().click()
-
-
 
 })
 Then('Verify if the datas for selected year and quarter are been displayed for KFW capital account', () => {
@@ -154,7 +167,7 @@ And("User hits the api request for the capital account transaction", () => {
     const authorization = `Bearer ${token}`;
     cy.request({
         method: "GET",
-        url: Cypress.env("baseurl") + (Apiurl.capitalaccount["transaction"]),
+        url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'transactions'),
         headers: {
             authorization,
         },

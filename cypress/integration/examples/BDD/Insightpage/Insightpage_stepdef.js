@@ -19,7 +19,7 @@ let resbody = "";
 
 // Login
 Given('The user lands on the authentication page', () => {
-    cy.visit(Cypress.env('qaurl'))
+    cy.visit('/')
 
 })
 
@@ -51,12 +51,12 @@ And('User selects the fund from vehicle drop-down', () => {
     cy.contains(Investorandfund.vehicle).click({ force: true })
 
 })
-And('The user hits the api request for insights', () => {
+And('The user hits the api request for insights - Fund Metrics', () => {
     const token = localStorage.getItem('access_token')
     const authorization = `Bearer ${token}`
     cy.request({
         method: 'GET',
-        url: Cypress.env('baseurl') + (Apiurl.insights["fund-metrics"]),
+        url: common.getApi(Investorandfund.lps, Investorandfund.vehicle, 'insights/fund-metrics'),
         headers: {
             authorization
         }
@@ -279,6 +279,21 @@ Then('Verify if all the charts are collapsed under LP details', () => {
 
 
 // Portfolios investment - Capital deployment
+And('The user hits the api request for insights - Portfolio Investment', () => {
+    const token = localStorage.getItem('access_token')
+    const authorization = `Bearer ${token}`
+    cy.request({
+        method: 'GET',
+        url: common.getApi(Investorandfund.lps, Investorandfund.vehicle, 'insights/portfolio-investments'),
+        headers: {
+            authorization
+        }
+    }).then((response) => {
+        expect(response.status).to.eq(200)
+        resbody = response;
+    })
+
+})
 And('User selects the portfolio investment tab', () => {
     leftpanel.getportfolio().click()
     leftpanel.getchildmenuheading().should('contain', ' Portfolio Investments ')

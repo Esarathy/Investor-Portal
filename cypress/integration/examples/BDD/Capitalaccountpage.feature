@@ -10,7 +10,7 @@ Feature: Validating the Capitalaccount page of investor portal
         And User selects the fund from vehicle drop-down
 
     Scenario: Verify the Overview of IFRS vertical
-        And User hits the api request for the capital account overview
+        And User hits the api request for the capital account overview - IFRS vertical
         When The user clicks on the Capital Account Page
         And Choose the year
         And Choose the quarter
@@ -18,7 +18,7 @@ Feature: Validating the Capitalaccount page of investor portal
         Then Verify if the datas for selected year and quarter are been displayed for IFRS vertical
 
     Scenario: Verify the Overview KFW capital account
-        And User hits the api request for the capital account overview
+        And User hits the api request for the capital account overview - KFW capital account
         When The user clicks on the Capital Account Page
         And Choose the year
         And Choose the quarter
@@ -49,7 +49,6 @@ Feature: Validating the Capitalaccount page of investor portal
 
 
     Scenario: Verify if the no transaction message is shown in case of no data
-        And User hits the api request for the capital account transaction
         When The user clicks on the Capital Account Page
         And The user clicks on the Transaction tab
         When User choose the From Date in the date picker
@@ -60,7 +59,6 @@ Feature: Validating the Capitalaccount page of investor portal
         Then Verify all the transactions are displayed
 
     Scenario: Verify the transaction are filtered based on capital call
-        And User hits the api request for the capital account transaction
         When The user clicks on the Capital Account Page
         And The user clicks on the Transaction tab
         And Choose the transaction type as capital call

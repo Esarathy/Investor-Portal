@@ -17,7 +17,7 @@ let resbody = "";
 
 // Login
 Given('The user lands on the authentication page', () => {
-    cy.visit(Cypress.env('qaurl'))
+    cy.visit('/')
 
 })
 
@@ -58,7 +58,7 @@ When('The user hits the api request for the reports', () => {
     const authorization = `Bearer ${token}`
     cy.request({
         method: 'GET',
-        url: Cypress.env('baseurl') + (Apiurl.reports),
+        url: common.getApi(Investorandfund.lps,Investorandfund.vehicle,'reports'),
         headers: {
             authorization
         }

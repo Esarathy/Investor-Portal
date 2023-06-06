@@ -3,6 +3,7 @@ import Loginpage from "../../support/Pageobject/Loginpage";
 import Investorandfund from "../../fixtures/Investorandfund.json";
 
 
+
 const capitalaccount = new Capitalaccount
 const loginpage = new Loginpage();
 
@@ -23,7 +24,7 @@ class Common {
       return false;
     })
   }
- getApi(lpsUuid, vehicleUuid, page) {
+  getApi(lpsUuid, vehicleUuid, page) {
     let lpsUuidValue;
     let vehicleUuidValue;
 
@@ -41,17 +42,17 @@ class Common {
       vehicleUuidValue = 'e782dafc-4fea-4365-b07c-12c2e7b05a61';
     } else if (Investorandfund.vehicle === " 2bX Fund ") {
       vehicleUuidValue = 'c442bcd8-eb36-4c5a-869b-e9a5d62e3214';
-    }else if (Investorandfund.vehicle === " Blockchain Founders Fund ") {
+    } else if (Investorandfund.vehicle === " Blockchain Founders Fund ") {
       vehicleUuidValue = 'cddee0af-6759-44cd-a186-55a4b2baac33';
-    }else if (Investorandfund.vehicle === " Interface Fund ") {
+    } else if (Investorandfund.vehicle === " Interface Fund ") {
       vehicleUuidValue = '44f8d051-3379-46b8-8a10-4b26d459c09f';
-    }else if (Investorandfund.vehicle === " Redstone Fund ") {
+    } else if (Investorandfund.vehicle === " Redstone Fund ") {
       vehicleUuidValue = '2ccb8516-2487-4372-9bcf-f609b9b11920';
-    }else {
+    } else {
       vehicleUuidValue = 'bfe3ab72-4b05-48f8-b60b-7edc3ed4ee55';
     }
 
-    const baseUrl = Cypress.env("baseurl");
+    const baseUrl = Cypress.env('baseurl');
     const endpoint = "/lps/" + lpsUuidValue + "/vehicles/" + vehicleUuidValue + "/" + page;
     const url = baseUrl + endpoint;
 
